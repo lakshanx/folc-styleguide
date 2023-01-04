@@ -1,0 +1,29 @@
+.nav-dropdown-category {
+  height: 85px;
+}
+
+.nav-pills {
+  .nav-link {
+    background-color: $white;
+  }
+}
+
+//.navbar {
+//  .nav-link {
+//    &:focus, &:active {
+//      background-color: $gray;
+//    }
+//  }
+//}
+
+@include media-breakpoint-up(lg) {
+  .dropdown-expand-lg {
+    width: 430px !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .dropdown-expand-xl {
+    width: 1131px;
+  }
+}

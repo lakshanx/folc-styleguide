@@ -1,0 +1,33 @@
+.mobile-wrapper {
+	@include media-breakpoint-down(md) {
+		padding-right: $grid-gutter-width / 2;
+		padding-left: $grid-gutter-width / 2;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.container, .container-fluid {
+		padding-right: $grid-gutter-width;
+		padding-left: $grid-gutter-width;
+	}
+
+	.row {
+		margin-right: -$grid-gutter-width;
+		margin-left: -$grid-gutter-width;
+	}
+
+	.col,
+	[class*="col-"] {
+		padding-right: $grid-gutter-width-lg / 2;
+		padding-left: $grid-gutter-width-lg / 2;
+	}
+}
+
+.no-gutters {
+  &__in-container {
+    @include media-breakpoint-down(md) {
+      margin-right: -$grid-gutter-width;
+      margin-left: -$grid-gutter-width;
+    }
+  }
+}
