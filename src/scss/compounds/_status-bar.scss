@@ -1,0 +1,25 @@
+.status-bar{
+
+  position: relative;
+  height: 100px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    height: 100%;
+    width: 100%;
+    left: -90%;
+  }
+
+  .nav-link{
+    background-color: transparent;
+    color: $body-color;
+
+    &.active{
+      background-color: $white;
+      color: $body-color;
+    }
+  }
+
+}
