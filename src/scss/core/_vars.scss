@@ -199,29 +199,11 @@ $popover-border-radius: 0;
 $popover-border-width: 0;
 $popover-bg: $gray;
 
-// Breadcrumb
-$breadcrumb-bg: white;
-$breadcrumb-divider-color: $body-color;
-$breadcrumb-active-color: $body-color;
-$breadcrumb-divider: quote(">");
-$breadcrumb-item-padding: calc-em(5);
-$breadcrumb-font-size: calc-em(12);
-$breadcrumb-padding-x: 0;
-
-// Social Icon
-$icon-primary-font-size: calc-em(30);
-
-// Alert
-$alert-padding-x: 1.25em;
-
 // navbar
 $navbar-nav-link-padding-x: 0;
 $navbar-padding-y: 0;
 $navbar-padding-x: calc-em(15 / 2, 16);
 $navbar-toggler-padding-x: 0;
-
-// navbar brand
-$navbar-brand-padding-y: calc-em(9, 16);
 
 // Select
 $custom-select-indicator-padding: 1em;
@@ -237,12 +219,3 @@ $badge-padding-y: calc-em(5);
 $badge-padding-x: calc-em(16);
 $badge-border-radius: $border-radius-lg;
 $badge-font-weight: 400;
-
-// Nav Tabs
-// $nav-tabs-link-active-bg: $primary;
-// $nav-tabs-link-active-color: white;
-// $nav-tabs-border-width: 1px;
-// $nav-tabs-border-radius: 6px;
-// $nav-tabs-border-color: black;
-// $nav-tabs-link-hover-border-color: $body-color;
-// $nav-tabs-link-active-border-color: $body-color;
