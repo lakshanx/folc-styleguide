@@ -1,0 +1,21 @@
+.countries-tabs{
+
+    .nav{
+        margin-left:calc-em(-15);
+        margin-right:calc-em(-15);
+        margin-bottom:calc-em(-15);
+    }
+
+    .nav-item{
+        margin-bottom: calc-em(15);
+        margin-left:calc-em(15);
+        margin-right:calc-em(15);
+        position: relative;
+
+        .nav-link{
+            padding: calc-em(20);
+        }
+    }
+
+
+}
