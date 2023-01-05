@@ -4,87 +4,86 @@
         {{> html-head title="Dropdown" }}
     </head>
     <body>
-        <div class="container">
-            <h1>Dropdown</h1>
-        </div>
+        {{> page-title text="Dropdown" }}
         <div class="container mt-4">
         <div class="my-4">
-        <div class="navbar-nav ms-auto">
+        <div class="nav nav-tabs">
             <div class="nav-item dropdown mx-1">
-                <a href="#" class="nav-link dropdown-toggle py-4" data-toggle="dropdown" data-target="false" role="button" aria-expanded="false" data-placement="bottom">SUBJECTS</a>
-                <ul class="dropdown-menu w-100 show-grid dropdown-expand-lg mt-0 rounded-0 p-0 border-0" style="">
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-art overflow-hidden position-relative cursor-pointer d-flex h-lg-100 align-items-center justify-content-end justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Art
-                        </span>
-                        </a>
-                    </li>
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-belief overflow-hidden position-relative
-                            cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
-                            justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Belief
-                        </span>
-                        </a>
-                    </li>
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-craftmanship overflow-hidden position-relative
-                            cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
-                            justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Craftmanship
-                        </span>
-                        </a>
-                    </li>
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-dance overflow-hidden position-relative
-                            cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
-                            justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Dance
-                        </span>
-                        </a>
-                    </li>
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-entertainment overflow-hidden position-relative
-                            cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
-                            justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Entertainment and recreation
-                        </span>
-                        </a>
-                    </li>
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-foodways overflow-hidden position-relative
-                            cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
-                            justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Foodways
-                        </span>
-                        </a>
-                    </li>
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-music overflow-hidden position-relative
-                            cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
-                            justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Music
-                        </span>
-                        </a>
-                    </li>
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-ritual overflow-hidden position-relative
-                            cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
-                            justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Ritual
-                        </span>
-                        </a>
-                    </li>
-                    <li class="my-2 nav-dropdown-category">
-                        <a href="#" class="category-card bg-verbal overflow-hidden position-relative
-                            cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
-                            justify-content-lg-center small">
-                        <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text ps-lg-5 pe-2 pe-lg-0">Verbal arts &amp; Literature
-                        </span>
-                        </a>
-                    </li>
+                <a href="#" class="nav-link dropdown-toggle py-4" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">SUBJECTS</a>
+                <ul class="dropdown-menu  categories categories--list w-100 show-grid dropdown-expand-lg mt-0 rounded-0 p-0 border-0" style="">
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-art overflow-hidden position-relative cursor-pointer d-flex h-lg-100 align-items-center justify-content-end justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Art
+                            </span>
+                            </a>
+                        </li>
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-belief overflow-hidden position-relative
+                                cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
+                                justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Belief
+                            </span>
+                            </a>
+                        </li>
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-craftmanship overflow-hidden position-relative
+                                cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
+                                justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Craftmanship
+                            </span>
+                            </a>
+                        </li>
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-dance overflow-hidden position-relative
+                                cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
+                                justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Dance
+                            </span>
+                            </a>
+                        </li>
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-entertainment overflow-hidden position-relative
+                                cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
+                                justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Entertainment and recreation
+                            </span>
+                            </a>
+                        </li>
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-foodways overflow-hidden position-relative
+                                cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
+                                justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Foodways
+                            </span>
+                            </a>
+                        </li>
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-music overflow-hidden position-relative
+                                cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
+                                justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Music
+                            </span>
+                            </a>
+                        </li>
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-ritual overflow-hidden position-relative
+                                cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
+                                justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Ritual
+                            </span>
+                            </a>
+                        </li>
+                        <li class="my-2 nav-dropdown-category">
+                            <a href="#" class="category-card bg-verbal overflow-hidden position-relative
+                                cursor-pointer d-flex h-lg-100 align-items-center justify-content-end
+                                justify-content-lg-center small">
+                            <span class="font-heading text-white justify-content-center ms-5 mb-0 category-text">Verbal arts &amp; Literature
+                            </span>
+                            </a>
+                        </li>
                 </ul>
             </div>
+
         </div>
         {{> js jquery=true popper=true bootstrap=true main=true }}
     </body>
