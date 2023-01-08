@@ -35,7 +35,7 @@ $line-height-lg: $line-height-base;
 $line-height-sm: calc-em(17, $context: 14, $unit: 1);
 
 $headings-font-weight: 500;
-$headings-line-height: $line-height-base;
+$headings-line-height: calc-em(20, $context: 16, $unit: 1);
 
 $link-hover-decoration: none;
 

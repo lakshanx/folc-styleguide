@@ -1,6 +1,9 @@
 .font-heading {
     font-family: $headings-font-family;
 }
+.font-body {
+    font-family: $font-family-sans-serif;
+}
 
 @include media-breakpoint-up(lg) {
 	h1, .h1 {
