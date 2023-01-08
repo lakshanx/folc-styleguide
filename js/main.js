@@ -15,7 +15,7 @@
   \************************/
 /***/ (() => {
 
-eval("// Popovers\n$(function () {\n  $('[data-toggle=\"popover\"]').popover();\n});\n\n//# sourceURL=webpack://folc-styleguide/./src/js/main.js?");
+eval("// Popovers\n$(function () {\n  $('[data-toggle=\"popover\"]').popover();\n}); // Stop auto closing of dropdowns with CSS class .avoid-auto-close\n\n$(document).on('click', '.avoid-auto-close.dropdown-menu', function (e) {\n  e.stopPropagation();\n});\n\n//# sourceURL=webpack://folc-styleguide/./src/js/main.js?");
 
 /***/ })
 
