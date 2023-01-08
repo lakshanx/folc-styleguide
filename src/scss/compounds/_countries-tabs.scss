@@ -1,18 +1,20 @@
 .countries-tabs{
-    .nav{
-        margin-left:calc-em(-15);
-        margin-right:calc-em(-15);
-        margin-bottom:calc-em(-15);
-    }
-
-    .nav-item{
-        margin-bottom: calc-em(15);
-        margin-left:calc-em(15);
-        margin-right:calc-em(15);
-        position: relative;
-
-        .nav-link{
-            padding: calc-em(20);
+    @include media-breakpoint-up(lg) {
+        .countries-cols {
+          max-height: 375px;
         }
     }
 }
+
+.border-active .nav-link {
+    border-bottom: 8px solid $gray;
+}
+
+.border-active .nav-link {
+    border-bottom: 8px solid $gray;
+  
+    &.active {
+      border-color: $gray-600;
+    }
+  }
+  

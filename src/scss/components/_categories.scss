@@ -321,4 +321,10 @@
       }
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    &.dropdown-expand-lg {
+      width: 430px !important;
+    }
+  }
 }
