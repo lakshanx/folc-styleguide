@@ -1,0 +1,20 @@
+.main-header{
+    .folc-color-line{
+        span{
+            display: block;
+            height: 13px;
+            background-color: orange;
+            width: 10%;
+
+            &.bg-art{width:8%}
+            &.bg-belief{width:9%}
+            &.bg-craftmanship{width:10%}
+            &.bg-dance{width:35%}
+            &.bg-entertainment{width:4.8%}
+            &.bg-foodways{width:6.6%}
+            &.bg-music{width:9.4%}
+            &.bg-ritual{width:9.4%}
+            &.bg-verbal{width:14.2%}
+        }
+    }
+}
