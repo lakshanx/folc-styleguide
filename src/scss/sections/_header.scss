@@ -17,4 +17,32 @@
             &.bg-verbal{width:14.2%}
         }
     }
+    .navbar-nav{
+        .nav-link{
+            padding: 0 10px;
+        }
+    }
+    .header-search-box{
+        .form-control{
+            height:1em;
+        }
+    }
+}
+
+
+//todo: move to forms scss
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
 }
