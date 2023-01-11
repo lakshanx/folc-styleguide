@@ -1,0 +1,18 @@
+footer{
+    .nav-item{
+        margin-right: 1.5em;
+    }
+
+    .footer-bottom{
+        .nav-link{
+            color:$gray-200 !important;
+        }
+
+        .navbar-brand{
+            line-height: 0;
+        }
+        img{
+            width:80px;
+        }
+    }
+}
