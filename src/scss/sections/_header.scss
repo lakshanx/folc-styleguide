@@ -17,6 +17,11 @@
             &.bg-verbal{width:14.2%}
         }
     }
+
+    .navbar-brand{
+        max-width: 140px;
+    }
+
     .navbar-nav{
         .nav-link{
             padding: 0 10px;
@@ -39,9 +44,9 @@
     position: absolute;
     z-index: 2;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
+    width: 2.4em;
+    height: 2.3em;
+    line-height: 2.2em;
     text-align: center;
     pointer-events: none;
     color: #aaa;
