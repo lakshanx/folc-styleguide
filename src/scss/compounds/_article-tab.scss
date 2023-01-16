@@ -1,13 +1,7 @@
 .article-tab{
-  height: calc-em(82);
-
   .nav-link{
-    background-color: transparent;
-    color: $body-color;
-
     &.active{
-      background-color: $white;
-      color: $body-color;
+      background-color: $white !important;
     }
   }
 }
