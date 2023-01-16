@@ -12,11 +12,11 @@
             <h1>Browse Section</h1>
             <hr>
         </div>        <div class="nav nav-tabs nav-fill border-bottom-0" id="nav-tab" role="tablist">
-            <a href="#tab-subjects" class="nav-link border-start-0 border-end-0 fs-4 text-center py-5 active w-50 h4" data-toggle="tab" data-target="#tab-subjects" role="tab">BROWSE SUBJECTS</a>
-            <a href="#tab-countries" class="nav-link border-start-0 border-end-0 fs-4 text-center py-5 w-50 h4" data-toggle="tab" data-target="#tab-countries" role="tab">BROWSE COUNTRIES</a>
+            <a href="#tab-subjects" class="nav-link border-start-0 border-end-0 fs-4 text-center py-5 active w-50 h4 font-body text-uppercase text-gray" data-toggle="tab" data-target="#tab-subjects" role="tab">Browse Subjects</a>
+            <a href="#tab-countries" class="nav-link border-start-0 border-end-0 fs-4 text-center py-5 w-50 h4 font-body text-uppercase text-gray" data-toggle="tab" data-target="#tab-countries" role="tab">Browse Countries</a>
         </div>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane bg-lighter-gray fade active show" id="tab-subjects" role="tabpanel">
+            <div class="tab-pane bg-lighter-gray fade active show pt-2 pt-lg-0" id="tab-subjects" role="tabpanel">
                 <div class="row categories categories--grid no-gutters my-n1 mx-2 mx-lg-0 my-lg-0">
                     <div class="col-12 col-lg-4 my-1 my-lg-0">
                         <a href="#" class="category-card bg-art  d-flex h-lg-100 align-items-center justify-content-end justify-content-lg-center">
@@ -65,7 +65,7 @@
                     </div>
                 </div>            </div>
             <div class="tab-pane bg-lighter-gray fade" id="tab-countries" role="tabpanel">
-                <div class="container py-5">
+                <div class="container py-5 d-none d-lg-block">
                     <div class="container d-block countries-tabs py-2 bg-lighter-gray my-3">
                         <ul class="nav nav-pills nav-fill border-bottom-0 m-n1 m-md-n2" id="countries-tab" role="tablist">
                             <li class="nav-item mx-1 mx-md-2 mb-1 mb-md-2 border-active active">
@@ -487,6 +487,25 @@
                             </div>
                         </div>
                     </div>                </div>
+                <div class="container py-5 d-block d-lg-none">
+                    <form>
+                        <select class="custom-select mb-2" aria-label="Default select example">
+                            <option selected="">Select Continent</option>
+                            <option value="1">Continent</option>
+                            <option value="2">Continent</option>
+                            <option value="3">Continent</option>
+                        </select>
+                        <select class="custom-select" aria-label="Default select example">
+                            <option selected="">Select Country</option>
+                            <option value="1">Country</option>
+                            <option value="2">Country</option>
+                            <option value="3">Country</option>
+                        </select> 
+                        <div class="mt-3 text-center">
+                            <button class="btn text-uppercase btn-secondary text-white">Confirm</button>
+                        </div>                       
+                    </form>
+                </div>
             </div>
         </div>
         <script src="/folc-styleguide/js/globals.js"></script>
