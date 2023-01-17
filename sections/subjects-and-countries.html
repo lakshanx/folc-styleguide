@@ -15,7 +15,7 @@
             <a href="#tab-subjects" class="nav-link border-start-0 border-end-0 fs-4 text-center py-5 active w-50 h4 font-body text-uppercase text-gray" data-toggle="tab" data-target="#tab-subjects" role="tab">Browse Subjects</a>
             <a href="#tab-countries" class="nav-link border-start-0 border-end-0 fs-4 text-center py-5 w-50 h4 font-body text-uppercase text-gray" data-toggle="tab" data-target="#tab-countries" role="tab">Browse Countries</a>
         </div>
-        <div class="tab-content" id="nav-tabContent">
+        <div class="tab-content tabs-subject-countries">
             <div class="tab-pane bg-lighter-gray fade active show pt-2 pt-lg-0" id="tab-subjects" role="tabpanel">
                 <div class="row categories categories--grid no-gutters my-n1 mx-2 mx-lg-0 my-lg-0">
                     <div class="col-12 col-lg-4 my-1 my-lg-0">
@@ -66,7 +66,7 @@
                 </div>            </div>
             <div class="tab-pane bg-lighter-gray fade" id="tab-countries" role="tabpanel">
                 <div class="container py-5 d-none d-lg-block">
-                    <div class="container d-block countries-tabs py-2 bg-lighter-gray my-3">
+                    <div class="container d-none d-lg-block countries-tabs py-2 bg-lighter-gray my-3">
                         <ul class="nav nav-pills nav-fill border-bottom-0 m-n1 m-md-n2" id="countries-tab" role="tablist">
                             <li class="nav-item mx-1 mx-md-2 mb-1 mb-md-2 border-active active">
                                 <a href="#countries-africa" class="nav-link p-1 p-md-2 active" data-toggle="tab" data-target="#countries-africa" role="tab" aria-selected="true">Africa</a>
@@ -88,424 +88,280 @@
                             <div class="tab-pane bg-white show active" id="countries-africa" role="tabpanel">
                                 <div class="tab-pane bg-white" id="countries-africa" role="tabpanel">
                                     <div class="p-5">
-                                        <div class="countries-cols d-flex flex-row flex-lg-column flex-wrap">
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Albania (18)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Andorra (2)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Armenia (6)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Austria (19)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belarus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belgium (14)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Croatia (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Cyprus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Albania (18)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Andorra (2)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Armenia (6)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Austria (19)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belarus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belgium (14)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Croatia (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Cyprus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Albania (18)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Andorra (2)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Armenia (6)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Austria (19)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belarus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belgium (14)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Croatia (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Cyprus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <ul class="countries-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled dropdown-country-lg-height-375">
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Andorra (2)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Armenia (6)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Austria (19)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belarus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belgium (14)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Croatia (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Cyprus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Albania (18)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Andorra (2)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Armenia (6)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Austria (19)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belarus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belgium (14)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Croatia (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Cyprus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Albania (18)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Andorra (2)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Armenia (6)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Austria (19)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belarus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belgium (14)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Croatia (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Cyprus (3)</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane bg-white show" id="countries-asia" role="tabpanel">
                                 <div class="tab-pane bg-white" id="countries-asia" role="tabpanel">
                                     <div class="p-5">
-                                        <div class="d-flex flex-row flex-lg-column flex-wrap dropdown-country-lg-height-375">
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Armenia (6)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Austria (19)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belarus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belgium (14)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Croatia (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Cyprus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Albania (18)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <ul class="countries-cols d-flex flex-row flex-lg-column flex-wrap  list-unstyled dropdown-country-lg-height-375">
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Armenia (6)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Austria (19)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belarus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belgium (14)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Croatia (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Cyprus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Albania (18)</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane bg-white show" id="countries-europe" role="tabpanel">
                                 <div class="tab-pane show active bg-white" id="countries-europe" role="tabpanel">
                                     <div class="p-5">
-                                        <div class="d-flex flex-row flex-lg-column flex-wrap dropdown-country-lg-height-375">
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Austria (19)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belarus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belgium (14)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <ul class="countries-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled dropdown-country-lg-height-375">
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Austria (19)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belarus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belgium (14)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane bg-white show" id="countries-americas" role="tabpanel">
                                 <div class="tab-pane bg-white" id="countries-americas" role="tabpanel">
                                     <div class="p-5">
-                                        <div class="d-flex flex-row flex-lg-column flex-wrap dropdown-country-lg-height-375">
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Albania (18)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Andorra (2)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Armenia (6)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Austria (19)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belarus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <ul class="countries-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled dropdown-country-lg-height-375">
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Albania (18)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Andorra (2)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Armenia (6)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Austria (19)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belarus (3)</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane bg-white show" id="countries-oceania" role="tabpanel">
                                 <div class="tab-pane bg-white" id="countries-oceania" role="tabpanel">
                                     <div class="p-5">
-                                        <div class="d-flex flex-row flex-lg-column flex-wrap dropdown-country-lg-height-375">
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Albania (18)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Andorra (2)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Armenia (6)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Austria (19)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belarus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belgium (14)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Croatia (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Cyprus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Albania (18)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Andorra (2)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Armenia (6)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Austria (19)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belarus (3)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                            <div class="w-100 w-lg-auto">
-                                                <a href="#" class="a-link d-inline-block">Belgium (14)
-                                                    <!--v-if-->
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <ul class="countries-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled dropdown-country-lg-height-375">
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Albania (18)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Andorra (2)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Armenia (6)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Austria (19)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belarus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belgium (14)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bosnia and Herzegovina (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Bulgaria (11)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Croatia (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Cyprus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Albania (18)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Andorra (2)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Armenia (6)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Austria (19)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belarus (3)</a>
+                                            </li>
+                                            <li class="w-100 w-lg-auto">
+                                                <a href="#" class="a-link d-inline-block">Belgium (14)</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="container d-block d-lg-none py-5 d-block d-lg-none">
+                        <form id="countries-form">
+                            <select id="select-continent" class="custom-select mb-2" aria-label="Default select example">
+                                <option selected="">Select Continent</option>
+                            </select>
+                            <select id="select-country" class="custom-select" aria-label="Default select example">
+                                <option value="" disabled selected>Select a continent first</option>
+                            </select> 
+                            <div class="mt-3 text-center">
+                                <input type="submit" value="Confirm" class="btn text-uppercase btn-secondary text-white">
+                            </div>                       
+                        </form>
+                    
+                    
+                    
+                    
+                    
                     </div>                </div>
-                <div class="container py-5 d-block d-lg-none">
-                    <form>
-                        <select class="custom-select mb-2" aria-label="Default select example">
-                            <option selected="">Select Continent</option>
-                            <option value="1">Continent</option>
-                            <option value="2">Continent</option>
-                            <option value="3">Continent</option>
-                        </select>
-                        <select class="custom-select" aria-label="Default select example">
-                            <option selected="">Select Country</option>
-                            <option value="1">Country</option>
-                            <option value="2">Country</option>
-                            <option value="3">Country</option>
-                        </select> 
-                        <div class="mt-3 text-center">
-                            <button class="btn text-uppercase btn-secondary text-white">Confirm</button>
-                        </div>                       
-                    </form>
-                </div>
             </div>
         </div>
         <script src="/folc-styleguide/js/globals.js"></script>
