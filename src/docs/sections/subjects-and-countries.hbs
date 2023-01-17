@@ -9,32 +9,13 @@
             <a href="#tab-subjects" class="nav-link border-start-0 border-end-0 fs-4 text-center py-5 active w-50 h4 font-body text-uppercase text-gray" data-toggle="tab" data-target="#tab-subjects" role="tab">Browse Subjects</a>
             <a href="#tab-countries" class="nav-link border-start-0 border-end-0 fs-4 text-center py-5 w-50 h4 font-body text-uppercase text-gray" data-toggle="tab" data-target="#tab-countries" role="tab">Browse Countries</a>
         </div>
-        <div class="tab-content" id="nav-tabContent">
+        <div class="tab-content tabs-subject-countries">
             <div class="tab-pane bg-lighter-gray fade active show pt-2 pt-lg-0" id="tab-subjects" role="tabpanel">
                 {{> components/categories-grid}}
             </div>
             <div class="tab-pane bg-lighter-gray fade" id="tab-countries" role="tabpanel">
                 <div class="container py-5 d-none d-lg-block">
                     {{> compounds/countries-tabs }}
-                </div>
-                <div class="container py-5 d-block d-lg-none">
-                    <form>
-                        <select class="custom-select mb-2" aria-label="Default select example">
-                            <option selected="">Select Continent</option>
-                            <option value="1">Continent</option>
-                            <option value="2">Continent</option>
-                            <option value="3">Continent</option>
-                        </select>
-                        <select class="custom-select" aria-label="Default select example">
-                            <option selected="">Select Country</option>
-                            <option value="1">Country</option>
-                            <option value="2">Country</option>
-                            <option value="3">Country</option>
-                        </select> 
-                        <div class="mt-3 text-center">
-                            <button class="btn text-uppercase btn-secondary text-white">Confirm</button>
-                        </div>                       
-                    </form>
                 </div>
             </div>
         </div>
