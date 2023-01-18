@@ -1,0 +1,15 @@
+.categories-tabs{
+    .nav-link{
+        height: 100%;
+
+        &--art.active{background-color: $red;}
+        &--belief.active{background-color: $red-600;}
+        &--craftmanship.active{background-color: $orange;}
+        &--dance.active{background-color: $yellow;}
+        &--entertainment.active{background-color: $green;}
+        &--foodways.active{background-color: $teal;}
+        &--music.active{background-color: $cyan;}
+        &--ritual.active{background-color: $blue-300;}
+        &--verbal.active{background-color: $purple;}
+    }
+}
