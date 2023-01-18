@@ -53,10 +53,6 @@ $h2-font-size-lg: calc-em(45);
 $h3-font-size-lg: calc-em(32);
 $h4-font-size-lg: calc-em(24);
 
-$hero-banner-font-size: calc-em(32);
-$hero-banner-font-size-lg: calc-em(72);
-$playground-font-size: calc-em(52);
-
 // Colors
 $body-color: #212529;
 
@@ -137,10 +133,6 @@ $input-group-addon-bg: transparent;
 
 $input-padding-y: calc-em(28 / 2);
 $input-padding-x: 1em;
-// $input-height: calc-em(50, $unit: 1rem);
-
-// $input-padding-y-sm: calc-em(15 / 2, 14);
-// $input-padding-x-sm: calc-em(6, 14);
 
 $search-icon-padding-y-sm: calc-em(6, 14);
 $input-border-radius-sm: calc-em(18, 14);
@@ -174,10 +166,6 @@ $btn-border-radius: $border-radius-lg;
 
 $btn-font-size-lg: 1em;
 $btn-line-height-lg: $line-height-base;
-//$btn-border-radius-lg: $border-radius-lg;
-//$btn-border-width-lg: 2px;
-// $btn-padding-y-lg: calc-em(9);
-// $btn-padding-x-lg: calc-em(28);
 
 // Figures
 $figure-caption-color:$gray-500;
@@ -207,6 +195,7 @@ $navbar-toggler-padding-x: 0;
 
 // Select
 $custom-select-indicator-padding: .1em;
+$custom-select-padding-x:1.5em;
 $custom-select-indicator: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='eEV6r2zfSZ31' viewBox='0 0 40 40' shape-rendering='geometricPrecision' text-rendering='geometricPrecision'%3E%3Cpolygon points='0,-10.134469 8.776708,5.067235 -8.776708,5.067235 0,-10.134469' transform='matrix(-2.037821 0 0-1.664655 20 18.012227)' fill='%23677d85' stroke-width='0'/%3E%3C/svg%3E");
 $custom-select-bg-size: calc-em(20) calc-em(25);
 $custom-select-disabled-bg: $gray-100;
