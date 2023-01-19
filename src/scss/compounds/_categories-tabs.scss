@@ -1,7 +1,10 @@
 .categories-tabs{
+    .nav-item{
+        flex:1;
+    }
     .nav-link{
         position: relative;
-        
+
         &.active{
             color:$white !important;
 
