@@ -8,6 +8,16 @@
  */
 (self["webpackChunkfolc_styleguide"] = self["webpackChunkfolc_styleguide"] || []).push([["countries-tabs"],{
 
+/***/ "./src/js/modules/categories-tabs.js":
+/*!*******************************************!*\
+  !*** ./src/js/modules/categories-tabs.js ***!
+  \*******************************************/
+/***/ (() => {
+
+eval("$(document).ready(function () {\n  $('.categories-tabs .nav-link').click(function () {\n    var className = $(this).attr('class').split(' ')[1]; // get the class that starts with \"nav-link--\"\n\n    $('#categories-tabs-content').removeClass(function (index, className) {\n      return (className.match(/(^|\\s)bg-\\S+/g) || []).join(' '); // remove any classes that start with \"bg-\"\n    });\n    $('#categories-tabs-content').addClass('bg-' + className.split('--')[1]); // add the class \"bg-[className]\" to #categories-tabs-content\n  });\n});\n\n//# sourceURL=webpack://folc-styleguide/./src/js/modules/categories-tabs.js?");
+
+/***/ }),
+
 /***/ "./src/js/modules/countries-tabs.js":
 /*!******************************************!*\
   !*** ./src/js/modules/countries-tabs.js ***!
