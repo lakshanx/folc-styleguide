@@ -275,12 +275,6 @@
                         <div class="p-5">
                             <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
                                 <li class="w-100 w-lg-auto">
-                                    <a href="#" class="a-link d-inline-block">Paella</a>
-                                </li>
-                                <li class="w-100 w-lg-auto">
-                                    <a href="#" class="a-link d-inline-block">Red Sangria</a>
-                                </li>
-                                <li class="w-100 w-lg-auto">
                                     <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
                                 </li>
                                 <li class="w-100 w-lg-auto">
@@ -307,22 +301,55 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="tab-pane bg-white" id="category-foodways" role="tabpanel">
+                        <div class="p-5">
+                            <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                <li class="w-100 w-lg-auto">
+                                    <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                </li>
+                                <li class="w-100 w-lg-auto">
+                                    <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane bg-white" id="category-music" role="tabpanel">
+                        <div class="p-5">
+                            <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                <li class="w-100 w-lg-auto">
+                                    <a href="#" class="a-link d-inline-block">Music</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="tab-pane bg-white" id="category-ritual" role="tabpanel">
+                        <div class="p-5">
+                            <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                <li class="w-100 w-lg-auto">
+                                    <a href="#" class="a-link d-inline-block">Ritual</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane bg-white" id="category-verbal" role="tabpanel">
+                        <div class="p-5">
+                            <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                <li class="w-100 w-lg-auto">
+                                    <a href="#" class="a-link d-inline-block">Verbal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                                                                             
                 </div>
             </div>
 
             <div class="container d-block d-lg-none py-5 d-block d-lg-none">
                 <form id="categories-form">
-                    <select id="select-continent" class="custom-select mb-2" aria-label="Default select example">
-                        <option selected="">Select Continent</option>
-                    </select>
-                    <select id="select-country" class="custom-select" aria-label="Default select example">
+                    <select id="select-categories" class="custom-select" aria-label="Default select example">
                         <option value="" disabled selected>Select a continent first</option>
-                    </select> 
-                    <div class="mt-3 text-center">
-                        <input type="submit" value="Confirm" class="btn text-uppercase btn-secondary text-white">
-                    </div>                       
+                    </select>                      
                 </form>
-                <div>Select </div>
+                <ul id="categories-select-content" class="p-1 mt-3 bg-white list-unstyled">Select </ul>
 
             </div>
         </div>
