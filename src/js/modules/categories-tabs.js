@@ -27,7 +27,6 @@ $(document).ready(function() {
             // Append the relevant content from the .tab-pane .categories-cols element below the select element
             $('#categories-select-content').html(selectedContent);
             $('#categories-select-content a').addClass("with-prefix pb-1");
-
         });
 
 });

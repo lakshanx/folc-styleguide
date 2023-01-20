@@ -5,7 +5,7 @@
     </head>
     <body>
         {{> page-title text="Categories Tabs" }}
-        <div class="container py-5 bg-lighter-gray my-4">
+        <div class="container py-2 py-lg-5 bg-lighter-gray my-4">
             <div class="categories-tabs container d-none d-lg-block py-2 bg-lighter-gray my-3">
                 <ul class="nav nav-pills nav-fill border-bottom-0 m-n1" id="categories-tabs" role="tablist">
                     <li class="nav-item mx-1 mb-1 mb-md-2 active">
@@ -337,13 +337,15 @@
                 </div>
             </div>
 
-            <div class="container d-block d-lg-none py-5 d-block d-lg-none">
+            <div class="container d-block d-lg-none py-2 py-lg-5 d-block d-lg-none">
                 <form id="categories-form">
                     <select id="select-categories" class="custom-select" aria-label="Default select example">
                         <option value="" disabled selected>Select a continent first</option>
                     </select>                      
                 </form>
-                <ul id="categories-select-content" class="p-1 mt-3 bg-white list-unstyled">Select </ul>
+                <ul id="categories-select-content" class="p-1 mt-3 bg-white list-unstyled">
+                    <div class="py-5 text-center text-gray h4 font-body">Select a category<br> from the upper panel</div>
+                </ul>
 
             </div>
         </div>
