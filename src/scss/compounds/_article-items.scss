@@ -1,0 +1,12 @@
+.article-items{
+  @include media-breakpoint-up(lg) {
+    img{
+      max-width: 200px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    img{
+      aspect-ratio: 16/9;
+    }
+  }  
+}
