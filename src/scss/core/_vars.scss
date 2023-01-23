@@ -30,8 +30,6 @@ $headings-font-family:  "Alegreya", Arial, Helvetica, sans-serif;
 $font-family-sans-serif: "Lato", Arial, Helvetica, sans-serif;
 
 $line-height-base: calc-em(25, $context: 16, $unit: 1);
-$line-height-lg: $line-height-base;
-$line-height-sm: calc-em(17, $context: 14, $unit: 1);
 
 $headings-font-weight: 500;
 $headings-line-height: calc-em(20, $context: 16, $unit: 1);
@@ -39,18 +37,10 @@ $headings-line-height: calc-em(20, $context: 16, $unit: 1);
 $link-hover-decoration: none;
 
 $font-size-base: calc-em(18);
-$font-size-sm: calc-em(14);
-$font-size-xs: calc-em(13);
-
 $h1-font-size: calc-em(53);
 $h2-font-size: calc-em(45);
 $h3-font-size: calc-em(32);
 $h4-font-size: calc-em(24);
-
-$h1-font-size-lg: calc-em(53);
-$h2-font-size-lg: calc-em(45);
-$h3-font-size-lg: calc-em(32);
-$h4-font-size-lg: calc-em(24);
 
 // Colors
 $body-color: #212529;
