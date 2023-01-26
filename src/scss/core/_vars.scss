@@ -58,6 +58,7 @@ $gray-800: #303030;
 $cyan: #6492ac; // ok
 $blue-300: #637cb5; // ok
 $blue: #0061ff; // ok
+$light-blue: #e5efff; // to be used on dropdown bg
 $purple: #6a63b6; // ok
 $teal: #839b86; // ok
 $orange: #f47e61; // ok
@@ -83,6 +84,7 @@ $theme-colors: (
   "danger": $danger,
   "lighter-gray": $gray,
   "light-gray": $gray-200,
+  "light-blue": $light-blue,
   "gray": $gray-600,
   "dark-gray": $gray-800,
   "teal": $teal,
@@ -145,6 +147,9 @@ $nav-link-hover-color: $gray-600;
 
 // Nav - tabs
 $nav-tabs-border-radius: 0;
+
+// Dropdowns
+$dropdown-bg: $light-blue;
 
 // Buttons
 $btn-hover-darken: 80%;
