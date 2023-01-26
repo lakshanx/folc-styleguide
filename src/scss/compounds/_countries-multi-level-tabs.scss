@@ -1,4 +1,4 @@
-.countries-multi-level-tabs{
+#countries-multi-level-tabs{
     .nav-link{
       position:relative;
 
@@ -42,6 +42,18 @@
         height:46px;
         width:46px;
         font-size: 2em;
+        cursor: pointer;
       }
     }
+
+    @include media-breakpoint-down(md) {
+      .dropdown-header {
+          background:transparent !important;
+    
+          a{
+            color: $primary !important;
+          }
+      }
+    }  
 }
+
