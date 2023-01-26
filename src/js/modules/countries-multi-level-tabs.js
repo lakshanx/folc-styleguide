@@ -36,7 +36,7 @@ $(document).ready(function () {
 			const tab2 = tabs.find((tab) => tab.continent === continent);
 			tab2.countries.forEach((country) => {
 				const option = document.createElement('option');
-				option.value = country.href;
+				option.value = country.name;
 				option.text = `${country.name} (${country.count})`;
 				countriesSelect.appendChild(option);
 			});
@@ -45,21 +45,8 @@ $(document).ready(function () {
 		document.getElementById('countries-form').addEventListener('submit', function (e) {
 			e.preventDefault();
 			const selectedCountry = document.getElementById('select-country').value;
-			window.location.href = selectedCountry;
-
-			const selectedTab = $(this).val();
-			//const selectedContent = $(selectedTab).find('.categories-cols').html();
-	
-			// const classToAdd = `bg-${selectedTab.substring(10)}`; // get the text after "#category-"
-			// $(this).removeClass(function (index, className) {
-			// 	return (className.match(/\bbg-\S+/g) || []).join(' ');
-			// }).addClass(classToAdd).addClass('text-white');
-	
-			// Append the relevant content from the .tab-pane .categories-cols element below the select element
-			//var selectedCountry = $('#select-country').val();
-			var selectedContent = $('.dropdown a[href="' + selectedCountry + '"]').closest('.dropdown').find('.dropdown-menu').html();
+			var selectedContent = $(".dropdown .nav-link:contains('" + selectedCountry + "')").closest('.dropdown').find('.dropdown-menu').html();
 			$('#categories-select-content').html(selectedContent);
-
 		});
 	}
 });
