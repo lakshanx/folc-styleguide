@@ -12,971 +12,731 @@
             <h1>Countries Multi-level Tabs</h1>
             <hr>
         </div>        <div class="container py-5 bg-lighter-gray my-4">
-            <div class="container d-none d-lg-block countries-multi-level-tabs py-2 bg-lighter-gray my-3">
-                <ul class="nav nav-pills nav-fill border-bottom-0 mx-n1 mx-md-n1" id="countries-tab" role="tablist">
-                    <li class="nav-item mx-1 mb-1 mb-md-2 active">
-                        <a href="#countries-africa" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2 active" data-toggle="tab" data-target="#countries-africa" role="tab" aria-selected="true">Africa</a>
-                    </li>
-                    <li class="nav-item mx-1 mb-1 mb-md-2">
-                        <a href="#countries-asia" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2" data-toggle="tab" data-target="#countries-asia" role="tab" aria-selected="false">Asia</a>
-                    </li>
-                    <li class="nav-item mx-1 mb-1 mb-md-2">
-                        <a href="#countries-europe" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2" data-toggle="tab" data-target="#countries-europe" role="tab" aria-selected="false">Europe</a>
-                    </li>
-                    <li class="nav-item mx-1 mb-1 mb-md-2">
-                        <a href="#countries-americas" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2" data-toggle="tab" data-target="#countries-americas" role="tab">Americas</a>
-                    </li>
-                    <li class="nav-item mx-1 mb-1 mb-md-2">
-                        <a href="#countries-oceania" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2" data-toggle="tab" data-target="#countries-oceania" role="tab">Oceania</a>
-                    </li>
-                </ul>
-                <div class="tab-content pt-1 pt-md-2 bg-dance" id="countries-tabContent">
-                    <div class="tab-pane bg-white active" id="countries-africa" role="tabpanel">
-                        <div class="p-5 navbar d-block">
-                            <ul class=" countries-cols  list-unstyled navbar-nav">
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
+            <div id="countries-multi-level-tabs" class="container">
+            
+                <div class="d-none d-lg-block py-2 bg-lighter-gray my-3">
+                    <ul class="main-tabs nav nav-pills nav-fill border-bottom-0 mx-n1 mx-md-n1"  role="tablist">
+                        <li class="nav-item mx-1 mb-1 mb-md-2 active">
+                            <a href="#countries-africa" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2 active" data-toggle="tab" data-target="#countries-africa" role="tab" aria-selected="true">Africa</a>
+                        </li>
+                        <li class="nav-item mx-1 mb-1 mb-md-2">
+                            <a href="#countries-asia" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2" data-toggle="tab" data-target="#countries-asia" role="tab" aria-selected="false">Asia</a>
+                        </li>
+                        <li class="nav-item mx-1 mb-1 mb-md-2">
+                            <a href="#countries-europe" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2" data-toggle="tab" data-target="#countries-europe" role="tab" aria-selected="false">Europe</a>
+                        </li>
+                        <li class="nav-item mx-1 mb-1 mb-md-2">
+                            <a href="#countries-americas" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2" data-toggle="tab" data-target="#countries-americas" role="tab">Americas</a>
+                        </li>
+                        <li class="nav-item mx-1 mb-1 mb-md-2">
+                            <a href="#countries-oceania" class="nav-link text-dark h4 font-body mb-0 p-1 p-md-2" data-toggle="tab" data-target="#countries-oceania" role="tab">Oceania</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content pt-1 pt-md-2 bg-dance" id="countries-tabContent">
+                        <div class="tab-pane bg-white active" id="countries-africa" role="tabpanel">
+                            <div class="p-5 navbar d-block">
+                                <ul class=" countries-cols  list-unstyled navbar-nav">
+                                    <div class="row position-relative">
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Albania (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Albania</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Albania (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                </div> 
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Albania (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Albania</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Albania (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>   
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
+                                            </div>                             
+                                        </li>
+                                    </div> 
+                                    <div class="row position-relative">
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Albania (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Albania</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Albania (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>  
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>                                                                              
-                            </ul>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Albania (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Albania</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Albania (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                    </div> 
+                                    <div class="row position-relative">
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Albania (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Albania</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Albania (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Albania (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Albania</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Albania (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                    </div> 
+                                    <div class="row position-relative">
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Albania (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Albania</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Albania (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Albania (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Albania</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Albania (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0 " href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2 d-none d-md-block">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close d-none bg-white text-primary rounded-circle ml-5 d-md-flex justify-content-center align-items-center">&times;</div>
+                                                </div>
+                                                <div class="row p-2 py-3">
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3">
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link with-prefix d-block mb-1 mb-md-0" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
+                                                </div>
+                                            </div>                             
+                                        </li>
+                                    </div>                                                                                                                              
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tab-pane bg-white" id="countries-asia" role="tabpanel">
-                        <div class="p-5 navbar d-block">
-                            <ul class=" countries-cols  list-unstyled navbar-nav">
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                        <div class="tab-pane bg-white" id="countries-asia" role="tabpanel">
+                            <div class="p-5 navbar d-block">
+                                <ul class=" countries-cols  list-unstyled navbar-nav">
+                                    <div class="row position-relative">
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                                <div class="row p-2">
+                                                    <div class="col-3">
+                                                        <a class="a-link d-block" href="#">Column 1 Item 1</a>
+                                                        <a class="a-link d-block" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a class="a-link d-block" href="#">Column 2 Item 1</a>
+                                                        <a class="a-link d-block" href="#">Column 2 Item 2</a>
+                                                        <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a class="a-link d-block" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link d-block" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link d-block" href="#">Column 3 Item 3</a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a class="a-link d-block" href="#">Column 3 Item 1</a>
+                                                        <a class="a-link d-block" href="#">Column 3 Item 2</a>
+                                                        <a class="a-link d-block" href="#">Column 3 Item 3</a>
+                                                    </div>                                    
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                </div> 
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>   
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>  
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>                                                                              
-                            </ul>
+                                            </div>                             
+                                        </li>
+                                    </div>                                                                              
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tab-pane bg-white" id="countries-europe" role="tabpanel">
-                        <div class="p-5 navbar d-block">
-                            <ul class=" countries-cols  list-unstyled navbar-nav">
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                        <div class="tab-pane bg-white" id="countries-europe" role="tabpanel">
+                            <div class="p-5 navbar d-block">
+                                <ul class=" countries-cols  list-unstyled navbar-nav">
+                                    <div class="row position-relative">
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                                <div class="row p-2">
+                                                    <div class="col-3">
+                                                        <a class="a-link d-block" href="#">Column 1 Item 1</a>
+                                                        <a class="a-link d-block" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                                                    </div>                                  
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                </div> 
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>   
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>  
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>                                                                              
-                            </ul>
+                                            </div>                             
+                                        </li>
+                                    </div>                                                                             
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tab-pane bg-white" id="countries-americas" role="tabpanel">
-                        <div class="p-5 navbar d-block">
-                            <ul class=" countries-cols  list-unstyled navbar-nav">
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                        <div class="tab-pane bg-white" id="countries-americas" role="tabpanel">
+                            <div class="p-5 navbar d-block">
+                                <ul class=" countries-cols  list-unstyled navbar-nav">
+                                    <div class="row position-relative">
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                                <div class="row p-2">
+                                                    <div class="col-3">
+                                                        <a class="a-link d-block" href="#">Column 1 Item 1</a>
+                                                        <a class="a-link d-block" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                                                    </div>                                  
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                </div> 
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>   
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>  
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>                                                                              
-                            </ul>
+                                            </div>                             
+                                        </li>
+                                    </div>                                                                            
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tab-pane bg-white" id="countries-oceania" role="tabpanel">
-                        <div class="p-5 navbar d-block">
-                            <ul class=" countries-cols  list-unstyled navbar-nav">
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                        <div class="tab-pane bg-white" id="countries-oceania" role="tabpanel">
+                            <div class="p-5 navbar d-block">
+                                <ul class=" countries-cols  list-unstyled navbar-nav">
+                                    <div class="row position-relative">
+                                        <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
+                                            <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                                Austria (19)
+                                            </a>
+                                            <div class="dropdown-menu position-absolute w-100 pt-0 ml-n2">
+                                                <div class="dropdown-header d-flex align-items-center bg-primary text-white">
+                                                    <h3 class="h2">Austria</h3>
+                                                    <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
+                                                    <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
+                                                <div class="row p-2">
+                                                    <div class="col-3">
+                                                        <a class="a-link d-block" href="#">Column 1 Item 1</a>
+                                                        <a class="a-link d-block" href="#">Column 1 Item 2</a>
+                                                        <a class="a-link d-block" href="#">Column 1 Item 3</a>
+                                                    </div>                                   
                                                 </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                </div> 
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>   
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>  
-                                <div class="row position-relative">
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="https://example.com/albania" class="a-link d-inline-block">Albania (18)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Armenia (6)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto position-static">
-                                        <a href="#" class="a-link d-inline-block">Azerbaijan (4)</a>
-                                    </li>
-                                    <li class="col-3 w-100 w-lg-auto nav-item dropdown  position-static">
-                                        <a href="#" class="nav-link a-link d-inline-block" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                                            Austria (19)
-                                        </a>
-                                        <div class="dropdown-menu  position-absolute w-100 pt-0 ml-n2">
-                                            <div class="dropdown-header d-flex align-items-center bg-primary text-white">
-                                                <h3 class="h2">Austria</h3>
-                                                <a href="example.com/aus" class="a-link with-prefix text-white ml-auto ">Go to Austria (200) </a>
-                                                <div class="dropdown-close bg-white text-primary rounded-circle ml-5 d-flex justify-content-center align-items-center">&times;</div>
-                                            </div>
-                                            <div class="row p-2">
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 1 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 1 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 2 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 2 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a class="a-link d-block" href="#">Column 3 Item 1</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 2</a>
-                                                    <a class="a-link d-block" href="#">Column 3 Item 3</a>
-                                                </div>                                    
-                                            </div>
-                                        </div>                             
-                                    </li>                       
-                                </div>                                                                              
-                            </ul>
+                                            </div>                             
+                                        </li>
+                                    </div>                                                                             
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            
+                <div class=" d-block d-lg-none py-1 d-block d-lg-none">
+                    <form id="countries-form">
+                        <select id="select-continent" class="custom-select mb-2" aria-label="Default select example">
+                            <option selected="">Select Continent</option>
+                        </select>
+                        <select id="select-country" class="custom-select" aria-label="Default select example">
+                            <option value="" disabled selected>Select a continent first</option>
+                        </select> 
+                        <div class="mt-3 text-center">
+                            <input type="submit" value="Confirm" class="btn text-uppercase btn-secondary text-white">
+                        </div>    
+                        <ul id="categories-select-content" class="p-1 mt-3 bg-white list-unstyled">
+                            <div class="py-5 text-center text-gray h4 font-body">Select a Country<br> from the upper panel</div>
+                        </ul>                           
+                    </form>
+                </div>
+            
             </div>
             
-            <div class="container d-block d-lg-none py-5 d-block d-lg-none">
-                <form id="countries-form">
-                    <select id="select-continent" class="custom-select mb-2" aria-label="Default select example">
-                        <option selected="">Select Continent</option>
-                    </select>
-                    <select id="select-country" class="custom-select" aria-label="Default select example">
-                        <option value="" disabled selected>Select a continent first</option>
-                    </select> 
-                    <div class="mt-3 text-center">
-                        <input type="submit" value="Confirm" class="btn text-uppercase btn-secondary text-white">
-                    </div>                       
-                </form>
-            </div>        </div>
+        </div>
         <script src="/folc-styleguide/js/globals.js"></script>
         <script src="/folc-styleguide/js/lazyload.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
