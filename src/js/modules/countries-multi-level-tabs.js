@@ -45,7 +45,7 @@ $(document).ready(function () {
 		document.getElementById('countries-form').addEventListener('submit', function (e) {
 			e.preventDefault();
 			const selectedCountry = document.getElementById('select-country').value;
-			var selectedContent = $(".dropdown .nav-link:contains('" + selectedCountry + "')").closest('.dropdown').find('.dropdown-menu').html();
+			const selectedContent = $(`.dropdown .nav-link:contains('${selectedCountry}')`).closest('.dropdown').find('.dropdown-menu').html();
 			$('#categories-select-content').html(selectedContent);
 		});
 	}
