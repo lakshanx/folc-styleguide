@@ -20,7 +20,7 @@ $(document).ready(function () {
 			return { continent, countries };
 		});
 
-		const continentSelect = document.querySelector('#select-continent');
+		const continentSelect = this.querySelector('#select-continent');
 		tabs.forEach((tab) => {
 			const option = document.createElement('option');
 			option.value = tab.continent;
@@ -42,7 +42,7 @@ $(document).ready(function () {
 			});
 		});
 
-		document.getElementById('countries-form').addEventListener('submit', function (e) {
+		this.getElementById('countries-form').addEventListener('submit', function (e) {
 			e.preventDefault();
 			const selectedCountry = document.getElementById('select-country').value;
 			const selectedContent = $(`.dropdown .nav-link:contains('${selectedCountry}')`).closest('.dropdown').find('.dropdown-menu').html();
