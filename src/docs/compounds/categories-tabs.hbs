@@ -5,9 +5,9 @@
     </head>
     <body>
         {{> page-title text="Categories Tabs" }}
-        <div class="container py-2 py-lg-5 bg-lighter-gray my-4">
-            <div class="categories-tabs container d-none d-lg-block py-2 bg-lighter-gray my-3">
-                <ul class="nav nav-pills nav-fill border-bottom-0 m-n1" id="categories-tabs" role="tablist">
+        <div class="categories-tabs container py-2 py-lg-5 bg-lighter-gray my-4">
+            <div class=" container d-none d-lg-block py-2 bg-lighter-gray my-3">
+                <ul class="nav nav-pills nav-fill border-bottom-0 m-n1" role="tablist">
                     <li class="nav-item mx-1 mb-1 mb-md-2 active">
                         <a href="#category-art" class="nav-link nav-link--art d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1 active" data-toggle="tab" data-target="#category-art" role="tab" aria-selected="true">Art</a>
                     </li>
@@ -36,7 +36,7 @@
                         <a href="#category-verbal" class="nav-link nav-link--verbal d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-verbal" role="tab">Verbal arts and literature</a>
                     </li>                                                                                
                 </ul>
-                <div class="tab-content pt-1 pt-md-2 bg-art" id="categories-tabs-content">
+                <div class="categories-tabs-content tab-content pt-1 pt-md-2 bg-art">
                     <div class="tab-pane bg-white active" id="category-art" role="tabpanel">
                         <div class="p-5">
                             <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
@@ -335,18 +335,19 @@
                         </div>
                     </div>                                                                             
                 </div>
-            </div>
 
+
+
+            </div>
             <div class="container d-block d-lg-none py-2 py-lg-5 d-block d-lg-none">
-                <form id="categories-form">
-                    <select id="select-categories" class="custom-select" aria-label="Default select example">
+                <form class="categories-form">
+                    <select class="select-categories custom-select" aria-label="Default select example">
                         <option value="" disabled selected>Select a continent first</option>
                     </select>                      
                 </form>
-                <ul id="categories-select-content" class="p-1 mt-3 bg-white list-unstyled">
+                <ul class="categories-select-content p-1 mt-3 bg-white list-unstyled">
                     <div class="py-5 text-center text-gray h4 font-body">Select a category<br> from the upper panel</div>
                 </ul>
-
             </div>
         </div>
         {{> js jquery=true popper=true bootstrap=true main=true }}

@@ -12,7 +12,7 @@ if ($('#countries-tab').length > 0) {
 	import(/* webpackChunkName: 'countries-tabs' */ '~mod/countries-tabs');
 }
 
-if ($('#categories-tabs').length > 0) {
+if ($('.categories-tabs').length > 0) {
 	import(/* webpackChunkName: 'categories-tabs' */ '~mod/categories-tabs');
 }
 
