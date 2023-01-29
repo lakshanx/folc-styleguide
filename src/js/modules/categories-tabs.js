@@ -1,10 +1,11 @@
 $(document).ready(function () {
 	const $categoriesTabs = $('.categories-tabs');
-	const $categoriesTabContent = $('.categories-tabs-content');
-	const $select = $('.select-categories');
-	const $categoriesSelectContent = $('.categories-select-content');
 
 	if ($categoriesTabs.length) {
+		const $categoriesTabContent = $categoriesTabs.find('.categories-tabs-content');
+		const $select = $categoriesTabs.find('.select-categories');
+		const $categoriesSelectContent = $categoriesTabs.find('.categories-select-content');
+	
 		$('.categories-tabs .nav-link').click(function () {
 			const className = $(this).attr('class').split(' ')[1];
 			$categoriesTabContent.removeClass(function (index, bgClassName) {
