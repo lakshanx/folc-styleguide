@@ -8,7 +8,7 @@ $(document).on('click', '.avoid-auto-close.dropdown-menu', function (e) {
 	e.stopPropagation();
 });
 
-if ($('#countries-tab').length > 0) {
+if ($('.countries-tabs').length > 0) {
 	import(/* webpackChunkName: 'countries-tabs' */ '~mod/countries-tabs');
 }
 
