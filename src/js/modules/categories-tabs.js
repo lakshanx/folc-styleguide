@@ -5,7 +5,7 @@ $(document).ready(function () {
 		const $categoriesTabContent = $categoriesTabs.find('.categories-tabs-content');
 		const $select = $categoriesTabs.find('.select-categories');
 		const $categoriesSelectContent = $categoriesTabs.find('.categories-select-content');
-	
+
 		$('.categories-tabs .nav-link').click(function () {
 			const className = $(this).attr('class').split(' ')[1];
 			$categoriesTabContent.removeClass(function (index, bgClassName) {
