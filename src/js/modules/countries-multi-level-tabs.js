@@ -1,9 +1,10 @@
 $(document).ready(function () {
-	const countriesMultiLevelTabs = $('#countries-multi-level-tabs');
+	const countriesMultiLevelTabs = $('.countries-multi-level-tabs');
 
 	if (countriesMultiLevelTabs.length > 0) {
 		const mainTabs = countriesMultiLevelTabs.find('.main-tabs');
 		const tabElements = mainTabs.find('li');
+		const continentSelect = countriesMultiLevelTabs.find('.select-continent');
 
 		const tabs = Array.from(tabElements).map((tab) => {
 			const a = tab.querySelector('a');
@@ -22,7 +23,6 @@ $(document).ready(function () {
 			return { continent, countries };
 		});
 
-		const continentSelect = countriesMultiLevelTabs.find('#select-continent');
 		tabs.forEach((tab) => {
 			const option = document.createElement('option');
 			option.value = tab.continent;
@@ -31,7 +31,7 @@ $(document).ready(function () {
 		});
 		continentSelect.on('change', function () {
 			const continent = this.value;
-			const countriesSelect = countriesMultiLevelTabs.find('#select-country');
+			const countriesSelect = countriesMultiLevelTabs.find('.select-country');
 			countriesSelect.prop('disabled', false);
 			countriesSelect.html('');
 
@@ -44,11 +44,11 @@ $(document).ready(function () {
 			});
 		});
 
-		countriesMultiLevelTabs.find('#countries-form').on('submit', function (e) {
+		countriesMultiLevelTabs.find('.countries-form').on('submit', function (e) {
 			e.preventDefault();
-			const selectedCountry = countriesMultiLevelTabs.find('#select-country').val();
+			const selectedCountry = countriesMultiLevelTabs.find('.select-country').val();
 			const selectedContent = countriesMultiLevelTabs.find(`.dropdown .nav-link:contains('${selectedCountry}')`).closest('.dropdown').find('.dropdown-menu').html();
-			countriesMultiLevelTabs.find('#categories-select-content').html(selectedContent);
+			countriesMultiLevelTabs.find('.categories-select-content').html(selectedContent);
 		});
 	}
 });
