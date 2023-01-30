@@ -15,7 +15,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("// Popovers\n$(function () {\n  $('[data-toggle=\"popover\"]').popover();\n}); // Stop auto closing of dropdowns with CSS class .avoid-auto-close\n\n$(document).on('click', '.avoid-auto-close.dropdown-menu', function (e) {\n  e.stopPropagation();\n});\n\nif ($('.countries-tabs').length > 0) {\n  __webpack_require__.e(/*! import() | countries-tabs */ \"countries-tabs\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./modules/countries-tabs */ \"./src/js/modules/countries-tabs.js\", 23));\n}\n\nif ($('.categories-tabs').length > 0) {\n  __webpack_require__.e(/*! import() | categories-tabs */ \"categories-tabs\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./modules/categories-tabs */ \"./src/js/modules/categories-tabs.js\", 23));\n}\n\nif ($('#countries-multi-level-tabs').length > 0) {\n  __webpack_require__.e(/*! import() | countries-multi-level-tabs */ \"countries-multi-level-tabs\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./modules/countries-multi-level-tabs */ \"./src/js/modules/countries-multi-level-tabs.js\", 23));\n}\n\n//# sourceURL=webpack://folc-styleguide/./src/js/main.js?");
+eval("// Popovers\n$(function () {\n  $('[data-toggle=\"popover\"]').popover();\n}); // Stop auto closing of dropdowns with CSS class .avoid-auto-close\n\n$(document).on('click', '.avoid-auto-close.dropdown-menu', function (e) {\n  e.stopPropagation();\n});\n\nif ($('.countries-tabs').length > 0) {\n  __webpack_require__.e(/*! import() | countries-tabs */ \"countries-tabs\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./modules/countries-tabs */ \"./src/js/modules/countries-tabs.js\", 23));\n}\n\nif ($('.categories-tabs').length > 0) {\n  __webpack_require__.e(/*! import() | categories-tabs */ \"categories-tabs\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./modules/categories-tabs */ \"./src/js/modules/categories-tabs.js\", 23));\n}\n\nif ($('.countries-multi-level-tabs').length > 0) {\n  __webpack_require__.e(/*! import() | countries-multi-level-tabs */ \"countries-multi-level-tabs\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./modules/countries-multi-level-tabs */ \"./src/js/modules/countries-multi-level-tabs.js\", 23));\n}\n\n//# sourceURL=webpack://folc-styleguide/./src/js/main.js?");
 
 /***/ })
 
@@ -109,7 +109,7 @@ eval("// Popovers\n$(function () {\n  $('[data-toggle=\"popover\"]').popover();\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "chunk." + chunkId + ".js?h=" + {"countries-tabs":"74d0d3afb07c2ab62900","categories-tabs":"083427f100291c49697f","countries-multi-level-tabs":"783ba4775f8c037f16f6"}[chunkId] + "";
+/******/ 			return "chunk." + chunkId + ".js?h=" + {"countries-tabs":"74d0d3afb07c2ab62900","categories-tabs":"083427f100291c49697f","countries-multi-level-tabs":"fabaab1c7a3dbcabaafd"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
