@@ -30,6 +30,10 @@
             &.show{
                 background-color: $gray;
             }
+
+            .dropdown-menu{
+                &--narrow{width: 400px;}
+            }
         }
     }
     .header-search-box{

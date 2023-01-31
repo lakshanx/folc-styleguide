@@ -27,8 +27,11 @@
                         {{> compounds/countries-tabs}}
                     </div>
                 </li>
-                <li class="nav-item py-3 px-1 text-uppercase">
-                    <a class="nav-link text-dark"  href="#">SDG</a>
+                <li class="nav-item dropdown py-3">
+                    <a class="nav-link nav-link dropdown-toggle text-uppercase text-dark"  data-toggle="dropdown" href="#">SDG</a>
+                    <div class="dropdown-menu dropdown-menu--narrow avoid-auto-close bg-white  categories categories--list mt-0 rounded-0 pt-0 border-0" style="">
+                        {{> compounds/sdg-dropdown}}
+                    </div>                    
                 </li>
                 <li class="nav-item py-3 px-1 text-uppercase">
                     <a class="nav-link text-dark" href="#">About</a>
