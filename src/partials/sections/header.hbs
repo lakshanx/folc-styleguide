@@ -16,20 +16,25 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto text-uppercase">
-                {{> compounds/subject-dropdown}}
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Countries</a>
+        <div class="collapse navbar-collapse position-relative">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown py-3 px-1">
+                    {{> compounds/subject-dropdown}}
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SDG</a>
+                <li class="nav-item dropdown py-3 position-static">
+                    <a class="nav-link nav-link dropdown-toggle text-uppercase text-dark"  data-toggle="dropdown" href="#">Countries</a>
+                    <div class="dropdown-menu avoid-auto-close w-100 bg-white  categories categories--list mt-0 rounded-0 pt-0 border-0" style="">
+                        {{> compounds/countries-tabs}}
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                <li class="nav-item py-3 px-1 text-uppercase">
+                    <a class="nav-link text-dark"  href="#">SDG</a>
+                </li>
+                <li class="nav-item py-3 px-1 text-uppercase">
+                    <a class="nav-link text-dark" href="#">About</a>
                 </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login/Register</a>
+                <li class="nav-item py-3 px-1 text-uppercase">
+                    <a class="nav-link text-dark" href="#">Login/Register</a>
                 </li>                                 
             </ul>
             <form class="header-search-box form-inline ml-lg-2 my-2 my-lg-0">

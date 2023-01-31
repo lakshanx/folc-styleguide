@@ -36,6 +36,22 @@
 
 
 //todo: move to forms scss
+.main-header{
+
+    .navbar-nav{
+        .dropdown{
+            &.show{
+                background-color: $gray;
+            }
+        }
+    }
+}
+
+
+
+
+
+//todo:
 .has-search .form-control {
     padding-left: 2.375rem;
 }
