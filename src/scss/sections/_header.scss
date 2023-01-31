@@ -46,15 +46,15 @@
             position:static
         }
         .navbar-collapse{
-            //display:block; //todo testing
             position: absolute !important;
             top:100px;
             left:0;
             background-color: $gray-800;
             width: 100%;
-            transition: all 0.4s ease;
+            transition: all 0.3s ease;
             display: block;
             transform: translateX(100%);
+            z-index: 10;
 
             &.collapsing {
                 height: auto !important;
@@ -108,7 +108,7 @@
             }
           }
         
-          .collapsed{
+          [aria-expanded="true"]{
             .navbar-toggler-icon {
                 background:rgba(0,0,0,0);
               }
@@ -120,9 +120,16 @@
                 top: 0;
                 transform:rotate(135deg);
               }
-          } 
+          }
     }
 }
+
+//todo
+.main-navbar-visible .main-content{
+    transform: translateX(-100%);
+    transition: .5s;
+}
+
 
 //todo:
 .has-search .form-control {

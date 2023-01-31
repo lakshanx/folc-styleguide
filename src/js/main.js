@@ -1,3 +1,11 @@
+// Mobile menu
+$('#main-navbar').on('show.bs.collapse', function () {
+	$('body').addClass('main-navbar-visible');
+});
+$('#main-navbar').on('hide.bs.collapse', function () {
+	$('body').removeClass('main-navbar-visible');
+});
+
 // Popovers
 $(function () {
 	$('[data-toggle="popover"]').popover();
