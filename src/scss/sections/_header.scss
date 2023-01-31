@@ -26,6 +26,11 @@
         .nav-link{
             padding: 0 10px;
         }
+        .dropdown{
+            &.show{
+                background-color: $gray;
+            }
+        }
     }
     .header-search-box{
         .form-control{
@@ -33,23 +38,6 @@
         }
     }
 }
-
-
-//todo: move to forms scss
-.main-header{
-
-    .navbar-nav{
-        .dropdown{
-            &.show{
-                background-color: $gray;
-            }
-        }
-    }
-}
-
-
-
-
 
 //todo:
 .has-search .form-control {
