@@ -28,11 +28,10 @@
         }
         .dropdown{
             &.show{
-                background-color: $gray;
+                //background-color: $gray;
             }
-
             .dropdown-menu{
-                &--narrow{width: 400px;}
+                &--narrow{width: 480px;}
             }
         }
     }
@@ -40,6 +39,88 @@
         .form-control{
             height:1em;
         }
+    }
+
+    @include media-breakpoint-down(md) {
+        .navbar{
+            position:static
+        }
+        .navbar-collapse{
+            //display:block; //todo testing
+            position: absolute !important;
+            top:100px;
+            left:0;
+            background-color: $gray-800;
+            width: 100%;
+            transition: all 0.4s ease;
+            display: block;
+            transform: translateX(100%);
+
+            &.collapsing {
+                height: auto !important;
+            }
+            &.show {
+                transform: translateX(0%);
+            }
+
+            .dropdown-toggle{
+                &::after{display: none;}
+            }
+            .dropdown-menu{
+                display: block;
+                &.open{
+                    background-color: transparent;
+                }
+            }
+            .categories--list{
+                background-color: $gray-800 !important;
+            }
+            .countries-tabs{
+                background-color: rgba(255,255,255,.1);
+            }
+
+            .header-search-box{order:1}
+            .navbar-nav{order:2}
+
+        }
+        .navbar-toggler-icon {
+            top:50%;
+            left:10%;
+            width: 50px;
+            height: 6px;
+            background: black;
+            position: relative;
+            transition: 0.5s;
+        
+            &:after,
+            &:before{
+                top: -16px;
+                content: '';
+                position:absolute;
+                width: 50px;
+                height: 6px;
+                left:0;
+                background:black;
+                transition:0.5s;        
+            }
+            &:after{
+                top: 16px;
+            }
+          }
+        
+          .collapsed{
+            .navbar-toggler-icon {
+                background:rgba(0,0,0,0);
+              }
+              .navbar-toggler-icon:before {
+                top: 0;
+                transform:rotate(45deg);
+              }     
+              .navbar-toggler-icon:after {
+                top: 0;
+                transform:rotate(135deg);
+              }
+          } 
     }
 }
 
