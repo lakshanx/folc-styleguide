@@ -50,9 +50,13 @@
         .navbar-brand{
             max-width: 110px;
         }
-
+        .nav-link{
+            color:$gray-400 !important;
+        }
         .navbar-collapse{
             position: absolute !important;
+            height:calc(100% - 100px);
+            overflow-y: scroll;
             top:100px;
             left:0;
             background-color: $gray-800;
@@ -145,9 +149,14 @@
 }
 
 //todo
+.main-content{
+    transition: .5s;
+}
+.main-navbar-visible{
+    overflow: hidden;
+}
 .main-navbar-visible .main-content{
     transform: translateX(-100%);
-    transition: .5s;
 }
 
 
