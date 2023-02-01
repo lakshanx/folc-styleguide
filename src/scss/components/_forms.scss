@@ -3,3 +3,19 @@
     border-left: 0;
   }
 }
+
+.has-search {
+  .form-control {
+    padding-left: 3rem;
+  }
+  .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 3em;
+    height: 2.3em;
+    line-height: 2.6em;
+    text-align: center;
+    pointer-events: none;
+  }
+}
