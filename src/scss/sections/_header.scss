@@ -48,7 +48,7 @@
         }
 
         .navbar-brand{
-            max-width: 120px;
+            max-width: 110px;
         }
 
         .navbar-collapse{
@@ -87,8 +87,18 @@
                 background-color: rgba(255,255,255,.1);
             }
 
-            .header-search-box{order:1}
+            .header-search-box{
+                order:1;
+                width:100%;
+                background-color: $gray-600;
+
+                .has-search{
+                    background-color:$gray-700;
+                }
+            }
             .navbar-nav{order:2}
+
+            
 
         }
         .navbar-toggler-icon {
