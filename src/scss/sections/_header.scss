@@ -42,9 +42,15 @@
     }
 
     @include media-breakpoint-down(md) {
+
         .navbar{
             position:static
         }
+
+        .navbar-brand{
+            max-width: 120px;
+        }
+
         .navbar-collapse{
             position: absolute !important;
             top:100px;
@@ -52,6 +58,7 @@
             background-color: $gray-800;
             width: 100%;
             transition: all 0.3s ease;
+            will-change: transform;
             transform: translateX(100%);
             z-index: 10;
 
@@ -61,6 +68,7 @@
             }
             &.show {
                 transform: translateX(0%);
+                display: flex;
             }
 
             .dropdown-toggle{
@@ -86,25 +94,27 @@
         .navbar-toggler-icon {
             top:50%;
             left:10%;
-            width: 50px;
-            height: 6px;
-            background: black;
             position: relative;
             transition: 0.5s;
+
+            &,
+            &:after,
+            &:before{   
+                width: 35px;
+                height: 4px;
+                background: $gray-800;
+                transition:0.5s;        
+            }         
         
             &:after,
             &:before{
-                top: -16px;
                 content: '';
+                top: -12px;
                 position:absolute;
-                width: 50px;
-                height: 6px;
                 left:0;
-                background:black;
-                transition:0.5s;        
             }
             &:after{
-                top: 16px;
+                top: 12px;
             }
           }
         
