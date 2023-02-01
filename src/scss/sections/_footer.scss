@@ -1,6 +1,8 @@
 footer{
     .nav-item{
-        margin-right: 1.5em;
+        .nav-link{
+            margin-right: 1.5em;
+        }
     }
 
     .footer-bottom{
@@ -13,6 +15,20 @@ footer{
         }
         img{
             width:80px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .nav-bar{
+            .navbar-nav{
+                flex-direction: row;
+                flex-wrap: wrap;
+                .nav-item{
+                    margin-right: 0;
+                    flex: 0 0 50%;
+                }
+            }
+
         }
     }
 }
