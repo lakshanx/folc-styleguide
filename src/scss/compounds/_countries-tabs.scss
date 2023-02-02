@@ -17,8 +17,9 @@
       }
     }
     @include media-breakpoint-up(lg) {
-        .countries-cols {
-          max-height: 375px;
+        .tab-content-inner {
+          max-height: 600px;
+          overflow-y: auto;
         }
     }
 }
