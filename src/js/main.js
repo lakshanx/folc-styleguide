@@ -1,12 +1,23 @@
 // Mobile menu
-$('#main-navbar').on('show.bs.collapse', function () {
+const $mainContent = $('.main-content');
+const $mainNavBar = $('#main-navbar');
+
+$mainNavBar.on('show.bs.collapse', function () {
 	$('body').addClass('main-navbar-visible');
 });
-$('#main-navbar').on('hide.bs.collapse', function () {
+$mainNavBar.on('hide.bs.collapse', function () {
 	$('body').removeClass('main-navbar-visible');
 });
 
-// Popovers
+$(document).on('show.bs.dropdown', $mainNavBar.find('.nav-item.dropdown'), function handleShowDropdown() {
+	$mainContent.addClass('menu-opened');
+});
+
+$(document).on('hide.bs.dropdown', $mainNavBar.find('.nav-item.dropdown'), function handleHideDropdown() {
+	$mainContent.removeClass('menu-opened');
+});
+
+// PopoSvers
 $(function () {
 	$('[data-toggle="popover"]').popover();
 });
