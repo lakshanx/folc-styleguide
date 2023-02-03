@@ -10,7 +10,9 @@ $mainNavBar.on('hide.bs.collapse', function () {
 });
 
 $(document).on('show.bs.dropdown', $mainNavBar.find('.nav-item.dropdown'), function handleShowDropdown() {
+	const bodyHeight = $('body').outerHeight() - 100;
 	$mainContent.addClass('menu-opened');
+	document.documentElement.style.setProperty('--menu-opened-height', `${bodyHeight}px`);
 });
 
 $(document).on('hide.bs.dropdown', $mainNavBar.find('.nav-item.dropdown'), function handleHideDropdown() {

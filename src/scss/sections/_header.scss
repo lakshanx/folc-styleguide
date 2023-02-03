@@ -49,7 +49,8 @@
     @include media-breakpoint-down(md) {
 
         .navbar{
-            position:static
+            position:static;
+            height: 4.8em;
         }
 
         .navbar-brand{
@@ -175,8 +176,9 @@
             top:100px;
             left:0;
             width: 100%;
-            height: 100%;
+            height: var(--menu-opened-height);
             background-color: rgba(0,0,0,0.2);
+            z-index:10;
         }
     }
 }
