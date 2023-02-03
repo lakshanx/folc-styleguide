@@ -1,4 +1,6 @@
 .main-header{
+    border-bottom: 1px solid $gray-300;
+
     .folc-color-line{
         span{
             display: block;
@@ -165,6 +167,18 @@
 //todo
 .main-content{
     transition: .5s;
+
+    &.menu-opened{
+        &::after{
+            content:"" ;
+            position: absolute;
+            top:100px;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.2);
+        }
+    }
 }
 .main-navbar-visible{
     overflow: hidden;
