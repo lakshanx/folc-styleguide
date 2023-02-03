@@ -1,0 +1,10 @@
+.hero-search{
+    min-height: 80vh;
+    background-image: url(asset-url("hero.svg"));
+    border-bottom: 1px solid $gray-300;
+
+    .has-search{
+        max-width: 600px;
+        font-size: 1.5em;;
+    }
+}
