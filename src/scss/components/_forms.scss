@@ -12,10 +12,13 @@
     position: absolute;
     z-index: 2;
     display: block;
-    width: 3em;
-    height: 2.3em;
-    line-height: 2.6em;
+    width: 2.8em;
+    line-height: 2.8em;
     text-align: center;
     pointer-events: none;
+
+    svg{
+      width: 1.2em;
+    }
   }
 }
