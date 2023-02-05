@@ -40,3 +40,7 @@ if ($('.categories-tabs').length > 0) {
 if ($('.countries-multi-level-tabs').length > 0) {
 	import(/* webpackChunkName: 'countries-multi-level-tabs' */ '~mod/countries-multi-level-tabs');
 }
+
+if ($('.article-tab').length > 0) {
+	import(/* webpackChunkName: 'article-tab' */ '~mod/article-tab');
+}
