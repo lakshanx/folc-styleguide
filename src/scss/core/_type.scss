@@ -1,3 +1,22 @@
+@include media-breakpoint-up(lg) {
+	body{
+		font-size: $font-size-base-lg;
+	}
+	h1, .h1 {
+		@include font-size($h1-font-size-lg);
+	}
+	h2, .h2 {
+		@include font-size($h2-font-size-lg);
+	}
+	h3, .h3 {
+		@include font-size($h3-font-size-lg);
+	}
+	h4, .h4 {
+		@include font-size($h4-font-size-lg);
+		font-weight: 400;
+	}
+}
+
 .font-heading {
     font-family: $headings-font-family;
 }

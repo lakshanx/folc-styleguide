@@ -36,11 +36,17 @@ $headings-line-height: calc-em(20, $context: 16, $unit: 1);
 
 $link-hover-decoration: none;
 
-$font-size-base: calc-em(18);
-$h1-font-size: calc-em(53);
-$h2-font-size: calc-em(45);
-$h3-font-size: calc-em(32);
+$font-size-base: calc-em(16);
+$h1-font-size: calc-em(32);
+$h2-font-size: calc-em(28);
+$h3-font-size: calc-em(28);
 $h4-font-size: calc-em(24);
+
+$font-size-base-lg: calc-em(18);
+$h1-font-size-lg: calc-em(59);
+$h2-font-size-lg: calc-em(50);
+$h3-font-size-lg: calc-em(36);
+$h4-font-size-lg: calc-em(27);
 
 // Colors
 $body-color: #212529;
