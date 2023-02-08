@@ -1,0 +1,16 @@
+.category-header{
+    background-repeat: no-repeat;
+    .container{
+        min-height:415px;
+        background-repeat: no-repeat;
+        background-position: 5% center;
+    }
+    &--dance{
+        background-image: url(asset-url("category-header-dance-background.svg"));
+        .container{
+            @include media-breakpoint-up(md) {
+                background-image: url(asset-url("category-header-dance-foreground.png"));
+            }
+        }
+    }
+}
