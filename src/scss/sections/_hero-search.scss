@@ -3,6 +3,10 @@
     background-image: url(asset-url("hero.svg"));
     border-bottom: 1px solid $gray-300;
 
+    @include media-breakpoint-down(md) {
+        min-height: 60vh;
+    }
+
     .has-search{
         max-width: 600px;
     }
