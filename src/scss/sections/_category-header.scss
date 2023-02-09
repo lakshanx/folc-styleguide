@@ -1,6 +1,17 @@
 .category-header{
-    background-repeat: no-repeat;
-    background-image: url(asset-url("category-header-dance-background.svg"));
+    position: relative;
+    &::after{
+        content: " ";
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+        opacity: .3;
+        background-repeat: no-repeat;
+        background-image: url(asset-url("category-header-background.svg"));
+        background-size: 100%;
+        background-position: center;
+    }
   
     .container {
       min-height: 415px;
