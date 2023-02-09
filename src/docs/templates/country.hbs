@@ -7,8 +7,11 @@
         {{> sections/header}}
 
         <div class="main-content">
-            {{> sections/hero-search}}
-            {{!-- {{> sections/subjects-and-countries}} --}}
+            {{> sections/country-header}}
+            <div class="bg-lighter-gray">
+                {{> compounds/categories-tabs}}
+            </div>
+            {{> sections/article-items}}
         </div>
 
         {{> sections/footer}}
