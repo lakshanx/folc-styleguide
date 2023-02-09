@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        {{> html-head title="Header" }}
+        {{> html-head title="Homepage" }}
 	</head>
 	<body>
         {{> sections/header}}
 
         <div class="main-content">
             {{> sections/hero-search}}
-            {{!-- {{> sections/subjects-and-countries}} --}}
+            {{> sections/home-about}}
+            {{> sections/subjects-and-countries}}
+            {{> sections/article-items}}
         </div>
 
         {{> sections/footer}}
