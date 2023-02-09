@@ -5,10 +5,12 @@
 	</head>
 	<body>
         {{> sections/header}}
-
         <div class="main-content">
-            {{> sections/hero-search}}
-            {{!-- {{> sections/subjects-and-countries}} --}}
+            {{> sections/category-header  category="dance" }}
+            <div class="bg-lighter-gray pt-1 pb-3">
+                {{> compounds/countries-multi-level-tabs theme="dance"}}
+            </div>
+            {{> sections/article-items }}
         </div>
 
         {{> sections/footer}}
