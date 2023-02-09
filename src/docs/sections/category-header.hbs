@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        {{> html-head title="Hero Search" }}
+        {{> html-head title="Category header" }}
 	</head>
 	<body>
-        {{> sections/category-header  category="dance" }}
+        {{> sections/category-header  category="art" title="Art" }}
+        <hr>
+        {{> sections/category-header  category="belief" title="Belief" }}
+        <hr>
+        {{> sections/category-header  category="craftmanship" title="Craftmanship" }}
+        <hr>
+        {{> sections/category-header  category="dance" title="Dance" }}   
+        <hr>
+        {{> sections/category-header  category="entertainment" title="Entertainment & Recreation" }}        
+        <hr>
+        {{> sections/category-header  category="foodways" title="Foodways" }}      
+        <hr>
+        {{> sections/category-header  category="music" title="Music" }}  
+        <hr>
+        {{> sections/category-header  category="ritual" title="Ritual" }}
+        <hr>
+        {{> sections/category-header  category="verbal" title="Verbal arts & Literature" }}  
 
         {{> js jquery=true bootstrap=true main=true }}
     </body>

@@ -1,16 +1,31 @@
 .category-header{
     background-repeat: no-repeat;
-    .container{
-        min-height:415px;
-        background-repeat: no-repeat;
-        background-position: 5% center;
+    background-image: url(asset-url("category-header-dance-background.svg"));
+  
+    .container {
+      min-height: 415px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: contain;
     }
-    &--dance{
-        background-image: url(asset-url("category-header-dance-background.svg"));
-        .container{
-            @include media-breakpoint-up(md) {
-                background-image: url(asset-url("category-header-dance-foreground.png"));
-            }
+  
+    @each $category, $img-url in (
+      art: asset-url("category-art.svg"),
+      belief: asset-url("category-belief.svg"),
+      craftmanship: asset-url("category-craftmanship.svg"),
+      dance: asset-url("category-dance.svg"),
+      entertainment: asset-url("category-entertainment.svg"),
+      foodways: asset-url("category-foodways.svg"),
+      music: asset-url("category-music.svg"),
+      ritual: asset-url("category-ritual.svg"),
+      verbal: asset-url("category-verbal.svg")
+    ) {
+      &--#{$category} {
+        .container {
+          @include media-breakpoint-up(md) {
+            background-image: url($img-url);
+          }
         }
+      }
     }
-}
+  }
