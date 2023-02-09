@@ -581,19 +581,423 @@
             </nav>
         </header>
         <div class="main-content">
-            <div class="hero-search jumbotron jumbotron-fluid  d-flex align-items-center text-center">
-                <div class="container ">
-                    <h1 class="text-dark">Welcome to Folc, the encyclopedia of folklore,<br> customs and traditions around the world.</h1>
-                    <div class="form-group has-search py-2 d-flex m-auto align-items-center h4 font-body">
-                        <span class="fa fa-search form-control-feedback">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                            </svg>
-                        </span>
-                        <input type="text" class="form-control flex-fill" placeholder="Search">
-                    </div> 
-                    <p>EXAMPLE: FLAMENCO, DENMARK, GALICIA, LITERATURE</p>
-                    <a class="btn btn-light btn-lg bg-info text-white text-uppercase" href="#" role="button">Explore</a>
+            <div class="country-header bg-light-gray">
+                <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+                    <h1>Spain</h1>
+                    <select class="custom-select text-uppercase text-gray mt-2 col-3" aria-label="Default select example">
+                        <option selected="">Filter by Regions/States</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>            <div class="bg-lighter-gray">
+                <div class="categories-tabs container py-3 py-lg-2 bg-lighter-gray">
+                    <div class=" container d-none d-lg-block py-1 bg-lighter-gray my-1">
+                        <ul class="nav nav-pills nav-fill border-bottom-0 m-n1" role="tablist">
+                            <li class="nav-item mx-1 mb-1 mb-md-2 active">
+                                <a href="#category-art" class="nav-link nav-link--art d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1 active" data-toggle="tab" data-target="#category-art" role="tab" aria-selected="true">Art</a>
+                            </li>
+                            <li class="nav-item mx-1 mb-1 mb-md-2">
+                                <a href="#category-belief" class="nav-link nav-link--belief d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-belief" role="tab" aria-selected="false">Belief</a>
+                            </li>
+                            <li class="nav-item mx-1 mb-1 mb-md-2">
+                                <a href="#category-craftmanship" class="nav-link nav-link--craftmanship d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-craftmanship" role="tab" aria-selected="false">Craftmanship</a>
+                            </li>
+                            <li class="nav-item mx-1 mb-1 mb-md-2">
+                                <a href="#category-dance" class="nav-link nav-link--dance d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-dance" role="tab">Dance</a>
+                            </li>
+                            <li class="nav-item mx-1 mb-1 mb-md-2">
+                                <a href="#category-entertainment" class="nav-link nav-link--entertainment d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-entertainment" role="tab">Entertainment and recreation</a>
+                            </li>
+                            <li class="nav-item mx-1 mb-1 mb-md-2">
+                                <a href="#category-foodways" class="nav-link nav-link--foodways d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-foodways" role="tab">Foodways</a>
+                            </li>  
+                            <li class="nav-item mx-1 mb-1 mb-md-2">
+                                <a href="#category-music" class="nav-link nav-link--music d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-music" role="tab">Music</a>
+                            </li> 
+                            <li class="nav-item mx-1 mb-1 mb-md-2">
+                                <a href="#category-ritual" class="nav-link nav-link--ritual d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-ritual" role="tab">Rituals</a>
+                            </li> 
+                            <li class="nav-item mx-1 mb-1 mb-md-2">
+                                <a href="#category-verbal" class="nav-link nav-link--verbal d-flex justify-content-center align-items-center text-dark font-size-base mb-0 p-1" data-toggle="tab" data-target="#category-verbal" role="tab">Verbal arts and literature</a>
+                            </li>                                                                                
+                        </ul>
+                        <div class="categories-tabs-content tab-content pt-1 pt-md-2 bg-art">
+                            <div class="tab-pane bg-white active" id="category-art" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                            <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                            <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>                                  
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>                                
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane bg-white" id="category-belief" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap  list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                            <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                            <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>                                
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>                                  
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane bg-white" id="category-craftmanship" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>                               
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                            <li class="w-100 w-lg-auto">
+                                            <a href="https://example.com/spanish-rice" class="a-link d-inline-block">Spanish Rice</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Tortilla Espanola</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane bg-white" id="category-dance" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane bg-white" id="category-entertainment" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Paella</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Red Sangria</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane bg-white" id="category-foodways" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Patatas Bravas</a>
+                                        </li>
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Pimientos de Padron</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane bg-white" id="category-music" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Music</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div class="tab-pane bg-white" id="category-ritual" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Ritual</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane bg-white" id="category-verbal" role="tabpanel">
+                                <div class="p-5">
+                                    <ul class="categories-cols d-flex flex-row flex-lg-column flex-wrap list-unstyled">
+                                        <li class="w-100 w-lg-auto">
+                                            <a href="#" class="a-link d-inline-block">Verbal</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                                                                             
+                        </div>
+                
+                
+                
+                    </div>
+                    <div class="container d-block d-lg-none py-2 py-lg-5 d-block d-lg-none">
+                        <form class="categories-form">
+                            <select class="select-categories custom-select" aria-label="Default select example">
+                                <option value="" disabled selected>Select a continent first</option>
+                            </select>                      
+                        </form>
+                        <ul class="categories-select-content p-1 mt-3 bg-white list-unstyled">
+                            <div class="py-5 text-center text-gray h4 font-body">Select a category<br> from the upper panel</div>
+                        </ul>
+                    </div>
+                </div>            </div>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="article-item">
+                            <h4 class="text-uppercase small text-gray mb-0 mb-md-3 font-body">Last published article</h4>
+                            <div class="d-xl-flex">
+                                <img  class="img-fluid object-fit-cover mr-xl-2 mb-2 mb-xl-0 d-none d-md-block" src="https://via.placeholder.com/600x600" alt="">
+                                <div class="d-flex flex-column">
+                                    <h3 class="mb-lg-auto text-dark">Festive cycle around the devotion and worship towards Saint John the Baptis </h3>
+                                    <p class="mb-1"><span class="text-muted d-none d-md-inline">Category: </span><span class="badge badge-padding bg-dance">Dance </span></p>
+                                    <img  class="img-fluid object-fit-cover mr-xl-2 mb-2 mb-xl-0 d-block d-md-none" src="https://via.placeholder.com/600x600" alt="">
+                                    <dl class="m-0 mt-1 mt-lg-0">
+                                        <dt class="d-inline-block me-1 text-muted">Nation:</dt>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Zambia </a><span>, </span></dd>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Ghana </a><span>, </span></dd>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Sri Lanka </a></dd>
+                                    </dl>
+                                    <dl class="m-0">
+                                        <dt class="d-inline-block me-1 text-muted">Region: </dt>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Zambesi </a><span>, </span></dd>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Ashanti </a><span>, </span></dd>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Sabaragamuwa </a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <p class="mt-2">The Budima Dance is a warrior dance performed all year round by the inhabitants of Zambezi/Gwembe Valley
+                                in the Southern Province. Arriving from Liberia in the 16th century, the Wee People carry out this
+                                traditional dance on a number of sombre and spiritual occasions, especially during traditional ceremonies,
+                                funeral processions, weddings, initiation ceremonies… <a href="#" class="a-link with-prefix d-block d-md-inline mt-1 mt-md-0">Full Article </a>
+                            </p>   
+                        </div>            <hr class="d-md-none"> 
+                    </div>   
+                    <div class="col-lg-6">
+                        <div class="article-item">
+                            <h4 class="text-uppercase small text-gray mb-0 mb-md-3 font-body">Article of the week</h4>
+                            <div class="d-xl-flex">
+                                <img  class="img-fluid object-fit-cover mr-xl-2 mb-2 mb-xl-0 d-none d-md-block" src="https://via.placeholder.com/600x600" alt="">
+                                <div class="d-flex flex-column">
+                                    <h3 class="mb-lg-auto text-dark">Festive cycle around the devotion and worship towards Saint John the Baptis </h3>
+                                    <p class="mb-1"><span class="text-muted d-none d-md-inline">Category: </span><span class="badge badge-padding bg-dance">Dance </span></p>
+                                    <img  class="img-fluid object-fit-cover mr-xl-2 mb-2 mb-xl-0 d-block d-md-none" src="https://via.placeholder.com/600x600" alt="">
+                                    <dl class="m-0 mt-1 mt-lg-0">
+                                        <dt class="d-inline-block me-1 text-muted">Nation:</dt>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Zambia </a><span>, </span></dd>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Ghana </a><span>, </span></dd>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Sri Lanka </a></dd>
+                                    </dl>
+                                    <dl class="m-0">
+                                        <dt class="d-inline-block me-1 text-muted">Region: </dt>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Zambesi </a><span>, </span></dd>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Ashanti </a><span>, </span></dd>
+                                        <dd class="d-inline-block me-1 mb-0"><a href="#" class="a-link">Sabaragamuwa </a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <p class="mt-2">The Budima Dance is a warrior dance performed all year round by the inhabitants of Zambezi/Gwembe Valley
+                                in the Southern Province. Arriving from Liberia in the 16th century, the Wee People carry out this
+                                traditional dance on a number of sombre and spiritual occasions, especially during traditional ceremonies,
+                                funeral processions, weddings, initiation ceremonies… <a href="#" class="a-link with-prefix d-block d-md-inline mt-1 mt-md-0">Full Article </a>
+                            </p>   
+                        </div>        </div>                         
                 </div>
             </div>        </div>
 
