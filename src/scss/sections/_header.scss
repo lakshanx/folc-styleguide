@@ -53,9 +53,9 @@
         }
         .navbar-collapse{
             position: absolute !important;
-            height:calc(100% - 100px);
+            height:calc(100% - 90px);
             overflow-y: scroll;
-            top:100px;
+            top:90px;
             left:0;
             background-color: $gray-800;
             width: 100%;
