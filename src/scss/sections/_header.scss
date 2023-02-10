@@ -42,20 +42,20 @@
 
         .navbar{
             position:static;
-            height: 4.8em;
+            height:4em;
         }
 
         .navbar-brand{
-            max-width: 110px;
+            max-width: 80px;
         }
         .nav-link{
             color:$gray-400 !important;
         }
         .navbar-collapse{
             position: absolute !important;
-            height:calc(100% - 90px);
+            height:calc(100% - 78px);
             overflow-y: scroll;
-            top:90px;
+            top:78px;
             left:0;
             background-color: $gray-800;
             width: 100%;
@@ -114,8 +114,8 @@
             &,
             &:after,
             &:before{   
-                width: 35px;
-                height: 4px;
+                width: 25px;
+                height: 3px;
                 background: $gray-800;
                 transition:0.5s;        
             }         
@@ -123,12 +123,12 @@
             &:after,
             &:before{
                 content: '';
-                top: -12px;
+                top: -9px;
                 position:absolute;
                 left:0;
             }
             &:after{
-                top: 12px;
+                top: 9px;
             }
           }
         
