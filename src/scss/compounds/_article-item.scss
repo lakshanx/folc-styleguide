@@ -1,7 +1,7 @@
 .article-item{
   @include media-breakpoint-up(lg) {
     img{
-      max-width: 200px;
+      max-width: 230px;
     }
   }
   @include media-breakpoint-down(lg) {
