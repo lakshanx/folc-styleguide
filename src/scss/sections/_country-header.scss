@@ -1,7 +1,17 @@
 .country-header{
     background-image: url(asset-url("hero.svg"));
+    @include media-breakpoint-down(md) {
+        background-image:none;
+        background-color:$gray-600;
+    }
     
     .container{
-        min-height:420px;
+        min-height:415px;
+        @include media-breakpoint-down(md) {
+            min-height: 250px;
+            h1{
+                color:$white;
+            }
+        }
     }
 }
