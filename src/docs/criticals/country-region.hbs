@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        {{> html-head title="Header" }}
+        {{> html-head title="Country Region Critical CSS" }}
+        <link rel="stylesheet" href="{{ criticalUrl }}/country-region.css">
 	</head>
 	<body>
         {{> sections/header}}
 
         <div class="main-content">
-            {{> sections/hero-search}}
-            {{!-- {{> sections/subjects-and-countries}} --}}
+            {{> sections/country-region-header}}
+            <div class="bg-lighter-gray">
+                {{> compounds/categories-tabs}}
+            </div>
         </div>
 
-        {{> sections/footer}}
-
-        {{> js jquery=true bootstrap=true main=true }}
+        {{> js jquery=false bootstrap=false main=false }}
     </body>
 </html>

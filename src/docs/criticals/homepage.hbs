@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        {{> html-head title="Header" }}
+        {{> html-head title="Homepage Critical CSS" }}
+        <link rel="stylesheet" href="{{ criticalUrl }}/homepage.css">
 	</head>
 	<body>
         {{> sections/header}}
@@ -11,8 +12,6 @@
             {{!-- {{> sections/subjects-and-countries}} --}}
         </div>
 
-        {{> sections/footer}}
-
-        {{> js jquery=true bootstrap=true main=true }}
+        {{> js jquery=false bootstrap=false main=false }}
     </body>
 </html>

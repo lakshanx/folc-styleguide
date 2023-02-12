@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        {{> html-head title="Header" }}
+        {{> html-head title="Categories Critical CSS" }}
+        <link rel="stylesheet" href="{{ criticalUrl }}/categories.css">
 	</head>
 	<body>
         {{> sections/header}}
 
         <div class="main-content">
-            {{> sections/hero-search}}
-            {{!-- {{> sections/subjects-and-countries}} --}}
+            {{> sections/category-header  category="dance" title="Dance" }}
+            <div class="bg-lighter-gray pt-1 pb-3">
+                {{> compounds/countries-multi-level-tabs theme="dance"}}
+            </div>
         </div>
 
-        {{> sections/footer}}
-
-        {{> js jquery=true bootstrap=true main=true }}
+        {{> js jquery=false bootstrap=false main=false }}
     </body>
 </html>
