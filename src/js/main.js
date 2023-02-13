@@ -1,21 +1,27 @@
-// Mobile menu
+// Main Menu
 const $mainContent = $('.main-content');
 const $mainNavBar = $('#main-navbar');
+const $body = $('body');
 
-$mainNavBar.on('show.bs.collapse', function () {
-	$('body').addClass('main-navbar-visible');
-});
-$mainNavBar.on('hide.bs.collapse', function () {
-	$('body').removeClass('main-navbar-visible');
-});
-
-$(document).on('show.bs.dropdown', $mainNavBar.find('.nav-item.dropdown'), function handleShowDropdown() {
-	const bodyHeight = $('body').outerHeight() - 100;
+$mainNavBar.on('show.bs.collapse', () => {
+	$body.addClass('overflow-hidden');
 	$mainContent.addClass('menu-opened');
-	document.documentElement.style.setProperty('--menu-opened-height', `${bodyHeight}px`);
 });
 
-$(document).on('hide.bs.dropdown', $mainNavBar.find('.nav-item.dropdown'), function handleHideDropdown() {
+$mainNavBar.on('hide.bs.collapse', () => {
+	$body.removeClass('overflow-hidden');
+	$mainContent.removeClass('menu-opened');
+});
+
+$mainNavBar.on('show.bs.dropdown', '.nav-item.dropdown', () => {
+	const mainMenuHeight = $('.main-header').outerHeight();
+	const bodyHeight = $body.outerHeight() - mainMenuHeight;
+	$mainContent.addClass('menu-opened');
+	document.documentElement.style.setProperty('--menu-height', `${mainMenuHeight}px`);
+	document.documentElement.style.setProperty('--menu-overlay-height', `${bodyHeight}px`);
+});
+
+$mainNavBar.on('hide.bs.dropdown', '.nav-item.dropdown', () => {
 	$mainContent.removeClass('menu-opened');
 });
 

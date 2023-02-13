@@ -21,7 +21,7 @@
     }
 
     .navbar-brand img{
-        width: 140px;
+        width: $header-menu-logo-width-lg;
     }
 
     .navbar-nav{
@@ -45,8 +45,8 @@
             height:4em;
         }
 
-        .navbar-brand{
-            max-width: 80px;
+        .navbar-brand img{
+            width: $header-menu-logo-width-md;
         }
         .nav-link{
             color:$gray-400 !important;
@@ -73,23 +73,26 @@
                 display: flex;
             }
 
-            .dropdown-toggle{
-                &::after{display: none;}
-            }
-            .dropdown-menu{
-                display: block;
-                &.open{
-                    background-color: transparent;
+            .dropdown{
+                .dropdown-toggle{
+                    &::after{display: none;}
+                }
+                .dropdown-menu{
+                    display: block;
+                    &.open{
+                        background-color: transparent;
+                    }
+                }
+                .categories--list{
+                    background-color: $gray-800 !important;
+                }
+    
+                .countries-tabs,
+                .dropdown--countries{
+                    background-color:$gray-700;
                 }
             }
-            .categories--list{
-                background-color: $gray-800 !important;
-            }
-
-            .countries-tabs,
-            .dropdown--countries{
-                background-color:$gray-700;
-            }
+            
             .header-search-box{
                 order:1;
                 width:100%;
@@ -148,27 +151,26 @@
     }
 }
 
-//todo
+// Menu Overlay + content animation
 .main-content{
-    transition: .5s;
+    transition: $header-menu-mobile-transition;
 
     &.menu-opened{
-        &::after{
-            content:"" ;
-            position: absolute;
-            top:100px;
-            left:0;
-            width: 100%;
-            height: var(--menu-opened-height);
-            background-color: rgba(0,0,0,0.2);
-            z-index:10;
+        @include media-breakpoint-down(md) {
+            transform: translateX(-100%);
+        } 
+        @include media-breakpoint-up(md) {       
+            &::after{
+                content:"" ;
+                position: absolute;
+                top:var(--menu-height);
+                left:0;
+                width: 100%;
+                height: var(--menu-overlay-height);
+                background-color: $black;
+                opacity: $header-menu-overlay-opacity;
+                z-index:10;
+            }
         }
-    }
-}
-.main-navbar-visible{
-    overflow: hidden;
-
-    .main-content{
-        transform: translateX(-100%);
     }
 }
