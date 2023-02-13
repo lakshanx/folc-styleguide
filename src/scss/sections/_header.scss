@@ -28,13 +28,30 @@
         .nav-link{
             padding: 0 10px;
         }
-        .dropdown{
-            &.show{
-                background-color: $gray;
+        @include  media-breakpoint-up(md) {
+            .dropdown{
+                &.show{
+                    background-color: $gray;
+                }
+
+                &--subjects,
+                &--sdg{
+                    .dropdown-menu{
+                        width: 480px;
+                    }
+                }
+
+                &--countries{
+                    .dropdown-menu{
+                        margin-left:-300%
+                    }
+                }
             }
-            .dropdown-menu{
-                &--narrow{width: 480px;}
-            }
+        }
+    }
+    .has-search{
+        @include  media-breakpoint-up(md) {
+            text-transform: uppercase;
         }
     }
 
@@ -53,7 +70,7 @@
         }
         .navbar-collapse{
             position: absolute !important;
-            height:calc(100% - 78px);
+            height:calc(100% - var(--menu-height));
             overflow-y: scroll;
             top:78px;
             left:0;

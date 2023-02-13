@@ -17,16 +17,19 @@
       }
     }
 
-    .tab-content-inner {
-      max-height: 600px;
-      overflow-y: auto;
-    }
-
-    &--small{
-      max-width: 1150px;
-
-      .tab-content-inner{
-        max-height: 400px;
+    @include media-breakpoint-up(md) {
+      .tab-content-inner {
+        max-height: 600px;
+        overflow-y: auto;
       }
-    }
+
+      &--small{
+        width: 1150px;
+        max-width: 80vw;
+
+        .tab-content-inner{
+          max-height: 520px;
+        }
+      }
+  }
 }

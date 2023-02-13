@@ -7,21 +7,18 @@
         {{> page-title text="Countries Dropdown" }}
         <div class="container mt-4">
             <div class="my-4 pb-4">
-                <div class="container-fluid px-0">
-                    <div class="container-fluid px-0">
-                        <nav class="navbar d-block">
-                            <ul class="navbar-nav px-0 mb-2 mb-lg-0 me-4">
-                                <div class="nav-item dropdown mx-1">
-                                    <a href="#" class="nav-link dropdown-toggle py-4" data-toggle="dropdown" data-flip="false" data-target="false" role="button" aria-expanded="false" data-auto-close="false" data-placement="bottom">COUNTRIES</a>
-                                    <div class="dropdown-menu avoid-auto-close w-100 dropdown-expand-xl p-1 p-lg-4 border-0 bg-lighter-gray mw-vw-75" style="">
-                                        {{> compounds/countries-tabs }}
-                                    </div>
+                <nav class="navbar navbar-expand-lg navbar-light mx-1">
+                    <div class="collapse navbar-collapse position-relative d-md-block flex-column flex-md-row">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown dropdown--countries py-1 py-md-3 m-1 m-md-0">
+                                <a class="nav-link nav-link dropdown-toggle text-uppercase text-dark my-1 ml-1 my-md-0 ml-md-0"  data-toggle="dropdown" href="#">Countries</a>
+                                <div class="dropdown-menu avoid-auto-close pb-0 w-100 bg-transparent mt-0 rounded-0 pt-0 border-0" style="">
+                                    {{> compounds/countries-tabs-small}}
                                 </div>
-                            </ul>
-                        </nav> 
-
+                            </li>                                 
+                        </ul>
                     </div>
-                </div>
+                </nav>
             </div>
         </div>
         {{> js jquery=true popper=true bootstrap=true main=true }}
