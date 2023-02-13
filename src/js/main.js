@@ -2,28 +2,26 @@
 const $mainContent = $('.main-content');
 const $mainNavBar = $('#main-navbar');
 const $body = $('body');
+const $mainHeader = $('.main-header');
 
-$mainNavBar.on('show.bs.collapse', () => {
-	$body.addClass('overflow-hidden');
-	$mainContent.addClass('menu-opened');
-});
-
-$mainNavBar.on('hide.bs.collapse', () => {
-	$body.removeClass('overflow-hidden');
-	$mainContent.removeClass('menu-opened');
-});
-
-$mainNavBar.on('show.bs.dropdown', '.nav-item.dropdown', () => {
-	const mainMenuHeight = $('.main-header').outerHeight();
+function handleMenuOpen() {
+	const mainMenuHeight = $mainHeader.outerHeight();
 	const bodyHeight = $body.outerHeight() - mainMenuHeight;
-	$mainContent.addClass('menu-opened');
 	document.documentElement.style.setProperty('--menu-height', `${mainMenuHeight}px`);
 	document.documentElement.style.setProperty('--menu-overlay-height', `${bodyHeight}px`);
-});
+	$body.addClass('overflow-hidden');
+	$mainContent.addClass('menu-opened');
+}
 
-$mainNavBar.on('hide.bs.dropdown', '.nav-item.dropdown', () => {
+function handleMenuClose() {
+	$body.removeClass('overflow-hidden');
 	$mainContent.removeClass('menu-opened');
-});
+}
+
+$mainNavBar.on('show.bs.collapse', handleMenuOpen);
+$mainNavBar.on('hide.bs.collapse', handleMenuClose);
+$mainNavBar.on('show.bs.dropdown', '.nav-item.dropdown', handleMenuOpen);
+$mainNavBar.on('hide.bs.dropdown', '.nav-item.dropdown', handleMenuClose);
 
 // PopoSvers
 $(function () {
