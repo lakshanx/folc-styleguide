@@ -4,21 +4,31 @@ const $mainNavBar = $('#main-navbar');
 const $body = $('body');
 const $mainHeader = $('.main-header');
 
-function handleMenuOpen() {
+function calculateHeaderCSSVars() {
 	const mainMenuHeight = $mainHeader.outerHeight();
 	const bodyHeight = $body.outerHeight() - mainMenuHeight;
 	document.documentElement.style.setProperty('--menu-height', `${mainMenuHeight}px`);
 	document.documentElement.style.setProperty('--menu-overlay-height', `${bodyHeight}px`);
+}
+
+function handleMenuOpen() {
+	calculateHeaderCSSVars();
+	$mainContent.addClass('menu-opened');
+}
+function handleMobileMenuOpen() {
+	calculateHeaderCSSVars();
 	$body.addClass('overflow-hidden');
 	$mainContent.addClass('menu-opened');
 }
 
 function handleMenuClose() {
-	$body.removeClass('overflow-hidden');
+	if ($body.hasClass('overflow-hidden')) {
+		$body.removeClass('overflow-hidden');
+	}
 	$mainContent.removeClass('menu-opened');
 }
 
-$mainNavBar.on('show.bs.collapse', handleMenuOpen);
+$mainNavBar.on('show.bs.collapse', handleMobileMenuOpen);
 $mainNavBar.on('hide.bs.collapse', handleMenuClose);
 $mainNavBar.on('show.bs.dropdown', '.nav-item.dropdown', handleMenuOpen);
 $mainNavBar.on('hide.bs.dropdown', '.nav-item.dropdown', handleMenuClose);
