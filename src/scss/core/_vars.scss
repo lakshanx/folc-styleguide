@@ -160,8 +160,10 @@ $dropdown-bg: $light-blue;
 // Buttons
 $btn-hover-darken: 80%;
 $btn-font-weight: 400;
-$btn-padding-y: calc-em(3);
-$btn-padding-x: calc-em(15);
+$btn-padding-y: .4em;
+$btn-padding-x: 1.8em;
+$btn-padding-y-lg: .6em;
+$btn-padding-x-lg: 1.8em;
 $btn-border-radius: $border-radius-lg;
 
 $btn-font-size-lg: 1em;

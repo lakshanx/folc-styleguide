@@ -20,7 +20,7 @@
 
     .dropdown{
       &.show{
-        .nav-link{
+        >.nav-link{
           &::after{
             content: "";
             position: absolute;
