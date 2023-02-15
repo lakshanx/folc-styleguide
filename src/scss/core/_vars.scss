@@ -137,25 +137,21 @@ $search-icon-padding-y-sm: calc-em(6, 14);
 $input-border-radius-sm: calc-em(18, 14);
 
 // Nav
-$nav-link-padding-y: calc-em(12/2);
-$nav-link-padding-x: calc-em(12/2);
-$nav-link-padding-y-lg: calc-em(24/2);
-$nav-link-padding-x-lg: calc-em(24/2);
-$nav-tabs-link-active-bg: $gray;
+$nav-link-padding-y: .25em;
+$nav-link-padding-x: 0;
 
-$nav-tabs-border-radius: 0;
 $nav-pills-border-radius: 0;
-
-$nav-tabs-link-active-color: $gray-600;
 $nav-pills-link-active-bg: $gray-600;
 
-$nav-tabs-link-hover-border-color: transparent;
-$nav-link-color: $gray-800;
+$nav-link-color: $primary;
 $nav-link-hover-color: $gray-600;
 
 $navbar-light-toggler-border-color: transparent;
 
-// Nav - tabs
+$nav-tabs-link-active-bg: $gray;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-active-color: $gray-600;
+$nav-tabs-link-hover-border-color: transparent;
 $nav-tabs-border-radius: 0;
 
 // Dropdowns
