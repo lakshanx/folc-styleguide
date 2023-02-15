@@ -25,9 +25,6 @@
     }
 
     .navbar-nav{
-        .nav-link{
-            padding: 0 10px;
-        }
         @include  media-breakpoint-up(md) {
             .dropdown{
                 &.show{
@@ -57,9 +54,27 @@
 
     @include media-breakpoint-down(md) {
 
-        .navbar{
+        >.navbar{
             position:static;
             height:4em;
+        }
+
+        .navbar{
+            &--mobile-menu-footer{
+                .navbar-nav{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    height:auto;
+                }
+                .nav-item {
+                    margin-right: 0;
+                    flex: 0 0 50%;
+                    .nav-link{
+                        margin-right: 1em;
+                        pointer-events:all;
+                    }
+                }
+            }
         }
 
         .navbar-brand img{
@@ -67,6 +82,7 @@
         }
         .nav-link{
             color:$gray-400 !important;
+            pointer-events: none;
         }
         .navbar-collapse{
             position: absolute !important;
@@ -103,9 +119,8 @@
                 .categories--list{
                     background-color: $gray-800 !important;
                 }
-    
-                .countries-tabs,
-                .dropdown--countries{
+
+                &--countries{
                     background-color:$gray-700;
                 }
             }
@@ -123,7 +138,9 @@
                     }
                 }
             }
-            .navbar-nav{order:2}
+            .navbar-nav{
+                order:2
+            }
         }
         .navbar-toggler-icon {
             top:50%;

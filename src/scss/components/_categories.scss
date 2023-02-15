@@ -22,7 +22,7 @@
     cursor: pointer;
     outline-offset: -8px;
     transition: all 0.1s ease-in;
-    outline: 8px solid rgba(#fff, 0);
+    outline: 8px solid rgba($white, 0);
     height: 85px;
   
     .category-text {
@@ -48,7 +48,7 @@
       transition: outline-offset 0.1s ease-out;
   
       outline-offset: -16px;
-      outline: 8px solid #fff;
+      outline: 8px solid $white;
     }
   
     &:before {
