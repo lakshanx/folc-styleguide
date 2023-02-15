@@ -10,7 +10,7 @@
         <span class="bg-ritual"></span>
         <span class="bg-verbal"></span>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light mx-1">
+    <nav class="navbar navbar-expand-lg mx-1">
         <a class="navbar-brand mr-0 mr-md-2 mt-0" href="homepage.html" aria-label="Bootstrap"><img class="img-fluid" src="../images/logo.svg"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-navbar">
             <div class="navbar-toggler-icon"></div>
@@ -18,26 +18,51 @@
 
         <div id="main-navbar" class="collapse navbar-collapse position-relative d-md-block flex-column flex-md-row">
             <ul class="navbar-nav ml-0 ml-md-auto">
-                <li class="nav-item dropdown dropdown--subjects pt-2 pb-0 py-md-3 px-0 px-md-1">
+                <li class="nav-item dropdown dropdown--subjects pt-1 pb-0 py-md-3 px-0 px-md-1">
+                    <a href="#" class="nav-link dropdown-toggle text-uppercase text-dark pl-1" data-toggle="dropdown" data-flip="false" data-target="false" role="button" aria-expanded="false" data-auto-close="false" data-placement="bottom">Subjects</a>
                     {{> compounds/subject-dropdown}}
                 </li>
-                <li class="nav-item dropdown dropdown--countries py-1 py-md-3 m-1 m-md-0">
-                    <a class="nav-link nav-link dropdown-toggle text-uppercase text-dark my-1 ml-1 my-md-0 ml-md-0"  data-toggle="dropdown" href="#">Countries</a>
+                <li class="nav-item dropdown dropdown--countries py-1 py-md-3 mt-n1 m-1 m-md-0">
+                    <a class="nav-link nav-link dropdown-toggle text-uppercase text-dark ml-1 my-md-0 ml-md-0 px-md-1"  data-toggle="dropdown" href="#">Countries</a>
                     <div class="dropdown-menu avoid-auto-close pb-0 w-100 bg-transparent mt-0 rounded-0 pt-0 border-0" style="">
                         {{> compounds/countries-tabs-small}}
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown--sdg py-3 d-none d-md-block">
-                    <a class="nav-link nav-link dropdown-toggle text-uppercase text-dark"  data-toggle="dropdown" href="#">SDG</a>
+                    <a class="nav-link nav-link dropdown-toggle text-uppercase text-dark px-md-1"  data-toggle="dropdown" href="#">SDG</a>
                     <div class="dropdown-menu avoid-auto-close bg-transparent mt-0 rounded-0 pt-0 border-0" style="">
                         {{> compounds/sdg-dropdown}}
                     </div>                    
                 </li>
+                <li class="d-flex d-md-none pt-1 pb-3">
+                    <nav class="navbar navbar--mobile-menu-footer">
+                        <ul class="navbar-nav navbar-expand-lg mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link a-link with-prefix" href="#">Privacy policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link a-link with-prefix" href="#">Disclaimers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link a-link with-prefix" href="#">Mobile view</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link a-link with-prefix" href="#">Developers</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link a-link with-prefix" href="#">Statistics</a>
+                            </li>   
+                            <li class="nav-item">
+                                <a class="nav-link a-link with-prefix" href="#">Cookie statement</a>
+                            </li>   
+                        </ul>
+                    </nav>
+                </li>
                 <li class="nav-item py-3 px-1 text-uppercase d-none d-md-block">
-                    <a class="nav-link text-dark" href="#">About</a>
+                    <a class="nav-link text-dark px-md-1" href="#">About</a>
                 </li> 
                 <li class="nav-item py-3 px-1 text-uppercase d-none d-md-block">
-                    <a class="nav-link text-dark" href="#">Login/Register</a>
+                    <a class="nav-link text-dark px-md-1" href="#">Login/Register</a>
                 </li>                                 
             </ul>
             <form class="header-search-box form-inline d-block d-md-flex ml-lg-2 my-md-2 my-lg-0">
@@ -54,7 +79,6 @@
                     <a href="#" class="btn flex-fill text-uppercase btn-outline-white">Register</a>
                 </div>
             </form>
-            
         </div>
     </nav>
 </header>
