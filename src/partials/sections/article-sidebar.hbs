@@ -11,11 +11,8 @@
     <div class="p-3">
         <div class="text-gray text-uppercase pb-1">Categories</div>
         <div class="categories categories--list">
-            <a href="#" class="category-card bg-dance small d-flex align-items-center justify-content-end justify-content-lg-center mb-1">
-                <span class="font-heading text-white justify-content-center pl-4 ml-md-5 mb-0 category-text">Dance</span>
-            </a>
-            <a href="#" class="category-card bg-music small  d-flex  align-items-center justify-content-end justify-content-lg-center">
-                <span class="font-heading text-white justify-content-center pl-4 ml-md-5 mb-0 category-text">Music</span>
+            {{> components/category-card category="dance" title="Dance" size="small"}}
+            {{> components/category-card category="music" title="Music" size="small"}}     
             </a>                      
         </div>
     </div>

@@ -1,0 +1,18 @@
+// category card start todo
+.categories{
+  &--grid{
+    @include media-breakpoint-up(lg) {
+      div[class^="col-"]{
+        aspect-ratio: 1;
+        height:100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &.dropdown-expand-lg {
+      width: 430px !important;
+    }
+  }
+}

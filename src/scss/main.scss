@@ -5,8 +5,9 @@
 
 @import 'components/forms';
 @import 'components/tabs';
-@import 'components/categories';
+@import 'components/category-card';
 
+@import 'compounds/categories';
 @import 'compounds/countries-tabs';
 @import 'compounds/countries-multi-level-tabs';
 @import 'compounds/categories-tabs';

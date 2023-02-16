@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{> html-head title="Categories" }}
+    </head>
+    <body>
+        {{> page-title text="Categories" }}
+        <div class="container mt-4">
+            <div class="flex-fill">
+                <h3>Categories - List</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="categories categories--list">
+                        {{> components/category-card category="dance" title="Dance" size="small"}}
+                        {{> components/category-card category="music" title="Music" size="small"}}                     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <h3>Categories - Grid</h3>
+        </div>
+        {{> compounds/categories-grid}}
+
+    </body>
+</html>
