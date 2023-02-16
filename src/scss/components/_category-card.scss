@@ -1,11 +1,11 @@
 .category-card {
-overflow: hidden;
-position: relative;
-cursor: pointer;
-outline-offset: -8px;
-transition: all 0.1s ease-in;
-outline: 8px solid rgba($white, 0);
-height: 85px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    outline-offset: -8px;
+    transition: all 0.1s ease-in;
+    outline: 8px solid rgba($white, 0);
+    min-height: 5rem;
 
     .category-text {
         width: 75%;
@@ -18,11 +18,11 @@ height: 85px;
         }
     }
 
-    &:not(.small) {
+    &:not(&--small) {
         .category-text {
-        @include media-breakpoint-up(lg) {
-            text-align: center;
-        }
+            @include media-breakpoint-up(lg) {
+                text-align: center;
+            }
         }
     }
 
@@ -52,7 +52,7 @@ height: 85px;
         background-image: url(asset-url("category-art.svg"));
     }
 
-    &.bg-art:not(.small):before {
+    &.bg-art:not(&--small):before {
         @include media-breakpoint-up(lg) {
         background-position: 150px 50%;
         background-size: 100%;
@@ -64,7 +64,7 @@ height: 85px;
         background-position: -20px -5px;
     }
 
-    &.bg-art:not(.small):hover:before {
+    &.bg-art:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-position: 110px 50%;
         background-size: 110%;
@@ -82,7 +82,7 @@ height: 85px;
         opacity: 0.5;
     }
 
-    &.bg-belief:not(.small):before {
+    &.bg-belief:not(&--small):before {
         @include media-breakpoint-up(lg) {
         margin-left: 0;
         background-position: 90px 50%;
@@ -97,7 +97,7 @@ height: 85px;
         background-position: 90% -10px;
     }
 
-    &.bg-belief:not(.small):hover:before {
+    &.bg-belief:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-position: 60px 50%;
         background-size: 110%;
@@ -111,7 +111,7 @@ height: 85px;
         opacity: 0.5;
     }
 
-    &.bg-craftmanship:not(.small):before {
+    &.bg-craftmanship:not(&--small):before {
         @include media-breakpoint-up(lg) {
         background-position: 90px 50%;
         background-size: 115%;
@@ -124,7 +124,7 @@ height: 85px;
         background-position: -20px center;
     }
 
-    &.bg-craftmanship:not(.small):hover:before {
+    &.bg-craftmanship:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-position: 60px 50%;
         background-size: 125%;
@@ -138,7 +138,7 @@ height: 85px;
         opacity: 0.5;
     }
 
-    &.bg-dance:not(.small):before {
+    &.bg-dance:not(&--small):before {
         @include media-breakpoint-up(lg) {
         background-position: 5px 110%;
         background-size: 100%;
@@ -151,7 +151,7 @@ height: 85px;
         background-position: 0px -40px;
     }
 
-    &.bg-dance:not(.small):hover:before {
+    &.bg-dance:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-position: -10px 90%;
         background-size: 110%;
@@ -165,7 +165,7 @@ height: 85px;
         opacity: 0.5;
     }
 
-    &.bg-entertainment:not(.small):before {
+    &.bg-entertainment:not(&--small):before {
         @include media-breakpoint-up(lg) {
         background-position: -40px 100%;
         background-size: 80%;
@@ -179,7 +179,7 @@ height: 85px;
         background-position: -5px -65px;
     }
 
-    &.bg-entertainment:not(.small):hover:before {
+    &.bg-entertainment:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-position: -10px 90%;
         background-size: 90%;
@@ -193,7 +193,7 @@ height: 85px;
         opacity: 0.5;
     }
 
-    &.bg-foodways:not(.small):before {
+    &.bg-foodways:not(&--small):before {
         @include media-breakpoint-up(lg) {
         background-position: 110px 50%;
         background-size: 100%;
@@ -206,7 +206,7 @@ height: 85px;
         background-position: -45px -20px;
     }
 
-    &.bg-foodways:not(.small):hover:before {
+    &.bg-foodways:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-position: 80px 50%;
         background-size: 110%;
@@ -224,7 +224,7 @@ height: 85px;
         opacity: 0.5;
     }
 
-    &.bg-music:not(.small):before {
+    &.bg-music:not(&--small):before {
         @include media-breakpoint-up(lg) {
         margin-top: 0;
         margin-left: 0;
@@ -241,7 +241,7 @@ height: 85px;
         background-position: 92% 90%;
     }
 
-    &.bg-music:not(.small):hover:before {
+    &.bg-music:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-position: 80px -10px;
         background-size: 90%;
@@ -256,7 +256,7 @@ height: 85px;
         opacity: 0.5;
     }
 
-    &.bg-ritual:not(.small):before {
+    &.bg-ritual:not(&--small):before {
         @include media-breakpoint-up(lg) {
         background-position: 185px 0;
         background-size: 70%;
@@ -270,7 +270,7 @@ height: 85px;
         background-position: 96% -40px;
     }
 
-    &.bg-ritual:not(.small):hover:before {
+    &.bg-ritual:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-position: 135px 0;
         background-size: 80%;
@@ -284,7 +284,7 @@ height: 85px;
         opacity: 0.5;
     }
 
-    &.bg-verbal:not(.small):before {
+    &.bg-verbal:not(&--small):before {
         @include media-breakpoint-up(lg) {
         background-size: 60%;
         background-position: center;
@@ -296,10 +296,20 @@ height: 85px;
         background-size: 110px;
     }
 
-    &.bg-verbal:not(.small):hover:before {
+    &.bg-verbal:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
         background-size: 70%;
         background-position: 70% center;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &--minimal-mobile{
+            justify-content: flex-start !important;
+            min-height: 3.5rem;
+            &:before{
+                display:none;
+            }
         }
     }
 }
