@@ -58,3 +58,7 @@ if ($('.countries-multi-level-tabs').length > 0) {
 if ($('.article-tab').length > 0) {
 	import(/* webpackChunkName: 'article-tab' */ '~mod/article-tab');
 }
+
+if ($('.country-header').length > 0) {
+	import(/* webpackChunkName: 'country-header' */ '~mod/country-header');
+}
