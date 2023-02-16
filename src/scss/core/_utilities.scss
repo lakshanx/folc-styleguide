@@ -11,6 +11,10 @@
     object-fit: cover;
 }
 
+.border-bottom{
+    border-bottom: 1px solid $gray-300;
+}
+
 @include media-breakpoint-up(lg) {
     .text-uppercase-lg{
         text-transform: uppercase;
