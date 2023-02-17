@@ -1,5 +1,5 @@
 html,
-.smooth-scroll{
+.smooth-scroll {
     scroll-behavior: smooth;
 }
 
@@ -7,17 +7,27 @@ html,
     .h-lg-100 {
         height: 100% !important;
     }
+
     .w-lg-auto {
         width: auto !important;
-    }  
+    }
 }
 
-.object-fit-cover{
+.w-custom-px-1 {
+    width: 450px;
+}
+
+.w-custom-px-2 {
+    width: 1150px;
+}
+
+
+.object-fit-cover {
     object-fit: cover;
 }
 
 @include media-breakpoint-up(lg) {
-    .text-uppercase-lg{
+    .text-uppercase-lg {
         text-transform: uppercase;
     }
 }

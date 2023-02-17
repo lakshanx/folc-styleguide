@@ -29,13 +29,6 @@
                     background-color: $gray;
                 }
 
-                &--subjects,
-                &--sdg{
-                    .dropdown-menu{
-                        width: 480px;
-                    }
-                }
-
                 &--countries{
                     .dropdown-menu{
                         margin-left:-230%
