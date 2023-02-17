@@ -1,35 +1,39 @@
-.countries-tabs{
-    .nav-link{
-      position:relative;
+.countries-tabs {
+    .nav-item {
+        background-color: $white;
 
-      &.active{
-        color:$white !important;
+        .nav-link {
+            position: relative;
 
-        &::after{
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: -1em;
-          height: 1em;
-          width: 100%;
-          background: inherit;
+            &.active {
+                color: $white !important;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -1em;
+                    height: 1em;
+                    width: 100%;
+                    background: inherit;
+                }
+            }
         }
-      }
     }
 
     @include media-breakpoint-up(md) {
-      .tab-content-inner {
-        max-height: 600px;
-        overflow-y: auto;
-      }
-
-      &--small{
-        width: 1150px;
-        max-width: 80vw;
-
-        .tab-content-inner{
-          max-height: 520px;
+        .tab-content-inner {
+            max-height: 600px;
+            overflow-y: auto;
         }
-      }
-  }
+
+        &--small {
+            width: 1150px;
+            max-width: 80vw;
+
+            .tab-content-inner {
+                max-height: 520px;
+            }
+        }
+    }
 }

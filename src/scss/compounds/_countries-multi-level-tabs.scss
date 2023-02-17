@@ -1,59 +1,62 @@
-.countries-multi-level-tabs{
-    .nav-link{
-      position:relative;
+.countries-multi-level-tabs {
+    .nav-item {
+        background-color: $white;
 
-      &.active{
-        color:$white !important;
-        background-color: $yellow;
+        .nav-link {
+            position: relative;
 
-        &::after{
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: -1em;
-          height: 1em;
-          width: 100%;
-          background: inherit;
+            &.active {
+                color: $white !important;
+                background-color: $yellow;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -1em;
+                    height: 1em;
+                    width: 100%;
+                    background: inherit;
+                }
+            }
         }
-      }
     }
 
-    .dropdown{
-      &.show{
-        >.nav-link{
-          &::after{
-            content: "";
-            position: absolute;
-            display: block;
-            width: 0;
-            height: 0;
-            border-left: 1em solid rgba(0,0,0,0);
-            border-right: 1em solid rgba(0,0,0,0);
-            border-bottom: 1em solid #0061ff;
-            bottom: -0.5em;
-            left: 30%;
-          }
+    .dropdown {
+        &.show {
+            >.nav-link {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-left: 1em solid rgba(0, 0, 0, 0);
+                    border-right: 1em solid rgba(0, 0, 0, 0);
+                    border-bottom: 1em solid #0061ff;
+                    bottom: -0.5em;
+                    left: 30%;
+                }
+            }
         }
-      }
     }
 
-    .dropdown-menu{
-      .dropdown-close{
-        height:46px;
-        width:46px;
-        font-size: 2em;
-        cursor: pointer;
-      }
+    .dropdown-menu {
+        .dropdown-close {
+            height: 46px;
+            width: 46px;
+            font-size: 2em;
+            cursor: pointer;
+        }
     }
 
     @include media-breakpoint-down(md) {
-      .dropdown-header {
-          background:transparent !important;
-    
-          a{
-            color: $primary !important;
-          }
-      }
-    }  
-}
+        .dropdown-header {
+            background: transparent !important;
 
+            a {
+                color: $primary !important;
+            }
+        }
+    }
+}
