@@ -11,6 +11,7 @@
         background-image: url(asset-url("category-header-background.svg"));
         background-size: cover;
         background-position: center;
+        pointer-events: none;
     }
   
     .container {
@@ -19,7 +20,7 @@
       background-position: left center;
       background-size: contain;
       @include media-breakpoint-down(md) {
-        min-height: 300px;
+        min-height: 380px;
       }
     }
   
