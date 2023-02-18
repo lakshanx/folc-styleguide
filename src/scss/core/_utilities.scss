@@ -11,16 +11,14 @@ html,
     .w-lg-auto {
         width: auto !important;
     }
+    .w-custom-px-lg-1 {
+        width: 450px;
+    }
+    
+    .w-custom-px-lg-2 {
+        width: 1150px;
+    }
 }
-
-.w-custom-px-1 {
-    width: 450px;
-}
-
-.w-custom-px-2 {
-    width: 1150px;
-}
-
 
 .object-fit-cover {
     object-fit: cover;
