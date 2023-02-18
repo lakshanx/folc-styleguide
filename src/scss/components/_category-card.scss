@@ -10,11 +10,18 @@
     .category-text {
         width: 75%;
         text-align: start;
-        font-size: 1.5em;
+        font-size: $font-size-base-lg; //todo change to a default size
+        line-height: 1.1em;
 
         @include media-breakpoint-up(lg) {
-        width: 100%;
-        font-size: 1.68em;
+            width: 100%;
+            font-size: $h3-font-size-lg;
+        }
+    }
+
+    &--small{
+        .category-text{
+            font-size:$font-size-base-lg;
         }
     }
 
@@ -54,8 +61,8 @@
 
     &.bg-art:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        background-position: 150px 50%;
-        background-size: 100%;
+            background-position: 150px 50%;
+            background-size: 100%;
         }
     }
 
@@ -66,8 +73,8 @@
 
     &.bg-art:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-position: 110px 50%;
-        background-size: 110%;
+            background-position: 110px 50%;
+            background-size: 110%;
         }
     }
 
@@ -84,11 +91,11 @@
 
     &.bg-belief:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        margin-left: 0;
-        background-position: 90px 50%;
-        background-size: 100%;
-        opacity: 0.2;
-        transform: scaleX(1);
+            margin-left: 0;
+            background-position: 90px 50%;
+            background-size: 100%;
+            opacity: 0.2;
+            transform: scaleX(1);
         }
     }
 
@@ -99,8 +106,8 @@
 
     &.bg-belief:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-position: 60px 50%;
-        background-size: 110%;
+            background-position: 60px 50%;
+            background-size: 110%;
         }
     }
 
@@ -113,9 +120,9 @@
 
     &.bg-craftmanship:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        background-position: 90px 50%;
-        background-size: 115%;
-        opacity: 0.2;
+            background-position: 90px 50%;
+            background-size: 115%;
+            opacity: 0.2;
         }
     }
 
@@ -126,8 +133,8 @@
 
     &.bg-craftmanship:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-position: 60px 50%;
-        background-size: 125%;
+            background-position: 60px 50%;
+            background-size: 125%;
         }
     }
 
@@ -140,9 +147,9 @@
 
     &.bg-dance:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        background-position: 5px 110%;
-        background-size: 100%;
-        opacity: 0.2;
+            background-position: 5px 110%;
+            background-size: 100%;
+            opacity: 0.2;
         }
     }
 
@@ -153,8 +160,8 @@
 
     &.bg-dance:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-position: -10px 90%;
-        background-size: 110%;
+            background-position: -10px 90%;
+            background-size: 110%;
         }
     }
 
@@ -167,10 +174,10 @@
 
     &.bg-entertainment:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        background-position: -40px 100%;
-        background-size: 80%;
-        transform: scaleX(-1);
-        opacity: 0.2;
+            background-position: -40px 100%;
+            background-size: 80%;
+            transform: scaleX(-1);
+            opacity: 0.2;
         }
     }
 
@@ -181,8 +188,8 @@
 
     &.bg-entertainment:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-position: -10px 90%;
-        background-size: 90%;
+            background-position: -10px 90%;
+            background-size: 90%;
         }
     }
 
@@ -195,9 +202,9 @@
 
     &.bg-foodways:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        background-position: 110px 50%;
-        background-size: 100%;
-        opacity: 0.2;
+            background-position: 110px 50%;
+            background-size: 100%;
+            opacity: 0.2;
         }
     }
 
@@ -208,8 +215,8 @@
 
     &.bg-foodways:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-position: 80px 50%;
-        background-size: 110%;
+            background-position: 80px 50%;
+            background-size: 110%;
         }
     }
 
@@ -226,13 +233,13 @@
 
     &.bg-music:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        margin-top: 0;
-        margin-left: 0;
+            margin-top: 0;
+            margin-left: 0;
 
-        background-position: 110px -10px;
-        background-size: 80%;
-        transform: rotateZ(10deg);
-        opacity: 0.2;
+            background-position: 110px -10px;
+            background-size: 80%;
+            transform: rotateZ(10deg);
+            opacity: 0.2;
         }
     }
 
@@ -243,8 +250,8 @@
 
     &.bg-music:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-position: 80px -10px;
-        background-size: 90%;
+            background-position: 80px -10px;
+            background-size: 90%;
         }
     }
 
@@ -258,10 +265,10 @@
 
     &.bg-ritual:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        background-position: 185px 0;
-        background-size: 70%;
-        opacity: 0.2;
-        transform: none;
+            background-position: 185px 0;
+            background-size: 70%;
+            opacity: 0.2;
+            transform: none;
         }
     }
 
@@ -272,8 +279,8 @@
 
     &.bg-ritual:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-position: 135px 0;
-        background-size: 80%;
+            background-position: 135px 0;
+            background-size: 80%;
         }
     }
 
@@ -286,9 +293,9 @@
 
     &.bg-verbal:not(&--small):before {
         @include media-breakpoint-up(lg) {
-        background-size: 60%;
-        background-position: center;
-        opacity: 0.2;
+            background-size: 60%;
+            background-position: center;
+            opacity: 0.2;
         }
     }
 
@@ -298,17 +305,18 @@
 
     &.bg-verbal:not(&--small):hover:before {
         @include media-breakpoint-up(lg) {
-        background-size: 70%;
-        background-position: 70% center;
+            background-size: 70%;
+            background-position: 70% center;
         }
     }
 
     @include media-breakpoint-down(sm) {
-        &--minimal-mobile{
+        &--minimal-mobile {
             justify-content: flex-start !important;
             min-height: 3.5rem;
-            &:before{
-                display:none;
+
+            &:before {
+                display: none;
             }
         }
     }
