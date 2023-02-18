@@ -22,7 +22,6 @@ const webpackCfg = {
 		ignored: ['**/vendor/*', '**/node_modules'],
 	},
 	entry: {
-		lazyload: './src/js/lazyload.js',
 		main: './src/js/main.js',
 	},
 	output: {
