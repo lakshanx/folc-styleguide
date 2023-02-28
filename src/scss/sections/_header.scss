@@ -6,6 +6,10 @@
             background-color: orange;
             width: 10%;
 
+            @include media-breakpoint-down(md) {
+                height: 10px;
+            }
+
             &.bg-art{width:8%}
             &.bg-belief{width:9%}
             &.bg-craftmanship{width:10%}
@@ -79,7 +83,7 @@
             position: absolute !important;
             height:calc(100% - var(--menu-height));
             overflow-y: scroll;
-            top:78px;
+            top:var(--menu-height);
             left:0;
             background-color: $gray-800;
             width: 100%;
