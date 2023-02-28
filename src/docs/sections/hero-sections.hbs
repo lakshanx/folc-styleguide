@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        {{> html-head title="Category header" }}
+        {{> html-head title="Hero Sections" }}
 	</head>
 	<body>
+        <h3>Home</h3>
+        {{> sections/hero-search}}
+
+        <h3>Country</h3>
+        {{> sections/country-header}}
+
+        <h3>Country region</h3>
+        {{> sections/country-region-header}}
+
+        <h3>Category</h3>
         {{> sections/category-header  category="art" title="Art" }}
         <hr>
         {{> sections/category-header  category="belief" title="Belief" }}
