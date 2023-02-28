@@ -3,11 +3,58 @@
 	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Category header | Folc Styleguide</title>
+        <title>Hero Sections | Folc Styleguide</title>
         
         <link rel="stylesheet" href="/folc-styleguide/css/main.css">
 	</head>
 	<body>
+        <h3>Home</h3>
+        <div class="hero-search jumbotron jumbotron-fluid d-flex align-items-center text-center mb-1">
+            <div class="container ">
+                <h1 class="text-dark col-md-9 m-auto mb-lg-4 mt-lg-3">Welcome to Folc, the encyclopedia of folklore, customs and traditions around the world.</h1>
+                <div class="form-group has-search px-1 pt-3 pt-lg-5 pb-1 d-flex m-auto align-items-center h4 font-body col-md-7 col-lg-5">
+                    <span class="fa fa-search form-control-feedback">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control flex-fill text-uppercase-lg" placeholder="Search">
+                </div> 
+                <p class="d-block text-uppercase pb-1 pb-lg-5 mt-lg-2">Example: Flamenco, Denmark, Galicia, Literature</p>
+                <a class="btn btn-lg bg-info text-white text-uppercase mt-lg-5 mb-md-1" href="#" role="button">Explore</a>
+            </div>
+        </div>
+        <h3>Country</h3>
+        <div class="country-header border-bottom">
+            <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+                <h1>Spain</h1>
+                <div class="col-11 col-lg-3 pb-lg-2">
+                    <select class="custom-select text-uppercase text-gray mt-2" aria-label="Default select example">
+                        <option selected="">Filter by Regions/States</option>
+                        <option value="country-region.html">Andaluacia</option>
+                        <option value="country-region.html">Two</option>
+                        <option value="country-region.html">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <h3>Country region</h3>
+        <div class="country-header country-header--region border-bottom">
+            <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+                <h4 class="text-gray">Spain</h4>
+                <h1>Andaluacia</h1>
+                <div class="col-11 col-lg-3 pb-lg-2">
+                    <select class="custom-select text-uppercase text-gray mt-2 mb-4" aria-label="Default select example">
+                        <option selected="">Filter by Regions/States</option>
+                        <option value="country-region.html">Andaluacia</option>
+                        <option value="country-region.html">Two</option>
+                        <option value="country-region.html">Three</option>
+                    </select>
+                </div>
+                <a class="text-uppercase btn text-white bg-gray d-none d-md-inline-block" href="country.html">Back to Spain</a>
+            </div>
+        </div>
+        <h3>Category</h3>
         <div class="bg-art category-header category-header--art">
             <div class="container text-center d-flex flex-column align-items-center justify-content-center">
                 <h1 class="text-white">Art</h1>
