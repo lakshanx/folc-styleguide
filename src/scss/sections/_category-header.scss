@@ -16,9 +16,19 @@
   
     .container {
       min-height: 415px;
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: contain;
+      position: relative;
+      &::before {
+        content:"";
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;        
+      }
       @include media-breakpoint-down(md) {
         min-height: 380px;
       }
@@ -36,9 +46,11 @@
       verbal: asset-url("category-verbal.svg")
     ) {
       &--#{$category} {
-        .container {
-          @include media-breakpoint-up(md) {
-            background-image: url($img-url);
+        .container{
+          &::before {
+            @include media-breakpoint-up(md) {
+              background-image: url($img-url);
+            }
           }
         }
       }
