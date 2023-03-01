@@ -1,6 +1,7 @@
 .hero-search{
     min-height: 105vh;
     background-image: url(asset-url("hero.svg"));
+    background-position: center;
     border-bottom: 1px solid $gray-300;
 
     @include media-breakpoint-down(md) {
