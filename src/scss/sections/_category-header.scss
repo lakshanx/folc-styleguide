@@ -20,11 +20,10 @@
       &::before {
         content:"";
         position: absolute;
-        left:0;
-        top:0;
+        left: 0;
         width: 100%;
         max-width: 400px;
-        height: 100%;
+        height: 80%;
         background-repeat: no-repeat;
         background-position: left center;
         background-size: contain;        
@@ -35,24 +34,25 @@
     }
   
     @each $category, $img-url in (
-      art: asset-url("category-art.svg"),
-      belief: asset-url("category-belief.svg"),
-      craftmanship: asset-url("category-craftmanship.svg"),
-      dance: asset-url("category-dance.svg"),
-      entertainment: asset-url("category-entertainment.svg"),
-      foodways: asset-url("category-foodways.svg"),
-      music: asset-url("category-music.svg"),
-      ritual: asset-url("category-ritual.svg"),
-      verbal: asset-url("category-verbal.svg")
+      art: (asset-url("category-art.svg"), 80%),
+      belief: (asset-url("category-belief.svg"), 75%),
+      craftmanship: (asset-url("category-craftmanship.svg"), 50%),
+      dance: (asset-url("category-dance.svg"), 85%),
+      entertainment: (asset-url("category-entertainment.svg"), 85%),
+      foodways: (asset-url("category-foodways.svg"), 60%),
+      music: (asset-url("category-music.svg"), 70%),
+      ritual: (asset-url("category-ritual.svg"), 80%),
+      verbal: (asset-url("category-verbal.svg"), 70%)
     ) {
-      &--#{$category} {
-        .container{
-          &::before {
-            @include media-breakpoint-up(md) {
-              background-image: url($img-url);
+        &--#{$category} {
+          .container{
+            &::before {
+              @include media-breakpoint-up(md) {
+                background-image: url(nth($img-url,1));
+                height:nth($img-url,2);
+              }
             }
           }
         }
-      }
     }
   }
