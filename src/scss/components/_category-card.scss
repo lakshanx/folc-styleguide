@@ -19,12 +19,6 @@
         }
     }
 
-    &--small{
-        .category-text{
-            font-size:$font-size-base-lg;
-        }
-    }
-
     &:not(&--small) {
         .category-text {
             @include media-breakpoint-up(lg) {
