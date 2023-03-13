@@ -1,0 +1,5 @@
+@include media-breakpoint-up(lg) {
+    .badge {
+        padding: $badge-padding-y-lg $badge-padding-x-lg;
+    }
+}

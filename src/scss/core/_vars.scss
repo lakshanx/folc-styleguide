@@ -213,8 +213,10 @@ $custom-select-border-radius: $border-radius-lg;
 
 // Badge
 $badge-font-size: 1em;
-$badge-padding-y: calc-em(3);
+$badge-padding-y: calc-em(4);
 $badge-padding-x: calc-em(16);
+$badge-padding-y-lg: calc-em(3);
+$badge-padding-x-lg: calc-em(16);
 $badge-border-radius: $border-radius-lg;
 $badge-font-weight: 400;
 
