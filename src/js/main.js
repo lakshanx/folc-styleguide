@@ -33,11 +33,6 @@ $mainNavBar.on('hide.bs.collapse', handleMenuClose);
 $mainNavBar.on('show.bs.dropdown', '.nav-item.dropdown', handleMenuOpen);
 $mainNavBar.on('hide.bs.dropdown', '.nav-item.dropdown', handleMenuClose);
 
-// PopoSvers
-$(function () {
-	$('[data-toggle="popover"]').popover();
-});
-
 // Stop auto closing of dropdowns with CSS class .avoid-auto-close
 $(document).on('click', '.avoid-auto-close.dropdown-menu', function (e) {
 	e.stopPropagation();
