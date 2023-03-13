@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{> html-head title="Tabs" }}
+    </head>
+    <body>
+        {{> page-title text="Tabs" }}
+
+            <div class="bg-light-gray">
+                <div class="container">
+                    <div class="article-tab row d-flex">
+                        <div class="col-xl-4 align-self-end">
+                            <ul class="nav  mt-1 mt-md-2 nav-pills nav-fill border-bottom-0 active" id="countries-tab" role="tablist">
+                                <li class="nav-item active">
+                                    <a href="#tab-one" class="nav-link bg-transparent text-dark-gray py-1 py-md-2 active" data-toggle="tab" data-target="#tab-one" role="tab" aria-selected="true">Tab One</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#tab-two" class="nav-link bg-transparent text-dark-gray py-1 py-md-2" data-toggle="tab" data-target="#tab-two" role="tab" aria-selected="false">Tab Two</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#tab-three" class="nav-link bg-transparent text-dark-gray py-1 py-md-2" data-toggle="tab" data-target="#tab-three" role="tab" aria-selected="false">Tab Three</a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="container tab-content pt-3">
+                <div class="tab-pane bg-white active" id="tab-one" role="tabpanel">
+                    Tab One
+                </div>
+
+                <div class="tab-pane bg-white" id="tab-two" role="tabpanel">
+                    Tab Two 
+                </div>
+                <div class="tab-pane bg-white" id="tab-three" role="tabpanel">
+                    Tab Three
+                </div>
+            </div>
+
+        {{> js jquery=true bootstrap=true popper=true main=true }}
+    </body>
+</html>
