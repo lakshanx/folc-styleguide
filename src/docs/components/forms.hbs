@@ -5,65 +5,30 @@
     </head>
     <body>
         {{> page-title text="Forms" }}
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <div class="text-center mb-5">
-                                <h3 class="">Newsletter</h3>
-                                <p class="text-muted">Accusantium doloremque laudantium totam rem.</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-10 m-auto">
-                                    <div class="m-auto">
-                                        <div class="input-group mb-2">
-                                            <input type="text" class="form-control  ps-3" placeholder="Insert your email here">
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="sML5n0nKoFk2n-R_96P7Y">
-                                            <label class="custom-control-label" for="sML5n0nKoFk2n-R_96P7Y">Lorem ipsum dolor sit amet</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5 d-flex justify-content-end">
-                                <a class="btn text-uppercase btn-secondary text-white px-4">Subscribe</a>
-                            </div>
-                        </div>
+        <div class="container">       
+            <div class="my-4">
+                <select class="custom-select" aria-label="Default select example">
+                    <option selected="">Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <div class="form-group has-search py-2 d-flex">
+                    <span class="fa fa-search form-control-feedback">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control flex-fill" placeholder="Search">
+                </div>                   
+                <div class="mb-2">
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control  ps-3" placeholder="Newsletter">
                     </div>
                 </div>
-            </div>
-            <div class="card mt-2">
-                <div class="card-body">
-                     <h3 class="">Dropdown</h3>
-                    <select class="custom-select" aria-label="Default select example">
-                        <option selected="">Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-            </div>            
-            <div class="card my-4">
-                <div class="card-body">
-                    <div class="form-group has-search py-2 d-flex">
-                        <span class="fa fa-search form-control-feedback">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                            </svg>
-                        </span>
-                        <input type="text" class="form-control flex-fill" placeholder="Search">
-                    </div>                   
-                    <div class="mb-2">
-                        <div class="input-group mb-2">
-                            <input type="text" class="form-control  ps-3" placeholder="Newsletter">
-                        </div>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="g0EsDM2WZDNw9arJhcpEu">
-                        <label class="custom-control-label" for="g0EsDM2WZDNw9arJhcpEu">Lorem ipsum dolor sit amet</label>
-                    </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="g0EsDM2WZDNw9arJhcpEu">
+                    <label class="custom-control-label" for="g0EsDM2WZDNw9arJhcpEu">Lorem ipsum dolor sit amet</label>
                 </div>
             </div>
         </div>
