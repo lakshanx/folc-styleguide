@@ -15,6 +15,10 @@
 		@include font-size($h4-font-size-lg);
 		font-weight: 400;
 	}
+	
+	.text-uppercase-lg {
+        text-transform: uppercase;
+    }
 }
 
 .font-size-base-lg {
