@@ -42,8 +42,8 @@ if ($('.countries-tabs').length > 0) {
 	import(/* webpackChunkName: 'countries-tabs' */ '~mod/countries-tabs');
 }
 
-if ($('.categories-tabs').length > 0) {
-	import(/* webpackChunkName: 'categories-tabs' */ '~mod/categories-tabs');
+if ($('.categories-tab').length > 0) {
+	import(/* webpackChunkName: 'categories-tab' */ '~mod/categories-tab');
 }
 
 if ($('.countries-multi-level-tabs').length > 0) {

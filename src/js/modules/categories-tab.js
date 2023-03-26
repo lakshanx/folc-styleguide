@@ -1,12 +1,12 @@
 $(document).ready(function () {
-	const $categoriesTabs = $('.categories-tabs');
+	const $categoriesTabs = $('.categories-tab');
 
 	if ($categoriesTabs.length) {
-		const $categoriesTabContent = $categoriesTabs.find('.categories-tabs-content');
+		const $categoriesTabContent = $categoriesTabs.find('.categories-tab-content');
 		const $select = $categoriesTabs.find('.select-categories');
 		const $categoriesSelectContent = $categoriesTabs.find('.categories-select-content');
 
-		$('.categories-tabs .nav-link').click(function () {
+		$('.categories-tab .nav-link').click(function () {
 			const className = $(this).attr('class').split(' ')[1];
 			$categoriesTabContent.removeClass(function (index, bgClassName) {
 				return (bgClassName.match(/(^|\s)bg-\S+/g) || []).join(' ');
@@ -14,7 +14,7 @@ $(document).ready(function () {
 			$categoriesTabContent.addClass(`bg-${className.split('--')[1]}`);
 		});
 
-		$('.categories-tabs .nav-item').each(function () {
+		$('.categories-tab .nav-item').each(function () {
 			const $navItem = $(this);
 			const $option = $('<option>');
 			$option.val($navItem.find('a').attr('href'));
