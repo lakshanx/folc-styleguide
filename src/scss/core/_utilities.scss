@@ -23,9 +23,3 @@ html,
 .object-fit-cover {
     object-fit: cover;
 }
-
-@include media-breakpoint-up(lg) {
-    .text-uppercase-lg {
-        text-transform: uppercase;
-    }
-}
