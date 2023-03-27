@@ -21,11 +21,7 @@
               }            
         }
     }
-    @include media-breakpoint-up(lg) {
-        .categories-cols {
-            columns:4;
-        }
-    }    
+   
     .nav-link{
         height: 100%;
 
