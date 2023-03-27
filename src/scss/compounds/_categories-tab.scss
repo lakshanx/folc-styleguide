@@ -1,4 +1,5 @@
 .categories-tab{
+
     .nav-item{
         flex:1;
         background-color: $white;
@@ -22,7 +23,7 @@
     }
     @include media-breakpoint-up(lg) {
         .categories-cols {
-            max-height: 180px;
+            columns:4;
         }
     }    
     .nav-link{
