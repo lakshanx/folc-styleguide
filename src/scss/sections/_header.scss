@@ -101,22 +101,45 @@
                 display: flex;
             }
 
-            .dropdown{
-                .dropdown-toggle{
-                    &::after{display: none;}
+            .dropdown:not(.dropdown--sdg) {
+                .dropdown-toggle {
+                    &::after {
+                        display: none;
+                    }
                 }
-                .dropdown-menu{
+                .dropdown-menu {
                     display: block;
-                    &.open{
+            
+                    &.open {
                         background-color: transparent;
                     }
                 }
-                .categories--list{
+                .categories--list {
                     background-color: $gray-800 !important;
                 }
+            }
 
-                &--countries{
-                    background-color:$gray-700;
+            .dropdown{
+                &--sdg{
+                    a{
+                        color: $gray-400 !important;
+                    }
+                    .nav-link{
+                        pointer-events: all;
+                    }
+                    .dropdown-menu{
+                        div{
+                            background-color: $gray-700 !important;
+                            .nav{
+                                background-color: $gray-700 !important;
+                            }
+                        }
+                    }
+                }
+
+                &--sdg,
+                &--countries {
+                    background-color: $gray-700;
                 }
             }
             
