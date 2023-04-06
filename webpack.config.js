@@ -15,8 +15,26 @@ const progressHandler = (percentage) => {
 };
 
 const webpackCfg = {
-	mode: 'development',
-	// devtool: false,
+
+	// All chunks in one file
+	// optimization: {
+	// 	splitChunks: {
+	// 	  cacheGroups: {
+	// 		default: false,
+	// 		vendors: false,
+	// 		// All chunks in one file
+	// 		allChunks: {
+	// 		  name: 'main',
+	// 		  chunks: 'all',
+	// 		  enforce: true,
+	// 		  test: /\.js$/,
+	// 		},
+	// 	  },
+	// 	},
+	//   },
+
+	mode: 'production',
+	devtool: false,
 	watchOptions: {
 		aggregateTimeout: 600,
 		ignored: ['**/vendor/*', '**/node_modules'],
