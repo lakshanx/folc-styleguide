@@ -17,7 +17,7 @@ select{word-wrap:normal}
 ::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}
 .h4,.h5,.h6,h1{margin-bottom:.625rem;font-family:Alegreya,Arial,Helvetica,sans-serif;font-weight:500;line-height:1.25}
 h1{margin-top:0;font-size:2em}
-.h4{font-size:1.5625em}
+.h4{font-size:1.5em}
 .h5{font-size:1.25em}
 .h6{font-size:1em}
 .list-unstyled{padding-left:0;list-style:none}
@@ -25,9 +25,7 @@ h1{margin-top:0;font-size:2em}
 @media (min-width:375px){
 .container{max-width:540px}
 }
-.row{display:flex;flex-wrap:wrap;margin-right:-10px;margin-left:-10px}
-.col-11,.col-4,.col-lg-4,.col-md-5,.col-xl-3{position:relative;width:100%;padding-right:10px;padding-left:10px}
-.col-4{flex:0 0 33.33333333%;max-width:33.33333333%}
+.col-11,.col-lg-4,.col-md-5,.col-xl-3{position:relative;width:100%;padding-right:10px;padding-left:10px}
 .col-11{flex:0 0 91.66666667%;max-width:91.66666667%}
 .form-control{display:block;width:100%;height:2.6em;padding:.875em 1em;font-size:1em;font-weight:400;line-height:1.5625;color:#212529;background-color:#fff;background-clip:padding-box;border:1px solid #ddd;border-radius:3.125rem}
 .form-control::-ms-expand{background-color:rgba(0,0,0,0);border:0}
@@ -39,7 +37,7 @@ h1{margin-top:0;font-size:2em}
 .form-inline .form-group{display:flex;flex:0 0 auto;flex-flow:row wrap;align-items:center;margin-bottom:0}
 .form-inline .form-control{display:inline-block;width:auto;vertical-align:middle}
 }
-.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;background-color:rgba(0,0,0,0);border:1px solid transparent;padding:.4em 1.8em;font-size:1em;line-height:1.5625;border-radius:3.125rem}
+.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;background-color:rgba(0,0,0,0);border:1px solid transparent;padding:.25em 1.4em;font-size:1em;line-height:1.5625;border-radius:3.125rem}
 .btn-secondary{color:#fff;background-color:#677d85;border-color:#677d85}
 .btn-outline-white{color:#fff;border-color:#fff}
 .collapse:not(.show){display:none}
@@ -53,7 +51,7 @@ h1{margin-top:0;font-size:2em}
 .nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}
 .nav-link{display:block;padding:.25em 0}
 .nav-pills .nav-link{border-radius:0}
-.nav-pills .nav-link.active{color:#fff;background-color:#677d85}
+.nav-pills .nav-link.active{color:#fff;background-color:#fff}
 .nav-fill .nav-item{flex:1 1 auto;text-align:center}
 .tab-content>.tab-pane{display:none}
 .tab-content>.active{display:block}
@@ -83,9 +81,7 @@ h1{margin-top:0;font-size:2em}
 .d-none{display:none!important}
 .d-block{display:block!important}
 .d-flex{display:flex!important}
-.flex-row{flex-direction:row!important}
 .flex-column{flex-direction:column!important}
-.flex-wrap{flex-wrap:wrap!important}
 .flex-fill{flex:1 1 auto!important}
 .justify-content-end{justify-content:flex-end!important}
 .justify-content-center{justify-content:center!important}
@@ -118,8 +114,7 @@ h1{margin-top:0;font-size:2em}
 .pb-3,.py-3{padding-bottom:1.875rem!important}
 .p-5{padding:3.75rem!important}
 .py-5{padding-top:3.75rem!important;padding-bottom:3.75rem!important}
-.px-5{padding-right:3.75rem!important}
-.pl-5,.px-5{padding-left:3.75rem!important}
+.px-5{padding-right:3.75rem!important;padding-left:3.75rem!important}
 .m-n1{margin:-.625rem!important}
 .mt-n1{margin-top:-.625rem!important}
 .mx-n1{margin-right:-.625rem!important;margin-left:-.625rem!important}
@@ -135,15 +130,14 @@ h1{margin-top:0;font-size:2em}
 .border-0{border:0!important}
 .border-bottom-0{border-bottom:0!important}
 .rounded-0{border-radius:0!important}
-.font-size-base-lg{font-size:1.125em!important}
 .font-heading{font-family:Alegreya,Arial,Helvetica,sans-serif}
 .font-body{font-family:Lato,Arial,Helvetica,sans-serif}
 a.with-prefix:before{content:"» "}
 .has-search .form-control{padding-left:2.5em}
 .has-search .form-control-feedback{position:absolute;z-index:2;display:block;width:3em;line-height:2.5em;opacity:.5;text-align:center}
 .has-search .form-control-feedback svg{width:1.2em}
-.category-card{overflow:hidden;position:relative;outline-offset:-8px;outline:rgba(255,255,255,0) solid 8px;min-height:5rem}
-.category-card .category-text{width:75%;text-align:start;font-size:1.125em;line-height:1.1em}
+.category-card{overflow:hidden;position:relative;outline-offset:-8px;outline:rgba(255,255,255,0) solid 8px;min-height:92px}
+.category-card .category-text{width:75%;text-align:start;line-height:1.1em}
 .category-card:before{content:" ";background-repeat:no-repeat;background-size:cover;position:absolute;top:0;left:0;width:100%;height:100%}
 .category-card.bg-art:before{background-size:100px;background-position:-30px 10px;background-image:url(/folc-styleguide/images/category-art.svg)}
 .category-card.bg-belief:before{margin-left:-90px;background-image:url(/folc-styleguide/images/category-belief.svg);background-size:170px;background-position:95% 0;transform:scaleX(-1);opacity:.5}
@@ -156,13 +150,13 @@ a.with-prefix:before{content:"» "}
 .category-card.bg-verbal:before{background-image:url(/folc-styleguide/images/category-verbal.svg);background-size:90px;background-position:10px -60px;opacity:.5}
 .countries-tabs .nav-item{background-color:#fff}
 .countries-tabs .nav-item .nav-link{position:relative}
-.countries-tabs .nav-item .nav-link.active{color:#fff!important}
+.countries-tabs .nav-item .nav-link.active{color:#fff!important;background-color:#677d85}
 .countries-tabs .nav-item .nav-link.active::after{content:"";position:absolute;left:0;bottom:-1em;height:1em;width:100%;background:inherit}
-.categories-tabs .nav-item{flex:1;background-color:#fff}
-.categories-tabs .nav-link{position:relative;height:100%}
-.categories-tabs .nav-link.active{color:#fff!important}
-.categories-tabs .nav-link.active::after{content:"";position:absolute;left:0;bottom:-1em;height:1em;width:100%;background:inherit}
-.categories-tabs .nav-link--art.active{background-color:#b04a41}
+.categories-tab .nav-item{flex:1;background-color:#fff}
+.categories-tab .nav-link{position:relative;height:100%}
+.categories-tab .nav-link.active{color:#fff!important}
+.categories-tab .nav-link.active::after{content:"";position:absolute;left:0;bottom:-1em;height:1em;width:100%;background:inherit}
+.categories-tab .nav-link--art.active{background-color:#b04a41}
 .main-header .folc-color-line span{display:block;height:13px;background-color:orange;width:10%}
 .main-header .folc-color-line span.bg-art{width:8%}
 .main-header .folc-color-line span.bg-belief{width:9%}
@@ -184,10 +178,12 @@ a.with-prefix:before{content:"» "}
 .main-header .navbar-brand img{width:80px}
 .main-header .nav-link{color:#8a8a8a!important}
 .main-header .navbar-collapse{position:absolute!important;height:calc(100% - var(--menu-height));overflow-y:scroll;top:var(--menu-height);left:0;background-color:#303030;width:100%;will-change:transform;transform:translateX(100%);z-index:10}
-.main-header .navbar-collapse .dropdown .dropdown-toggle::after{display:none}
-.main-header .navbar-collapse .dropdown .dropdown-menu{display:block}
-.main-header .navbar-collapse .dropdown .categories--list{background-color:#303030!important}
-.main-header .navbar-collapse .dropdown--countries{background-color:#3a3a3a}
+.main-header .navbar-collapse .dropdown:not(.dropdown--sdg) .dropdown-toggle::after{display:none}
+.main-header .navbar-collapse .dropdown:not(.dropdown--sdg) .dropdown-menu{display:block}
+.main-header .navbar-collapse .dropdown:not(.dropdown--sdg) .categories--list{background-color:#303030!important}
+.main-header .navbar-collapse .dropdown--sdg a{color:#8a8a8a!important}
+.main-header .navbar-collapse .dropdown--sdg .dropdown-menu div,.main-header .navbar-collapse .dropdown--sdg .dropdown-menu div .nav{background-color:#3a3a3a!important}
+.main-header .navbar-collapse .dropdown--countries,.main-header .navbar-collapse .dropdown--sdg{background-color:#3a3a3a}
 .main-header .navbar-collapse .header-search-box{order:1;width:100%;background-color:#677d85}
 .main-header .navbar-collapse .header-search-box .has-search{background-color:#4c5d63}
 .main-header .navbar-collapse .header-search-box .has-search input{background-color:#fff!important}
