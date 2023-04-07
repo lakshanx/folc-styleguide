@@ -20,7 +20,7 @@ $(document).ready(function () {
 		}).get();
 
 		const $continentSelect = $currentCountriesTab.find('.select-continent');
-		tabs.forEach(tab => {
+		tabs.forEach((tab) => {
 			const option = $('<option>').val(tab.continent).text(tab.continent);
 			$continentSelect.append(option);
 		});
@@ -31,8 +31,8 @@ $(document).ready(function () {
 			$countriesSelect.prop('disabled', false);
 			$countriesSelect.html('');
 
-			const selectedTab = tabs.find(tab => tab.continent === continent);
-			selectedTab.countries.forEach(country => {
+			const selectedTab = tabs.find((tab) => tab.continent === continent);
+			selectedTab.countries.forEach((country) => {
 				const option = $('<option>').val(isMultiLevel ? country.name : country.href).text(`${country.name} (${country.count})`);
 				$countriesSelect.append(option);
 			});
