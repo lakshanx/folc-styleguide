@@ -38,16 +38,12 @@ $(document).on('click', '.avoid-auto-close.dropdown-menu', function (e) {
 	e.stopPropagation();
 });
 
-if ($('.countries-tabs').length > 0) {
-	import(/* webpackChunkName: 'countries-tabs' */ '~mod/countries-tabs');
+if ($('.countries-tab').length > 0) {
+	import(/* webpackChunkName: 'countries-tab' */ '~mod/countries-tab');
 }
 
 if ($('.categories-tab').length > 0) {
 	import(/* webpackChunkName: 'categories-tab' */ '~mod/categories-tab');
-}
-
-if ($('.countries-multi-level-tabs').length > 0) {
-	import(/* webpackChunkName: 'countries-multi-level-tabs' */ '~mod/countries-multi-level-tabs');
 }
 
 if ($('.article-tab').length > 0) {

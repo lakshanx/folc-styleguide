@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{> html-head title="Countries Tab" }}
+    </head>
+    <body>
+        {{> page-title text="Countries Tab" }}
+        <div class="container py-5 bg-lighter-gray my-4">
+            {{> compounds/countries-tab }}
+        </div>
+        <br>
+        <h4 class="container">Multi-level tabs </h4>
+        <div class="container py-5 bg-lighter-gray my-4">
+            {{> compounds/countries-multi-level-tabs }}
+        </div>       
+        <br>
+        <h4 class="container">3-col layout</h4>
+        <div class="container py-5 bg-lighter-gray my-4">
+            {{> compounds/countries-tab-small }}
+        </div>
+        {{> js jquery=true popper=true bootstrap=true main=true }}
+    </body>
+</html>
