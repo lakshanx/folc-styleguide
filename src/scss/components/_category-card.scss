@@ -301,15 +301,4 @@
             background-position: 70% center;
         }
     }
-
-    @include media-breakpoint-down(sm) {
-        &--minimal-mobile {
-            justify-content: flex-start !important;
-            min-height: 3.5rem;
-
-            &:before {
-                display: none;
-            }
-        }
-    }
 }
