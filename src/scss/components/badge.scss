@@ -1,9 +1,7 @@
 .badge{
     color: $white;
-}
-
-@include media-breakpoint-up(lg) {
-    .badge {
+    @include media-breakpoint-up(lg) {
         padding: $badge-padding-y-lg $badge-padding-x-lg;
     }
 }
+
