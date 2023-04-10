@@ -77,7 +77,6 @@
         }
         .nav-link{
             color:$gray-400 !important;
-            pointer-events: none;
         }
         .navbar-collapse{
             position: absolute !important;
@@ -102,14 +101,7 @@
             }
 
             .dropdown:not(.dropdown--sdg) {
-                .dropdown-toggle {
-                    &::after {
-                        display: none;
-                    }
-                }
                 .dropdown-menu {
-                    display: block;
-            
                     &.open {
                         background-color: transparent;
                     }
@@ -121,12 +113,6 @@
 
             .dropdown{
                 &--sdg{
-                    a{
-                        color: $gray-400 !important;
-                    }
-                    .nav-link{
-                        pointer-events: all;
-                    }
                     .dropdown-menu{
                         div{
                             background-color: $gray-700 !important;
@@ -137,9 +123,18 @@
                     }
                 }
 
+                &--subjects .nav-link{
+                    padding-top:calc(map-get($spacers, 1) + $nav-link-padding-y);
+                    padding-bottom:calc(map-get($spacers, 1) + $nav-link-padding-y);
+                }
+
                 &--sdg,
-                &--countries {
+                &--countries,
+                &--subjects .dropdown-toggle {
                     background-color: $gray-700;
+                }
+                a{
+                    color: $gray-400 !important;
                 }
             }
             
