@@ -25,6 +25,10 @@ html,
     .css-columns-lg-3 {
         columns:3;
     }
+
+    .border-bottom-lg{
+        border-bottom: $border-width solid $border-color;
+    }
 }
 
 .object-fit-cover {
