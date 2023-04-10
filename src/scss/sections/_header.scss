@@ -92,7 +92,7 @@
             z-index: 10;
 
             &.collapsing {
-                height: auto !important;
+                height: calc(100% - var(--menu-height)) !important;
                 display: flex;
             }
             &.show {
