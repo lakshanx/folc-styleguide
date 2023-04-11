@@ -37,7 +37,7 @@ $mainNavBar.on('hide.bs.dropdown', '.nav-item.dropdown', handleMenuClose);
 // Sticky header
 function updateMarginTop() {
 	if ($(window).innerWidth() < 768) {
-		$mainContent.css('margin-top', $mainHeader.outerHeight() + 'px');
+		$mainContent.css('margin-top', `${$mainHeader.outerHeight()}px`);
 	} else {
 		$mainContent.css('margin-top', '0');
 	}
