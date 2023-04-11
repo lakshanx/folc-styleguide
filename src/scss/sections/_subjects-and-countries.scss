@@ -1,7 +1,8 @@
 .subjects-and-countries{
     @include media-breakpoint-down(md) {
         .nav-link{
-            font-size: $font-size-base;
+            font-size: $font-size-small;
+            color:$gray-800 !important;
             font-weight: bold;
             border: none;
         }
