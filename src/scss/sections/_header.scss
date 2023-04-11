@@ -8,7 +8,7 @@
         right: 0;
         z-index: 999;
         transition: top $header-sticky-transition;
-        
+
         @include media-breakpoint-down(md) {
             .navbar-collapse {
                 position: fixed !important;
@@ -129,7 +129,7 @@
                     }
                 }
                 .categories--list {
-                    background-color: $gray-800 !important;
+                    background-color: $gray-700 !important;
                 }
             }
 
@@ -155,8 +155,17 @@
                 &--subjects .dropdown-toggle {
                     background-color: $gray-700;
                 }
+
                 a{
                     color: $gray-400 !important;
+                }
+
+                & .dropdown-toggle::after{
+                    transition: $transition-base;
+                }
+
+                &.show .dropdown-toggle::after{
+                    transform: rotate(180deg);
                 }
             }
             
