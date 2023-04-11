@@ -2,6 +2,9 @@
 	body{
 		font-size: $font-size-base-lg;
 	}
+	.font-size-small{
+		font-size: $font-size-small-lg;
+	}	
 	h1, .h1 {
 		@include font-size($h1-font-size-lg);
 	}
@@ -24,7 +27,9 @@
 .font-size-base-lg {
 	font-size: $font-size-base-lg !important;
 }
-
+.font-size-small{
+	font-size: $font-size-small;
+}	
 .font-heading {
     font-family: $headings-font-family;
 }
