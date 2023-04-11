@@ -1,25 +1,29 @@
 .input-group{
-  .input-group-prepend + .form-control {
+    .input-group-prepend + .form-control {
     border-left: 0;
-  }
+    }
 }
 
 .has-search {
-  .form-control {
-    padding-left: 2.5em;
-  }
-  .form-control-feedback {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    width: 3em;
-    line-height: 2.5em;
-    opacity: .5;
-    text-align: center;
-    pointer-events: none;
+    .form-control {
+        padding-left: 2.7em;
 
-    svg{
-      width: 1.2em;
+        @include media-breakpoint-down(md) {
+            padding: 1.4em 1em 1.4em 2.7em;
+        }
     }
-  }
+    .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 3.4em;
+        line-height: 2.5em;
+        opacity: .5;
+        text-align: center;
+        pointer-events: none;
+
+        svg{
+            width: 1.2em;
+        }
+    }
 }
