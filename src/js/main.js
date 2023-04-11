@@ -3,6 +3,7 @@ const $mainContent = $('.main-content');
 const $mainNavBar = $('#main-navbar');
 const $body = $('body');
 const $mainHeader = $('.main-header');
+let lastScrollTop = 0;
 
 function calculateHeaderCSSVars() {
 	const mainMenuHeight = $mainHeader.outerHeight();
@@ -32,6 +33,43 @@ $mainNavBar.on('show.bs.collapse', handleMobileMenuOpen);
 $mainNavBar.on('hide.bs.collapse', handleMenuClose);
 $mainNavBar.on('show.bs.dropdown', '.nav-item.dropdown', handleMenuOpen);
 $mainNavBar.on('hide.bs.dropdown', '.nav-item.dropdown', handleMenuClose);
+
+// Sticky header
+function updateMarginTop() {
+	if ($(window).innerWidth() < 768) {
+		$mainContent.css('margin-top', $mainHeader.outerHeight() + 'px');
+	} else {
+		$mainContent.css('margin-top', '0');
+	}
+}
+
+function handleScroll() {
+	const currentScrollTop = $(window).scrollTop();
+
+	if (currentScrollTop < lastScrollTop) {
+		// Scrolling up
+		$mainHeader.addClass('sticky');
+		$mainHeader.addClass('sticky-visible');
+		updateMarginTop();
+	} else {
+		// Scrolling down
+		if (currentScrollTop > $mainHeader.outerHeight()) {
+			$mainHeader.removeClass('sticky-visible');
+		}
+
+		// Remove sliding animation
+		setTimeout(() => {
+			if (currentScrollTop <= 0) {
+				$mainHeader.removeClass('sticky');
+				updateMarginTop();
+			}
+		}, 400);
+	}
+
+	lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+}
+$(window).on('scroll', handleScroll);
+$(window).on('resize', updateMarginTop);
 
 // Stop auto closing of dropdowns with CSS class .avoid-auto-close
 $(document).on('click', '.avoid-auto-close.dropdown-menu', function (e) {

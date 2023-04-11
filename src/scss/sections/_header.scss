@@ -1,4 +1,26 @@
 .main-header{
+    background-color: $white;
+
+    &.sticky {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        transition: top $header-sticky-transition;
+        
+        @include media-breakpoint-down(md) {
+            .navbar-collapse {
+                position: fixed !important;
+                top: var(--menu-height);
+            }
+        }
+    }
+
+    &.sticky-visible {
+        top: 0;
+    }
+
     .folc-color-line{
         span{
             display: block;
