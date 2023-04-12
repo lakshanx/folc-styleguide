@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 // Function to handle the change event
 	function handleChange() {
 		const url = $(this).val();
