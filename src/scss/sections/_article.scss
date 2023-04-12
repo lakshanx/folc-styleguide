@@ -1,0 +1,36 @@
+.article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "intro"
+        "sidebar"
+        "content";
+    grid-gap: 1rem;
+
+    &__intro,
+    &__content {
+        max-width: 100%;
+    }
+
+    &__intro {
+        grid-area: intro;
+    }
+
+    &__sidebar {
+        grid-area: sidebar;
+    }
+
+    &__content {
+        grid-area: content;
+    }
+
+    @media (min-width: 992px) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "intro sidebar"
+            "content sidebar";
+        grid-auto-flow: row dense;
+        grid-gap: 1rem 2rem;
+    }
+}
