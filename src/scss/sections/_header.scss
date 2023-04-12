@@ -145,14 +145,9 @@
                     }
                 }
 
-                &--subjects .nav-link{
-                    padding-top:calc(map-get($spacers, 1) + $nav-link-padding-y);
-                    padding-bottom:calc(map-get($spacers, 1) + $nav-link-padding-y);
-                }
-
                 &--sdg,
                 &--countries,
-                &--subjects .dropdown-toggle {
+                &--subjects {
                     background-color: $gray-700;
                 }
 
