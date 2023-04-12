@@ -9,7 +9,7 @@
     .container{
         min-height:415px;
         @include media-breakpoint-down(md) {
-            min-height: 250px;
+            min-height: 176px;
             h4,
             h1{
                 color:$white !important;
