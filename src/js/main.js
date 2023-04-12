@@ -15,13 +15,15 @@ function handleMenuOpen() {
 	calculateHeaderCSSVars();
 	$mainContent.addClass('menu-opened');
 }
+function handleMenuClose() {
+	$mainContent.removeClass('menu-opened');
+}
 function handleMobileMenuOpen() {
 	calculateHeaderCSSVars();
 	$body.addClass('overflow-hidden');
 	$mainContent.addClass('menu-opened');
 }
-
-function handleMenuClose() {
+function handleMobileMenuClose() {
 	if ($body.hasClass('overflow-hidden')) {
 		$body.removeClass('overflow-hidden');
 	}
@@ -29,7 +31,7 @@ function handleMenuClose() {
 }
 
 $mainNavBar.on('show.bs.collapse', handleMobileMenuOpen);
-$mainNavBar.on('hide.bs.collapse', handleMenuClose);
+$mainNavBar.on('hide.bs.collapse', handleMobileMenuClose);
 $mainNavBar.on('show.bs.dropdown', '.nav-item.dropdown', handleMenuOpen);
 $mainNavBar.on('hide.bs.dropdown', '.nav-item.dropdown', handleMenuClose);
 
