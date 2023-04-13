@@ -7,6 +7,10 @@
     outline: 8px solid rgba($white, 0);
     min-height: 92px;
 
+    @include media-breakpoint-down(md) {
+        font-size: $h4-font-size;
+    }
+
     .category-text {
         width: 75%;
         text-align: start;
