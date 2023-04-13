@@ -14,6 +14,12 @@
         pointer-events: none;
     }
   
+    @include media-breakpoint-down(md) {
+      &::after{
+        display: none;
+      }
+    }
+
     .container {
       min-height: 415px;
       position: relative;
@@ -23,15 +29,93 @@
         left: 0;
         width: 100%;
         max-width: 400px;
-        height: 80%;
         background-repeat: no-repeat;
         background-position: left center;
         background-size: contain;        
+        height: 80%;
+        @include media-breakpoint-down(md) {
+          height:100% !important;
+        }
       }
       @include media-breakpoint-down(md) {
-        min-height: 176px;
+        min-height: 92px;
+
+        h1{
+          font-size: $h4-font-size;
+        }
       }
     }
+
+    @include media-breakpoint-down(md) {
+      &--art {
+          .container::before {
+              background-size: 100px;
+              background-position: -30px 10px;
+          }
+      }
+      &--belief {
+          .container::before {
+              margin-left: -90px;
+              background-size: 170px;
+              background-position: 95% 0px;
+              transform: scaleX(-1);
+              opacity: 0.5;
+          }
+      }
+      &--craftmanship {
+          .container::before {
+              background-size: 100px;
+              background-position: -30px center;
+              opacity: 0.5;
+          }
+      }
+      &--dance {
+          .container::before {
+              background-size: 90px;
+              background-position: 5px -60px;
+              opacity: 0.5;
+          }
+      }
+      &--entertainment {
+          .container::before {
+              background-size: 135px;
+              background-position: -25px -75px;
+              opacity: 0.5;
+          }
+      }
+      &--foodways {
+          .container::before {
+              background-size: 150px;
+              background-position: -60px -10px;
+              opacity: 0.5;
+          }
+      }
+      &--music {
+          .container::before {
+              margin-top: 15px;
+              margin-left: -50px;
+              background-size: 130px;
+              transform: scaleX(-1) rotateZ(-10deg);
+              background-position: 97% bottom;
+              opacity: 0.5;
+          }
+      }
+      &--ritual {
+          .container::before {
+              background-size: 110px;
+              transform: scaleX(-1);
+              background-position: right -50px;
+              opacity: 0.5;
+          }
+      }
+      &--verbal {
+          .container::before {
+              background-size: 90px;
+              background-position: 10px -60px;
+              opacity: 0.5;
+          }
+      }
+  }
   
     @each $category, $img-url in (
       art: (asset-url("category-art.svg"), 80%),
@@ -47,10 +131,8 @@
         &--#{$category} {
           .container{
             &::before {
-              @include media-breakpoint-up(md) {
-                background-image: url(nth($img-url,1));
-                height:nth($img-url,2);
-              }
+              background-image: url(nth($img-url,1));
+              height:nth($img-url,2);
             }
           }
         }
