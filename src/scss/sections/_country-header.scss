@@ -10,10 +10,19 @@
         min-height:415px;
         @include media-breakpoint-down(md) {
             min-height: 176px;
+            
             h4,
             h1{
                 color:$white !important;
             }
+
+            .btn{
+                background-color: $gray-650 !important;
+                span{
+                    margin-top: -3px;
+                }
+            }
+
         }
     }
 }
