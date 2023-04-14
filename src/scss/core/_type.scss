@@ -3,7 +3,7 @@
 		font-size: $font-size-base-lg;
 	}
 	.font-size-small{
-		font-size: $font-size-small-lg;
+		font-size: $font-size-small-lg !important;
 	}	
 	h1, .h1 {
 		@include font-size($h1-font-size-lg);
