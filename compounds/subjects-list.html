@@ -3,17 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Categories | Folc Styleguide</title>
+        <title>Subjects List | Folc Styleguide</title>
         
         <link rel="stylesheet" href="/folc-styleguide/css/main.css">
     </head>
     <body>
         <div class="container mb-4">
-            <h1>Categories</h1>
+            <h1>Subjects List</h1>
             <hr>
         </div>        <div class="container mt-4">
             <div class="flex-fill">
-                <h3>Categories - List</h3>
+                <h3>List</h3>
             </div>
             <div class="row">
                 <div class="col-md-8 col-lg-4">
@@ -57,9 +57,55 @@
                     </ul>                </div>
             </div>
         </div>
-
         <div class="container mt-4">
-            <h3>Categories - Grid</h3>
+            <h3>Dropdown</h3>
+            <nav class="navbar d-block">
+                <ul class="navbar-nav px-0 mb-2 mb-lg-0 me-4">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-uppercase text-dark" data-toggle="dropdown" data-flip="false" data-target="false" role="button" aria-expanded="false" data-auto-close="false" data-placement="bottom">Subjects</a>
+                        <ul class="dropdown-menu bg-lighter-gray  categories categories--list w-custom-px-lg-1 mt-0 rounded-0 p-1 ml-lg-n1 border-0" style="">
+                            <li>
+                                <a href="categories.html" class="category-card bg-art category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Art</span>
+                                </a>    </li>
+                            <li>
+                                <a href="categories.html" class="category-card bg-belief category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Belief</span>
+                                </a>    </li>     
+                            <li>
+                                <a href="categories.html" class="category-card bg-craftmanship category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Craftmanship</span>
+                                </a>    </li>     
+                            <li>
+                                <a href="categories.html" class="category-card bg-dance category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Dance</span>
+                                </a>    </li>   
+                            <li>
+                                <a href="categories.html" class="category-card bg-entertainment category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Entertainment and recreation</span>
+                                </a>    </li>     
+                            <li>
+                                <a href="categories.html" class="category-card bg-foodways category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Foodways</span>
+                                </a>    </li>
+                            <li>
+                                <a href="categories.html" class="category-card bg-music category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Music</span>
+                                </a>    </li> 
+                            <li>
+                                <a href="categories.html" class="category-card bg-ritual category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Ritual</span>
+                                </a>    </li> 
+                            <li>
+                                <a href="categories.html" class="category-card bg-verbal category-card--small mb-1 h4  d-flex align-items-center justify-content-end justify-content-lg-center">
+                                    <span class="font-heading text-white justify-content-center pl-md-5 ml-md-4  mb-0 category-text">Verbal arts &amp; Literature</span>
+                                </a>    </li>
+                        </ul>                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container mt-4">
+            <h3>Grid</h3>
         </div>
         <div class="row categories categories--grid no-gutters my-n1 mx-1 mx-lg-0 my-lg-0">
             <div class="col-12 col-lg-4 mb-1 my-lg-0">
@@ -99,5 +145,12 @@
                     <span class="font-heading text-white justify-content-center  mb-0 category-text">Verbal arts &amp; Literature</span>
                 </a>    </div>
         </div>
-    </body>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+          ></script>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          ></script>
+        <script src="/folc-styleguide/js/bootstrap.js"></script>
+        <script src="/folc-styleguide/js/main.js"></script>    </body>
 </html>
