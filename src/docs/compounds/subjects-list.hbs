@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {{> html-head title="Subjects Dropdown" }}
+        {{> html-head title="Subjects List" }}
     </head>
     <body>
-        {{> page-title text="Subjects Dropdown" }}
+        {{> page-title text="Subjects List" }}
         <div class="container mt-4">
+            <div class="flex-fill">
+                <h3>List</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-lg-4">
+                    {{> compounds/categories-list}} 
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <h3>Dropdown</h3>
             <nav class="navbar d-block">
                 <ul class="navbar-nav px-0 mb-2 mb-lg-0 me-4">
                     <li class="nav-item dropdown">
@@ -15,6 +26,11 @@
                 </ul>
             </nav>
         </div>
+        <div class="container mt-4">
+            <h3>Grid</h3>
+        </div>
+        {{> compounds/categories-grid}}
+
         {{> js jquery=true popper=true bootstrap=true main=true }}
     </body>
 </html>
