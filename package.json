@@ -9,7 +9,8 @@
     "critical": "gulp extractCriticalCss",
     "lint": "eslint .",
     "prepare": "husky install",
-    "server": "gulp server"
+    "server": "gulp server",
+    "mediawiki": "gulp mediawiki"
   },
   "author": "",
   "devDependencies": {

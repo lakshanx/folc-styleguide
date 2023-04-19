@@ -288,3 +288,33 @@ task('watch', series(
 	watchFiles,
 ));
 task('default', series('clean', 'watch', 'initServer'));
+
+// mediawiki
+const webpackMediawikiConfig = require('./webpack.mediawiki.config');
+
+const createMediawikiFolder = function () {
+	return src('*.*', { read: false })
+		.pipe(dest('src/mediawiki'));
+};
+
+const replaceImagePath = function () {
+	return src('dist/css/main.css')
+		.pipe(replace(/\/folc-styleguide\/images\//g, 'https://nativ.ee/skins/Folc/images/'))
+		.pipe(dest('src/mediawiki'));
+};
+
+const webpackMediawikiBuild = function () {
+	return new Promise((resolve, reject) => {
+		webpack(webpackMediawikiConfig, (err, stats) => {
+			if (err) {
+				return reject(err);
+			}
+			if (stats.hasErrors()) {
+				return reject(new Error(stats.compilation.errors.join('\n')));
+			}
+			return resolve();
+		});
+	});
+};
+
+task('mediawiki', series(createMediawikiFolder, replaceImagePath, webpackMediawikiBuild));
