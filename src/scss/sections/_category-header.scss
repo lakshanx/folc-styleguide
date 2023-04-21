@@ -1,5 +1,6 @@
 .category-header{
     position: relative;
+    min-height: 415px;
     &::after{
         content: " ";
         position: absolute;
@@ -20,35 +21,34 @@
       }
     }
 
-    .container {
-      min-height: 415px;
-      position: relative;
-      &::before {
-        content:"";
-        position: absolute;
-        left: 0;
-        width: 100%;
-        max-width: 400px;
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: contain;        
-        height: 80%;
-        @include media-breakpoint-down(md) {
-          height:100% !important;
-        }
+    &::before {
+      content:"";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      max-width: 400px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: contain;        
+      height: 80%;
+      @include media-breakpoint-up(md) {
+        left:5%;
       }
       @include media-breakpoint-down(md) {
-        min-height: 92px;
+        height:100% !important;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      min-height: 92px;
 
-        h1{
-          font-size: $h4-font-size;
-        }
+      h1{
+        font-size: $h4-font-size;
       }
     }
 
     @include media-breakpoint-down(md) {
       &--art {
-          .container::before {
+          &::before {
               background-size: 100px;
               background-position: -30px 10px;
           }
@@ -70,7 +70,7 @@
           }
       }
       &--dance {
-          .container::before {
+          &::before {
               background-size: 90px;
               background-position: 5px -60px;
               opacity: 0.5;
@@ -129,11 +129,9 @@
       verbal: (asset-url("category-verbal.svg"), 70%)
     ) {
         &--#{$category} {
-          .container{
-            &::before {
-              background-image: url(nth($img-url,1));
-              height:nth($img-url,2);
-            }
+          &::before {
+            background-image: url(nth($img-url,1));
+            height:nth($img-url,2);
           }
         }
     }
