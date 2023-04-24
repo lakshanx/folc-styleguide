@@ -2,3 +2,4 @@
 node_modules
 dist
 src/js/vendor
+src/mediawiki
