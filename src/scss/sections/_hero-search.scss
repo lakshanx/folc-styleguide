@@ -1,5 +1,5 @@
 .hero-search{
-    min-height: 105vh;
+    min-height: calc(100vh - var(--menu-height));
     background-image: url(asset-url("hero.svg"));
     background-position: center;
     background-size: cover;
