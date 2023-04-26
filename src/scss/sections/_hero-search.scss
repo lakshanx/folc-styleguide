@@ -1,12 +1,18 @@
 .hero-search{
-    min-height: calc(100vh - var(--menu-height));
+    
     background-image: url(asset-url("hero.svg"));
     background-position: center;
     background-size: cover;
     border-bottom: 1px solid $gray-300;
 
+    .container{
+        min-height: calc(100vh - var(--menu-height));
+    }
+
     @include media-breakpoint-down(md) {
-        min-height: 60vh;
+        .container{
+            min-height: 60vh;
+        }
 
         .has-search{
             font-size: $font-size-base;
