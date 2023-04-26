@@ -30,6 +30,7 @@ function handleMobileMenuClose() {
 	$mainContent.removeClass('menu-opened');
 }
 
+calculateHeaderCSSVars();
 $mainNavBar.on('show.bs.collapse', handleMobileMenuOpen);
 $mainNavBar.on('hide.bs.collapse', handleMobileMenuClose);
 $mainNavBar.on('show.bs.dropdown', '.nav-item.dropdown', handleMenuOpen);
