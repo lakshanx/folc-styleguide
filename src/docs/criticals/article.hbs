@@ -11,75 +11,47 @@
             <div class="bg-light-gray">
                 <div class="container">
                     <div class="article-tab row d-flex">
-                        <div class="col-xl-5 align-self-center text-uppercase text-gray d-none d-xl-block"><span>Read</span> Mode</div> 
-                        <div class="col-xl-4 align-self-end">
+                        <div class="col-lg-5 align-self-center text-uppercase text-gray d-none d-lg-block"><span>Read</span> Mode</div> 
+                        <div class="col-lg-4 align-self-end">
                             <ul class="nav  mt-1 mt-md-2 nav-pills nav-fill border-bottom-0 active" id="countries-tab" role="tablist">
                                 <li class="nav-item active">
-                                    <a href="#countries-africa" class="nav-link bg-transparent text-dark-gray py-2 active" data-toggle="tab" data-target="#countries-africa" role="tab" aria-selected="true">Read</a>
+                                    <a href="#tab-read" class="nav-link text-dark-gray py-1 py-md-2 active" data-toggle="tab" data-target="#tab-read" role="tab" aria-selected="true">Read</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#countries-asia" class="nav-link bg-transparent text-dark-gray py-2" data-toggle="tab" data-target="#countries-asia" role="tab" aria-selected="false">Edit</a>
+                                    <a href="#tab-edit" class="nav-link text-dark-gray py-1 py-md-2" data-toggle="tab" data-target="#tab-edit" role="tab" aria-selected="false">Edit</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#countries-europe" class="nav-link bg-transparent text-dark-gray py-2" data-toggle="tab" data-target="#countries-europe" role="tab" aria-selected="false">Discussion</a>
+                                    <a href="#tab-discussion" class="nav-link text-dark-gray py-1 py-md-2" data-toggle="tab" data-target="#tab-discussion" role="tab" aria-selected="false">Discussion</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#countries-americas" class="nav-link bg-transparent text-dark-gray py-2" data-toggle="tab" data-target="#countries-americas" role="tab" aria-selected="false">History</a>
+                                    <a href="#tab-history" class="nav-link text-dark-gray py-1 py-md-2" data-toggle="tab" data-target="#tab-history" role="tab" aria-selected="false">History</a>
                                 </li>
                             </ul>
                         </div> 
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 order-2 order-md-1">
-                        <div class="tab-content pt-3 pr-0 pr-lg-4">
-                            <div class="tab-pane bg-white show active" id="countries-africa" role="tabpanel">
-                                <div class="tab-pane bg-white" id="countries-africa" role="tabpanel">
-                                    <h2>Budima Dance</h2>
-                                    <p>The Budima Dance is a warrior dance performed all year round by the inhabitants of Zambezi/Gwembe Valley in the Southern Province.</p>
-                                    <h3>Anthropology</h3>
-                                    <p>The Budima Dance is a warrior dance performed all year round by the inhabitants of Zambezi/Gwembe Valley in the Southern Province. Arriving from <a href="#">Liberia</a> in the 16th century, the Wee People carry out this traditional dance on a number of sombre and spiritual occasions, especially during traditional ceremonies, funeral processions, weddings, initiation ceremonies, the installation of chiefs, thanksgiving, harvest celebrations and ritual activities.
-                                    </p>
-
-                                    <p>The dance is performed with spears, whistles, walking sticks, knobkerries, flutes, ceremonial axes, shields, horns/trumpets, drums and rattles. The performance includes men, women and children: the men represent skilled soldiers or fighters with long spears jumping up and down while running in and out of the inner circle of dangers, flourishing their spears in mimic of war, while others blow the sets of one-note antelope horn flutes / trumpets and shout chants. Others play big and small drums. The women – adorned in beaded necklaces and bangles, with rattles on their feet – sing along and dance energetically.</p>
-                                    <h3>Tradition</h3>
-                                    <p>
-                                        The related knowledge and skills are transmitted to young people through observation and their participation in the dance. Young people are also taught about the importance of the dance, how to perform it, and how to make some of the instruments during initiation ceremonies.
-                                    </p>
-                                    <p>
-                                        Budima dance serves as a unifying factor for the communities concerned, who take great pride in the dance and can join in with the dancers at any point during the performance.
-                                    </p>
-                                    <h3>Modern Life</h3>
-                                    <p>
-                                        The related knowledge and skills are transmitted to young people through observation and their participation in the dance. Young people are also taught about the importance of the dance, how to perform it, and how to make some of the instruments during initiation ceremonies.
-                                    </p>
-                                    <p>
-                                        Budima dance serves as a unifying factor for the communities concerned, who take great pride in the dance and can join in with the dancers at any point during the performance.
-                                    </p>                                    
-                                </div>
-                            </div>
-                            <div class="tab-pane bg-white" id="countries-asia" role="tabpanel">
-                                <div class="tab-pane bg-white" id="countries-asia" role="tabpanel">
-                                    EDIT
-                                </div>
-                            </div>
-                            <div class="tab-pane bg-white" id="countries-europe" role="tabpanel">
-                                <div class="tab-pane show active bg-white" id="countries-europe" role="tabpanel">
-                                    DISCUSSION
-                                </div>
-                            </div>
-                            <div class="tab-pane bg-white" id="countries-americas" role="tabpanel">
-                                <div class="tab-pane bg-white" id="countries-americas" role="tabpanel">
-                                    HISTORY
-                                </div>
-                            </div>
+            <div class="container tab-content">
+                <div class="tab-pane bg-white active" id="tab-read" role="tabpanel">
+                    <article class="article">
+                        <div class="article__intro pt-2 pt-md-3 pr-0 pr-lg-4">
+                            <h1 class="h2">Budima Dance</h1>
+                            <p class="mb-1">The Budima Dance is a warrior dance performed all year round by the inhabitants of Zambezi/Gwembe Valley in the Southern Province.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 order-1 order-md-2">
-                        {{> sections/article-sidebar }}
-                    </div>                
+                        <aside class="article__sidebar">
+                            {{> sections/article-sidebar }}
+                        </aside>                
+                    </article>
+                </div>
+
+                <div class="tab-pane bg-white" id="tab-edit" role="tabpanel">
+                    Edit 
+                </div>
+                <div class="tab-pane bg-white" id="tab-discussion" role="tabpanel">
+                    Discussion
+                </div>
+                <div class="tab-pane bg-white" id="tab-history" role="tabpanel">
+                    History
                 </div>
             </div>
         </div>
