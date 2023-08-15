@@ -25,11 +25,6 @@
     }
 
     &--multi-level {
-        .nav-link {
-            &.active {
-                background-color: $yellow;
-            }
-        }
 
         .dropdown {
             &.show {
@@ -66,6 +61,32 @@
                 a {
                     color: $primary !important;
                 }
+            }
+        }
+    }
+
+    $block-data: (
+        art: $red,
+        belief: $red-600,
+        craftmanship: $orange,
+        dance: $yellow,
+        entertainment: $green,
+        foodways: $teal,
+        music: $cyan,
+        ritual: $blue-300,
+        verbal: $purple,
+    );
+    
+    @each $block, $color in $block-data {
+        &--#{$block} {
+            .nav-link {
+                &.active {
+                    background-color: $color;
+                }
+            }
+
+            .tab-content{
+                background-color: $color !important;
             }
         }
     }
