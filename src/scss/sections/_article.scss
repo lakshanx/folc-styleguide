@@ -19,6 +19,12 @@
 
     &__sidebar {
         grid-area: sidebar;
+
+        .btn-outline-secondary{
+            &:hover{
+                background:$white;
+            }
+        }
     }
 
     &__content {
