@@ -34,3 +34,18 @@
     }
 }
 
+textarea{
+    border: $input-border-width solid $input-border-color !important;
+    border-radius: 12px !important;
+    padding:1em;
+}
+.select2-selection--multiple, .select2-selection__choice, #input_18, .oo-ui-widget{
+    border: $input-border-width solid $input-border-color !important;
+    border-radius: 3.125rem !important;
+}
+.select2-selection__choice__remove, .select2-match-entire{
+    font-size:.8em ;
+}
+#input_18{
+    margin-bottom: 6px;
+}
