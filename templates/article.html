@@ -12,7 +12,8 @@
         
         <link rel="stylesheet" href="/folc-styleguide/css/main.css">
         
-        <style>.fancycaptcha-image-container {
+        <style>
+            .fancycaptcha-image-container {
             min-height: 95px;
             position: relative;
             display: inline-block
@@ -1038,6 +1039,8 @@
         }
         
         table.formtable {
+            border-spacing: 20px;
+            border-collapse: separate;
         }
         
         table.formtable th {
@@ -1110,7 +1113,7 @@
             display: inline-block
         }
         
-        body.ltr #pfForm label.checkboxLabel {
+        .checkboxLabel {
             margin-right: 20px
         }
         
@@ -1775,7 +1778,8 @@
             float: left;
             margin-right: 5px;
             margin-top: 7px;
-            padding: 0 5px
+            padding: 0 5px;
+            display:inline-flex;
         }
         
         .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
@@ -3666,10 +3670,6 @@
             max-width: 50em
         }
         
-        .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget {
-            margin-right: 8px
-        }
-        
         .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget.oo-ui-textInputWidget > .oo-ui-inputWidget-input,.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-dropdownWidget-handle,.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-tagMultiselectWidget-handle {
             border-radius: 2px 0 0 2px;
             position: relative
@@ -3824,11 +3824,6 @@
         .oo-ui-horizontalLayout > .oo-ui-layout {
             display: inline-block
         }
-        
-        .oo-ui-horizontalLayout > .oo-ui-layout,.oo-ui-horizontalLayout > .oo-ui-widget {
-            margin-right: 8px
-        }
-        
         .oo-ui-horizontalLayout > .oo-ui-layout:last-child,.oo-ui-horizontalLayout > .oo-ui-widget:last-child {
             margin-right: 0
         }
@@ -4067,9 +4062,6 @@
             opacity: 0.51
         }
         
-        .oo-ui-buttonWidget {
-            margin-right: 8px
-        }
         
         .oo-ui-buttonWidget:last-child {
             margin-right: 0
@@ -4380,9 +4372,6 @@
             cursor: auto
         }
         
-        .oo-ui-inputWidget {
-            margin-right: 8px
-        }
         
         .oo-ui-inputWidget:last-child {
             margin-right: 0
@@ -18685,14 +18674,7 @@
                                     </th>
                                     <td>
                                         <span class="inputSpan">
-                                        <textarea tabindex="2" name="PostForm[Body]" id="input_2" class="createboxInput" rows="5" cols="90" style="width: 100%">Among the cultural dances that have endured in the Gwembe Valleys, Southern Province, one stands out, the traditional war dance called Budima. The Tonga Wee people perform this dance distinctively.
-                                        The movement of the tribe from the Zambezi River banks to the highlands of Lusitu, Pambazana, Chirundu, and Siavonga during the construction of the Kariba Dam has not stopped them from performing the Budima dance.
-                                        Budima dance is performed all year round especially for sombre and spiritual occasions, also often during traditional ceremonies, funeral processions, weddings, initiation ceremonies, thanksgiving, harvest celebrations, and ritual activities. The performers use spears, whistles, walking sticks, knobkerries, flutes, ceremonial axes, shields, horns/trumpets, drums, and rattles during the dance. 
-                                        During the performance, men, women, and children act as skilled soldiers or fighters with long spears, leaping up and down while running in and out of danger, flourishing their spears in mimic war, while others blow the sets of one-note antelope horn flutes or trumpets and chant while others play big and small drums. 
-                                        The women wear beaded necklaces and bracelets, with rattles, as well as dance energetically. As the music begins, they follow along passionately, beating the drums in their hands, vibrating with beats and rhythm. It was a powerful performance, full of vitality and power from the African savannah. 
-                                        The girls twist their hips and rotated their bodies during the performance, and they slap the beads on their hands, arms, and skirts in a way to create sounds. The young people in the community are taught these skills and know-how through observation and participation in the Budima dance. During the initiation ceremonies, they also learn more about the importance of the dance, how to perform it, and how to make some of the instruments. 
-                                        Budima dance serves as a unifying factor for the community, which takes great pride in the dance and enjoys joining in with the dancers at any point during the performance. It is as if the indigenous people here are possessed by this dance. This is a dance that used to be performed by warriors during the war and also to celebrate conquests.
-                                        Currently, the dance is mainly performed for entertainment, funerals, the installation of traditional leaders, and public gatherings. According to Chief Chipepo's cultural director of the Budima Cultural Association, Patrick Makukisi, who lives in Lusitu, the dance was practiced by his forefathers and has been passed on from generation to generation.
+                                        <textarea tabindex="2" name="PostForm[Body]" id="input_2" class="createboxInput" rows="5" cols="90" style="width: 100%">Among the cultural dances that have endured in the Gwembe Valleys, Southern Province, one stands out, the traditional war dance called Budima. The Tonga Wee people perform this dance distinctively.The movement of the tribe from the Zambezi River banks to the highlands of Lusitu, Pambazana, Chirundu, and Siavonga during the construction of the Kariba Dam has not stopped them from performing the Budima dance.Budima dance is performed all year round especially for sombre and spiritual occasions, also often during traditional ceremonies, funeral processions, weddings, initiation ceremonies, thanksgiving, harvest celebrations, and ritual activities. The performers use spears, whistles, walking sticks, knobkerries, flutes, ceremonial axes, shields, horns/trumpets, drums, and rattles during the dance.
                                         </textarea>
                                         </span>
                                     </td>
@@ -19005,7 +18987,7 @@
                                             <span class="selection">
                                                 <span class="select2-selection select2-selection--multiple pfTokens createboxInput pf-select2-container" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" style="min-width: 600px;">
                                                     <ul class="select2-selection__rendered">
-                                                    <li class="select2-selection__choice" title="Zambia" data-select2-id="252"><span class="select2-selection__choice__remove" role="presentation">Ã—</span><span class="select2-match-entire">Zambia</span></li>
+                                                    <li class="select2-selection__choice" title="Zambia" data-select2-id="252"><span class="select2-selection__choice__remove" role="presentation">×</span><span class="select2-match-entire">Zambia</span></li>
                                                     <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="13" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
                                                     </ul>
                                                 </span>
@@ -19174,7 +19156,7 @@
                                             <span class="selection">
                                                 <span class="select2-selection select2-selection--multiple pfTokens createboxInput pf-select2-container" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" style="min-width: 600px;">
                                                     <ul class="select2-selection__rendered">
-                                                    <li class="select2-selection__choice" title="(11) Sustainable Cities and Communities" data-select2-id="398"><span class="select2-selection__choice__remove" role="presentation">Ã—</span><span class="select2-match-entire">(11) Sustainable Cities and Communities</span></li>
+                                                    <li class="select2-selection__choice" title="(11) Sustainable Cities and Communities" data-select2-id="398"><span class="select2-selection__choice__remove" role="presentation">×</span><span class="select2-match-entire">(11) Sustainable Cities and Communities</span></li>
                                                     <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="16" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
                                                     </ul>
                                                 </span>
@@ -19208,7 +19190,7 @@
                                             <span class="selection">
                                                 <span class="select2-selection select2-selection--multiple pfTokens createboxInput pf-select2-container" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" style="min-width: 600px;">
                                                     <ul class="select2-selection__rendered">
-                                                    <li class="select2-selection__choice" title="performing arts" data-select2-id="422"><span class="select2-selection__choice__remove" role="presentation">Ã—</span><span class="select2-match-entire">performing arts</span></li>
+                                                    <li class="select2-selection__choice" title="performing arts" data-select2-id="422"><span class="select2-selection__choice__remove" role="presentation">×</span><span class="select2-match-entire">performing arts</span></li>
                                                     <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="17" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
                                                     </ul>
                                                 </span>

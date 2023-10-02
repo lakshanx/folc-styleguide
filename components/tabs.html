@@ -12,7 +12,8 @@
         
         <link rel="stylesheet" href="/folc-styleguide/css/main.css">
         
-        <style>.fancycaptcha-image-container {
+        <style>
+            .fancycaptcha-image-container {
             min-height: 95px;
             position: relative;
             display: inline-block
@@ -1038,6 +1039,8 @@
         }
         
         table.formtable {
+            border-spacing: 20px;
+            border-collapse: separate;
         }
         
         table.formtable th {
@@ -1110,7 +1113,7 @@
             display: inline-block
         }
         
-        body.ltr #pfForm label.checkboxLabel {
+        .checkboxLabel {
             margin-right: 20px
         }
         
@@ -1775,7 +1778,8 @@
             float: left;
             margin-right: 5px;
             margin-top: 7px;
-            padding: 0 5px
+            padding: 0 5px;
+            display:inline-flex;
         }
         
         .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
@@ -3666,10 +3670,6 @@
             max-width: 50em
         }
         
-        .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget {
-            margin-right: 8px
-        }
-        
         .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget.oo-ui-textInputWidget > .oo-ui-inputWidget-input,.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-dropdownWidget-handle,.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-tagMultiselectWidget-handle {
             border-radius: 2px 0 0 2px;
             position: relative
@@ -3824,11 +3824,6 @@
         .oo-ui-horizontalLayout > .oo-ui-layout {
             display: inline-block
         }
-        
-        .oo-ui-horizontalLayout > .oo-ui-layout,.oo-ui-horizontalLayout > .oo-ui-widget {
-            margin-right: 8px
-        }
-        
         .oo-ui-horizontalLayout > .oo-ui-layout:last-child,.oo-ui-horizontalLayout > .oo-ui-widget:last-child {
             margin-right: 0
         }
@@ -4067,9 +4062,6 @@
             opacity: 0.51
         }
         
-        .oo-ui-buttonWidget {
-            margin-right: 8px
-        }
         
         .oo-ui-buttonWidget:last-child {
             margin-right: 0
@@ -4380,9 +4372,6 @@
             cursor: auto
         }
         
-        .oo-ui-inputWidget {
-            margin-right: 8px
-        }
         
         .oo-ui-inputWidget:last-child {
             margin-right: 0
