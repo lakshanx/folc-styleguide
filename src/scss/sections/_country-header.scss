@@ -1,5 +1,5 @@
 .country-header{
-    background-image: url(asset-url("hero.svg"));
+    background-image: url(asset-url("hero.png"));
     background-position: center;
     @include media-breakpoint-down(md) {
         background-image:none;

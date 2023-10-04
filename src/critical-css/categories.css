@@ -161,8 +161,15 @@ a.with-prefix:before{content:"» "}
 .countries-tab .nav-link{position:relative}
 .countries-tab .nav-link.active{color:#fff!important;background-color:#677d85}
 .countries-tab .nav-link.active::after{content:"";position:absolute;left:0;bottom:-1em;height:1em;width:100%;background:inherit}
-.countries-tab--multi-level .nav-link.active{background-color:#f9b26b}
 .countries-tab--multi-level .dropdown-menu .dropdown-close{height:46px;width:46px;font-size:2em}
+@media (max-width:991.98px){
+.has-search .form-control{padding:1.4em 1em 1.4em 2.7em}
+.subject-card{font-size:1.5em}
+.countries-tab--multi-level .dropdown-header{background:rgba(0,0,0,0)!important}
+.countries-tab--multi-level .dropdown-header a{color:#0061ff!important}
+}
+.countries-tab--dance .nav-link.active{background-color:#f9b26b}
+.countries-tab--dance .tab-content{background-color:#f9b26b!important}
 .main-header{background-color:#fff}
 .main-header .folc-color-line span{display:block;height:13px;background-color:orange;width:10%}
 .main-header .folc-color-line span.bg-art{width:8%}
@@ -175,10 +182,6 @@ a.with-prefix:before{content:"» "}
 .main-header .folc-color-line span.bg-verbal{width:14.2%}
 .main-header .navbar-brand img{width:139px}
 @media (max-width:991.98px){
-.has-search .form-control{padding:1.4em 1em 1.4em 2.7em}
-.subject-card{font-size:1.5em}
-.countries-tab--multi-level .dropdown-header{background:rgba(0,0,0,0)!important}
-.countries-tab--multi-level .dropdown-header a{color:#0061ff!important}
 .main-header .folc-color-line span{height:10px}
 .main-header>.navbar{position:static;height:4em}
 .main-header .navbar--mobile-menu-footer .navbar-nav{flex-direction:row;flex-wrap:wrap;height:auto}
@@ -201,7 +204,7 @@ a.with-prefix:before{content:"» "}
 .category-header::after{display:none}
 }
 .category-header{position:relative;min-height:415px}
-.category-header::after{content:" ";position:absolute;top:0;width:100%;height:100%;opacity:.3;background-repeat:no-repeat;background-image:url(/folc-styleguide/images/category-header-background.svg);background-size:cover;background-position:center}
+.category-header::after{content:" ";position:absolute;top:0;width:100%;height:100%;opacity:.3;background-repeat:no-repeat;background-image:url(/folc-styleguide/images/category-header-background.png);background-size:cover;background-position:center}
 .category-header::before{content:"";position:absolute;left:0;width:100%;max-width:400px;background-repeat:no-repeat;background-position:left center;background-size:contain;height:80%}
 @media (max-width:991.98px){
 .category-header::before{height:100%!important}

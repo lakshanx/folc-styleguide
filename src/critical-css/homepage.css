@@ -157,7 +157,7 @@ a.with-prefix:before{content:"» "}
 .main-header .folc-color-line span.bg-music,.main-header .folc-color-line span.bg-ritual{width:9.4%}
 .main-header .folc-color-line span.bg-verbal{width:14.2%}
 .main-header .navbar-brand img{width:139px}
-.hero-search{background-image:url(/folc-styleguide/images/hero.svg);background-position:center;background-size:cover;border-bottom:1px solid #c2c2c2}
+.hero-search{background-image:url(/folc-styleguide/images/hero.png);background-position:center;background-size:cover;border-bottom:1px solid #c2c2c2}
 .hero-search .container{min-height:calc(100vh - var(--menu-height))}
 @media (max-width:991.98px){
 .has-search .form-control{padding:1.4em 1em 1.4em 2.7em}

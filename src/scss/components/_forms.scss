@@ -37,7 +37,7 @@
 textarea{
     border: $input-border-width solid $input-border-color !important;
     border-radius: 12px !important;
-    padding:1em;
+    padding: 1em;
 }
 .select2-selection--multiple, .select2-selection__choice, #input_18, .oo-ui-widget{
     border: $input-border-width solid $input-border-color !important;
@@ -48,4 +48,18 @@ textarea{
 }
 #input_18{
     margin-bottom: 6px;
+}
+.oo-ui-widget{
+    margin-right:0 !important;
+}
+.select2-selection__choice{
+    padding: 0 5px;
+    display:inline-flex;
+}
+.checkboxLabel {
+    margin-right: 20px
+}
+table.formtable {
+    border-spacing: 20px;
+    border-collapse: separate;
 }
