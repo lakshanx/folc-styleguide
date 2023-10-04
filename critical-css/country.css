@@ -163,7 +163,7 @@ a.with-prefix:before{content:"» "}
 .main-header .folc-color-line span.bg-music,.main-header .folc-color-line span.bg-ritual{width:9.4%}
 .main-header .folc-color-line span.bg-verbal{width:14.2%}
 .main-header .navbar-brand img{width:139px}
-.country-header{background-image:url(/folc-styleguide/images/hero.svg);background-position:center}
+.country-header{background-image:url(/folc-styleguide/images/hero.png);background-position:center}
 .country-header .container{min-height:415px}
 @media (max-width:991.98px){
 .has-search .form-control{padding:1.4em 1em 1.4em 2.7em}
